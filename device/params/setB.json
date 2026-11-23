@@ -1,0 +1,35 @@
+{
+  "name": "B",
+  "what": "P1 film: 10 nm Hf0.4Zr0.6O2 on 2 nm SiO2 (Ni, Jerry, Smith, Datta, VLSI 2018). Kinetics fitted to T3 by device/py/fit_setB.py; eps_r from the T1 slope; channel vth0 by device/py/fit_fefet.py.",
+  "t_fe_m": 1e-08,
+  "P_S_C_per_m2": 0.23965,
+  "eps_r": 42.9,
+  "tau_inf_s": 3.6502e-06,
+  "alpha": 2.9364,
+  "beta": 1.639,
+  "h0": 1e-06,
+  "V_imp_V": -0.155,
+  "dist": {
+    "type": "lognormal",
+    "median_MV_per_cm": 1.3932,
+    "sigma_ln": 0.3412
+  },
+  "N": 16,
+  "fefet": {
+    "W_m": 1e-06,
+    "L_m": 1e-06,
+    "r_A": 1.0,
+    "card": {
+      "name": "nfefet_b",
+      "toxe": 2e-09,
+      "toxp": 2e-09,
+      "toxm": 2e-09,
+      "vth0": 0.1392,
+      "u0": 0.03,
+      "vsat": 100000.0,
+      "rdsw": 150,
+      "cit": 0.0,
+      "xj": 1.5e-08
+    }
+  }
+}

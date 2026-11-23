@@ -1,0 +1,46 @@
+design,model,L_active_zero,p_column_code_error,p_field_sign_flip_h1
+"ours (binary 0/7, differential, full-res ADC)",gauss,16,1.087e-02,3.365e-02
+"ours (binary 0/7, differential, full-res ADC)",gauss,32,7.172e-02,9.966e-02
+"ours (binary 0/7, differential, full-res ADC)",gauss,64,2.029e-01,1.830e-01
+"ours (binary 0/7, differential, full-res ADC)",gauss,128,3.679e-01,2.617e-01
+"ours (binary 0/7, differential, full-res ADC)",gauss,256,5.243e-01,3.261e-01
+"ours (binary 0/7, differential, full-res ADC)",gauss,512,6.525e-01,3.750e-01
+"ours (binary 0/7, differential, full-res ADC)",gauss,1024,7.502e-01,4.109e-01
+"B1 3-bit, write-verify 1-6, level 0 open-loop",gauss,4,5.702e-01,nan
+"B1 3-bit, write-verify 1-6, level 0 open-loop",gauss,16,7.278e-01,nan
+"B1 3-bit, write-verify 1-6, level 0 open-loop",gauss,28,7.850e-01,nan
+"B1 3-bit, write-verify 1-6, level 0 verified",gauss,4,3.669e-01,nan
+"B1 3-bit, write-verify 1-6, level 0 verified",gauss,16,2.475e-01,nan
+"B1 3-bit, write-verify 1-6, level 0 verified",gauss,28,5.292e-02,nan
+"B1 3-bit, open-loop 1-6, level 0 open-loop",gauss,4,9.641e-01,nan
+"B1 3-bit, open-loop 1-6, level 0 open-loop",gauss,16,9.531e-01,nan
+"B1 3-bit, open-loop 1-6, level 0 open-loop",gauss,28,9.129e-01,nan
+"B1 3-bit, open-loop 1-6, level 0 verified",gauss,4,9.640e-01,nan
+"B1 3-bit, open-loop 1-6, level 0 verified",gauss,16,9.525e-01,nan
+"B1 3-bit, open-loop 1-6, level 0 verified",gauss,28,9.051e-01,nan
+"ours (binary 0/7, differential, full-res ADC)",rect,16,4.857e-02,1.387e-03
+"ours (binary 0/7, differential, full-res ADC)",rect,32,7.633e-01,1.792e-02
+"ours (binary 0/7, differential, full-res ADC)",rect,64,9.993e-01,6.969e-02
+"ours (binary 0/7, differential, full-res ADC)",rect,128,1.000e+00,1.484e-01
+"ours (binary 0/7, differential, full-res ADC)",rect,256,1.000e+00,2.306e-01
+"ours (binary 0/7, differential, full-res ADC)",rect,512,1.000e+00,3.012e-01
+"ours (binary 0/7, differential, full-res ADC)",rect,1024,1.000e+00,3.564e-01
+"B1 3-bit, write-verify 1-6, level 0 open-loop",rect,4,5.939e-01,nan
+"B1 3-bit, write-verify 1-6, level 0 open-loop",rect,16,9.725e-01,nan
+"B1 3-bit, write-verify 1-6, level 0 open-loop",rect,28,9.991e-01,nan
+"B1 3-bit, write-verify 1-6, level 0 verified",rect,4,3.669e-01,nan
+"B1 3-bit, write-verify 1-6, level 0 verified",rect,16,2.475e-01,nan
+"B1 3-bit, write-verify 1-6, level 0 verified",rect,28,5.292e-02,nan
+"B1 3-bit, open-loop 1-6, level 0 open-loop",rect,4,9.641e-01,nan
+"B1 3-bit, open-loop 1-6, level 0 open-loop",rect,16,9.543e-01,nan
+"B1 3-bit, open-loop 1-6, level 0 open-loop",rect,28,9.385e-01,nan
+"B1 3-bit, open-loop 1-6, level 0 verified",rect,4,9.640e-01,nan
+"B1 3-bit, open-loop 1-6, level 0 verified",rect,16,9.525e-01,nan
+"B1 3-bit, open-loop 1-6, level 0 verified",rect,28,9.051e-01,nan
+"ours (binary 0/7, differential, full-res ADC)",verified,16,1.490e-05,9.332e-04
+"ours (binary 0/7, differential, full-res ADC)",verified,32,2.200e-03,1.455e-02
+"ours (binary 0/7, differential, full-res ADC)",verified,64,3.038e-02,6.216e-02
+"ours (binary 0/7, differential, full-res ADC)",verified,128,1.258e-01,1.390e-01
+"ours (binary 0/7, differential, full-res ADC)",verified,256,2.790e-01,2.218e-01
+"ours (binary 0/7, differential, full-res ADC)",verified,512,4.440e-01,2.941e-01
+"ours (binary 0/7, differential, full-res ADC)",verified,1024,5.883e-01,3.509e-01

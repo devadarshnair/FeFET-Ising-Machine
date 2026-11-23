@@ -1,0 +1,251 @@
+{
+ "blocks": {
+  "ctrl_N1024": {
+   "block": "ctrl_N1024",
+   "cell_area_um2": 14398.048,
+   "cells": 8368.0,
+   "arrival_ns": 30.0164,
+   "p_internal_w": 0.06918582,
+   "p_switching_w": 0.007731017,
+   "p_leak_w": 0.0002867036,
+   "p_total_w": 0.07720354,
+   "pnr_arrival_ns": 2.1012,
+   "pnr_design_area_um2": 18037.0,
+   "pnr_util": 32.0,
+   "pnr_die_um2": 59528.680225000004,
+   "pnr_p_leak_w": 0.0004566644,
+   "pnr_p_total_w": 0.07558665
+  },
+  "ctrl_N256": {
+   "block": "ctrl_N256",
+   "cell_area_um2": 5620.846,
+   "cells": 3512.0,
+   "arrival_ns": 6.5316,
+   "p_internal_w": 0.01104304,
+   "p_switching_w": 0.004207361,
+   "p_leak_w": 0.0001135277,
+   "p_total_w": 0.01536392,
+   "pnr_arrival_ns": 1.5823,
+   "pnr_design_area_um2": 6534.0,
+   "pnr_util": 71.0,
+   "pnr_die_um2": 10158.6241,
+   "pnr_p_leak_w": 0.0001549799,
+   "pnr_p_total_w": 0.02685628
+  },
+  "ctrl_N64": {
+   "block": "ctrl_N64",
+   "cell_area_um2": 3033.464,
+   "cells": 1868.0,
+   "arrival_ns": 4.6391,
+   "p_internal_w": 0.006531907,
+   "p_switching_w": 0.00248419,
+   "p_leak_w": 6.296827e-05,
+   "p_total_w": 0.009079065,
+   "pnr_arrival_ns": 1.4302,
+   "pnr_design_area_um2": 3514.0,
+   "pnr_util": 71.0,
+   "pnr_die_um2": 5640.761025000001,
+   "pnr_p_leak_w": 8.417613e-05,
+   "pnr_p_total_w": 0.0133647
+  },
+  "lane": {
+   "block": "lane",
+   "cell_area_um2": 4683.728,
+   "cells": 4123.0,
+   "arrival_ns": 2.4734,
+   "p_internal_w": 0.008401535,
+   "p_switching_w": 0.006421232,
+   "p_leak_w": 0.0001094605,
+   "p_total_w": 0.01493223,
+   "pnr_arrival_ns": 2.4056,
+   "pnr_design_area_um2": 5351.0,
+   "pnr_util": 70.0,
+   "pnr_die_um2": 8529.446025000001,
+   "pnr_p_leak_w": 0.0001377037,
+   "pnr_p_total_w": 0.02007314
+  },
+  "restart_N1024": {
+   "block": "restart_N1024",
+   "cell_area_um2": 138581.212,
+   "cells": 86510.0,
+   "arrival_ns": 157.6443,
+   "p_internal_w": 0.09988114,
+   "p_switching_w": 0.0124478,
+   "p_leak_w": 0.002975593,
+   "p_total_w": 0.1153045,
+   "pnr_arrival_ns": 14.0784,
+   "pnr_design_area_um2": 173681.0,
+   "pnr_util": 76.0,
+   "pnr_die_um2": 234827.46809999997,
+   "pnr_p_leak_w": 0.004482585,
+   "pnr_p_total_w": 0.4464899
+  },
+  "restart_N256": {
+   "block": "restart_N256",
+   "cell_area_um2": 30601.97,
+   "cells": 19238.0,
+   "arrival_ns": 12.3889,
+   "p_internal_w": 0.0207561,
+   "p_switching_w": 0.007813084,
+   "p_leak_w": 0.0006593255,
+   "p_total_w": 0.02922851,
+   "pnr_arrival_ns": 3.4598,
+   "pnr_design_area_um2": 37887.0,
+   "pnr_util": 75.0,
+   "pnr_die_um2": 52826.4256,
+   "pnr_p_leak_w": 0.0009516077,
+   "pnr_p_total_w": 0.1970497
+  },
+  "restart_N64": {
+   "block": "restart_N64",
+   "cell_area_um2": 8245.734,
+   "cells": 5629.0,
+   "arrival_ns": 3.6008,
+   "p_internal_w": 0.003924164,
+   "p_switching_w": 0.0002968308,
+   "p_leak_w": 0.0001683753,
+   "p_total_w": 0.00438937,
+   "pnr_arrival_ns": 2.2523,
+   "pnr_design_area_um2": 10131.0,
+   "pnr_util": 74.0,
+   "pnr_die_um2": 14696.7129,
+   "pnr_p_leak_w": 0.0002420826,
+   "pnr_p_total_w": 0.007057103
+  },
+  "rng": {
+   "block": "rng",
+   "cell_area_um2": 1561.952,
+   "cells": 1050.0,
+   "arrival_ns": 2.3,
+   "p_internal_w": 0.00255893,
+   "p_switching_w": 0.001215922,
+   "p_leak_w": 3.393937e-05,
+   "p_total_w": 0.003808791,
+   "pnr_arrival_ns": 2.315,
+   "pnr_design_area_um2": 1951.0,
+   "pnr_util": 78.0,
+   "pnr_die_um2": 3027.2004,
+   "pnr_p_leak_w": 4.988175e-05,
+   "pnr_p_total_w": 0.007031208
+  },
+  "sel_N1024": {
+   "block": "sel_N1024",
+   "cell_area_um2": 11890.2,
+   "cells": 10474.0,
+   "arrival_ns": 28.4993,
+   "p_internal_w": 0.342034,
+   "p_switching_w": 0.2725373,
+   "p_leak_w": 0.0002862586,
+   "p_total_w": 0.6148576,
+   "pnr_arrival_ns": 9.1527,
+   "pnr_design_area_um2": 16935.0,
+   "pnr_util": 87.0,
+   "pnr_die_um2": 20959.800625,
+   "pnr_p_leak_w": 0.0004682851,
+   "pnr_p_total_w": 25484900.0
+  },
+  "sel_N256": {
+   "block": "sel_N256",
+   "cell_area_um2": 3715.222,
+   "cells": 3330.0,
+   "arrival_ns": 9.1399,
+   "p_internal_w": 0.1233519,
+   "p_switching_w": 0.1100216,
+   "p_leak_w": 8.749941e-05,
+   "p_total_w": 0.233461,
+   "pnr_arrival_ns": 5.6386,
+   "pnr_design_area_um2": 4869.0,
+   "pnr_util": 81.0,
+   "pnr_die_um2": 6837.6361,
+   "pnr_p_leak_w": 0.0001315639,
+   "pnr_p_total_w": 4592.304
+  },
+  "sel_N64": {
+   "block": "sel_N64",
+   "cell_area_um2": 1350.482,
+   "cells": 1190.0,
+   "arrival_ns": 3.622,
+   "p_internal_w": 0.05118416,
+   "p_switching_w": 0.04429102,
+   "p_leak_w": 3.22907e-05,
+   "p_total_w": 0.09550747,
+   "pnr_arrival_ns": 3.1848,
+   "pnr_design_area_um2": 1938.0,
+   "pnr_util": 89.0,
+   "pnr_die_um2": 2646.588025,
+   "pnr_p_leak_w": 5.372509e-05,
+   "pnr_p_total_w": 6.456411
+  },
+  "stall": {
+   "block": "stall",
+   "cell_area_um2": 411.768,
+   "cells": 290.0,
+   "arrival_ns": 1.433,
+   "p_internal_w": 0.000231908,
+   "p_switching_w": 1.287964e-05,
+   "p_leak_w": 8.183411e-06,
+   "p_total_w": 0.0002529711
+  }
+ },
+ "per_n": {
+  "64": {
+   "paths_ns": {
+    "lane": 2.4056,
+    "sel_N64": 3.1848,
+    "ctrl_N64": 1.4302,
+    "rng": 2.315
+   },
+   "critical": "sel_N64",
+   "t_clk_ns": 3.1848,
+   "f_max_mhz": 313.99145943230343,
+   "restart_unit_ns": 2.2523,
+   "area_um2": {
+    "sel_N64": 1938.0,
+    "ctrl_N64": 3514.0,
+    "restart_N64": 10131.0
+   }
+  },
+  "256": {
+   "paths_ns": {
+    "lane": 2.4056,
+    "sel_N256": 5.6386,
+    "ctrl_N256": 1.5823,
+    "rng": 2.315
+   },
+   "critical": "sel_N256",
+   "t_clk_ns": 5.6386,
+   "f_max_mhz": 177.3489873372823,
+   "restart_unit_ns": 3.4598,
+   "area_um2": {
+    "sel_N256": 4869.0,
+    "ctrl_N256": 6534.0,
+    "restart_N256": 37887.0
+   }
+  },
+  "1024": {
+   "paths_ns": {
+    "lane": 2.4056,
+    "sel_N1024": 9.1527,
+    "ctrl_N1024": 2.1012,
+    "rng": 2.315
+   },
+   "critical": "sel_N1024",
+   "t_clk_ns": 9.1527,
+   "f_max_mhz": 109.25737760442274,
+   "restart_unit_ns": 14.0784,
+   "area_um2": {
+    "sel_N1024": 16935.0,
+    "ctrl_N1024": 18037.0,
+    "restart_N1024": 173681.0
+   }
+  }
+ },
+ "lane_generic_nand2_eq": 8602.25,
+ "lane_rng_cell_area_um2": 7302.0,
+ "lane_only_path_ns": 2.4056,
+ "util": 0.6,
+ "a_nand2_eff_um2": 1.4147461419977332,
+ "a_nand2_cell_only_um2": 0.8488476851986398,
+ "p_leak_nand2_nw": 21.806556424191346,
+ "n_max": 1024
+}

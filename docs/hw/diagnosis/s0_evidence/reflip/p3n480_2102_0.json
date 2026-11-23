@@ -1,0 +1,16 @@
+{
+ "family": "p3n480",
+ "key": "2102",
+ "r": 0,
+ "n": 480,
+ "L": 10,
+ "K": 960,
+ "kicks": 131,
+ "best_E": 1.0,
+ "last_best_frac": 0.156,
+ "mean_returned": 0.8846153846153846,
+ "median_returned": 0.9,
+ "mean_drift_nonkicked": 0.013649754500818331,
+ "frac_kicks_returned_ge_0.5": 1.0,
+ "median_hamming_successive": 6.0
+}

@@ -1,0 +1,152 @@
+// fefet_preisach.va -- this project v0 FeFET compact model: CANONICAL SOURCE OF THE EQUATIONS.
+//
+// What it is: the ferroelectric (FE) part of an FeFET, written as an N-domain kinetic Preisach
+// model with a nucleation-limited-switching (NLS) rate. It sits between the gate (t) and the
+// internal node m (b) that is the gate of a separate BSIM4 MOSFET (MFMIS-style lumping). The
+// FeFET is assembled in the netlist: this module from g to m, plus a built-in BSIM4 MOSFET (d, m, s, b).
+//
+// Status: NOT COMPILED. It is written for OpenVAF-reloaded (OSDI, loaded in ngspice with pre_osdi),
+// which is not installed (needs approval). The equations are the same as the
+// ngspice-native subcircuits in device/ngspice/fefet_preisach.lib, which is what runs now.
+// Equation-by-equation correspondence: docs/device/MODEL_EQUIVALENCE.md.
+//
+// Rules followed (so OpenVAF can compile it and the simulator stays in control of the state):
+//   * every piece of history is a node voltage (16 domain-state nodes); no variables are kept
+//     between time steps, no @(cross), no $abstime, no $random, no idt;
+//   * the only time operator is ddt();
+//   * exponents are capped (200) and |V_FE| is floored (1 mV), so nothing overflows.
+// Domain-state nodes hold the DEVIATION from the start state x0_i (x_i = x0_i + V(xi)), because
+// Verilog-A has no per-node initial condition: with 'uic' or a DC start the nodes begin at 0,
+// which is exactly x_i = x0_i. A tiny conductance gx keeps the DC problem well posed.
+//
+// Equations (recipe R1-R5 of docs/lit/device_models.md §1.2):
+//   (R1) V_FE = V(t,b);  v = V_FE + vimp;  E = v / tfe
+//   (R2) r_i = exp(-min((E_a,i*tfe / max(|v|, 1 mV))^alpha, 200)) / tauinf
+//   (R3) dx_i/dt = s*beta*r_i*(1 - s*x_i)*[max(-ln((1 - s*x_i)/2), 0) + h0]^((beta-1)/beta), s = sign(v)
+//        (beta = 1 gives dx_i/dt = r_i*(s - x_i))
+//   (R4) P = psat * (1/N) * sum_i x_i
+//   (R5) I(t -> b) = d/dt[ area*(P + eps0*epsr*v/tfe) ] + gleak*V_FE
+// Units: SI (V, m, s, C/m^2; E_a in V/m, 1 MV/cm = 1e8 V/m).
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module fe_preisach16(t, b);
+    inout t, b;
+    electrical t, b;
+    electrical x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15, x16;   // domain-state deviations
+
+    parameter real area   = 1e-12  from (0:inf);    // FE area (m^2) = W*L*r_A
+    parameter real tfe    = 10e-9  from (0:inf);    // FE thickness (m)
+    parameter real psat   = 0.25   from (0:inf);    // saturation polarization P_S (C/m^2)
+    parameter real epsr   = 30     from (0:inf);    // background (linear) permittivity
+    parameter real tauinf = 1e-6   from (0:inf);    // NLS attempt time tau_inf (s)
+    parameter real alpha  = 2      from (0:inf);    // NLS field exponent
+    parameter real beta   = 1      from [1:inf);    // Weibull exponent (1 = plain exponential)
+    parameter real h0     = 1e-6   from (0:inf);    // seed of the beta > 1 history term
+    parameter real vimp   = 0;                      // imprint voltage added to V_FE (V)
+    parameter real gleak  = 0      from [0:inf);    // FE leakage conductance (S), 0 = off
+    parameter real gx     = 1e-18  from [0:inf);    // state-node conductance (time constant 1e18 s)
+    parameter real ea1    = 2e8    from (0:inf);    // activation field of domain 1 (V/m)
+    parameter real ea2    = 2e8    from (0:inf);    // activation field of domain 2 (V/m)
+    parameter real ea3    = 2e8    from (0:inf);    // activation field of domain 3 (V/m)
+    parameter real ea4    = 2e8    from (0:inf);    // activation field of domain 4 (V/m)
+    parameter real ea5    = 2e8    from (0:inf);    // activation field of domain 5 (V/m)
+    parameter real ea6    = 2e8    from (0:inf);    // activation field of domain 6 (V/m)
+    parameter real ea7    = 2e8    from (0:inf);    // activation field of domain 7 (V/m)
+    parameter real ea8    = 2e8    from (0:inf);    // activation field of domain 8 (V/m)
+    parameter real ea9    = 2e8    from (0:inf);    // activation field of domain 9 (V/m)
+    parameter real ea10   = 2e8    from (0:inf);    // activation field of domain 10 (V/m)
+    parameter real ea11   = 2e8    from (0:inf);    // activation field of domain 11 (V/m)
+    parameter real ea12   = 2e8    from (0:inf);    // activation field of domain 12 (V/m)
+    parameter real ea13   = 2e8    from (0:inf);    // activation field of domain 13 (V/m)
+    parameter real ea14   = 2e8    from (0:inf);    // activation field of domain 14 (V/m)
+    parameter real ea15   = 2e8    from (0:inf);    // activation field of domain 15 (V/m)
+    parameter real ea16   = 2e8    from (0:inf);    // activation field of domain 16 (V/m)
+    parameter real x0_1   = 0      from [-1:1];     // start state of domain 1
+    parameter real x0_2   = 0      from [-1:1];     // start state of domain 2
+    parameter real x0_3   = 0      from [-1:1];     // start state of domain 3
+    parameter real x0_4   = 0      from [-1:1];     // start state of domain 4
+    parameter real x0_5   = 0      from [-1:1];     // start state of domain 5
+    parameter real x0_6   = 0      from [-1:1];     // start state of domain 6
+    parameter real x0_7   = 0      from [-1:1];     // start state of domain 7
+    parameter real x0_8   = 0      from [-1:1];     // start state of domain 8
+    parameter real x0_9   = 0      from [-1:1];     // start state of domain 9
+    parameter real x0_10  = 0      from [-1:1];     // start state of domain 10
+    parameter real x0_11  = 0      from [-1:1];     // start state of domain 11
+    parameter real x0_12  = 0      from [-1:1];     // start state of domain 12
+    parameter real x0_13  = 0      from [-1:1];     // start state of domain 13
+    parameter real x0_14  = 0      from [-1:1];     // start state of domain 14
+    parameter real x0_15  = 0      from [-1:1];     // start state of domain 15
+    parameter real x0_16  = 0      from [-1:1];     // start state of domain 16
+
+    // (R2)+(R3): rate of change of one domain state.
+    analog function real dxdt;
+        input v, x, va, tau, alp, bet, hseed;
+        real v, x, va, tau, alp, bet, hseed;
+        real av, expo, r, sg, om, hist;
+        begin
+            av   = max(abs(v), 1e-3);
+            expo = min(pow(va / av, alp), 200.0);
+            r    = exp(-expo) / tau;
+            sg   = (v > 0.0) ? 1.0 : ((v < 0.0) ? -1.0 : 0.0);
+            om   = 1.0 - sg * x;
+            hist = max(-ln(max(0.5 * om, 1e-300)), 0.0) + hseed;
+            dxdt = sg * bet * r * om * pow(hist, (bet - 1.0) / bet);
+        end
+    endfunction
+
+    real vfe, v, psum;
+    real xx1, xx2, xx3, xx4, xx5, xx6, xx7, xx8, xx9, xx10, xx11, xx12, xx13, xx14, xx15, xx16;
+
+    analog begin
+        vfe = V(t, b);                          // (R1)
+        v   = vfe + vimp;
+        xx1  = x0_1  + V(x1);
+        xx2  = x0_2  + V(x2);
+        xx3  = x0_3  + V(x3);
+        xx4  = x0_4  + V(x4);
+        xx5  = x0_5  + V(x5);
+        xx6  = x0_6  + V(x6);
+        xx7  = x0_7  + V(x7);
+        xx8  = x0_8  + V(x8);
+        xx9  = x0_9  + V(x9);
+        xx10 = x0_10 + V(x10);
+        xx11 = x0_11 + V(x11);
+        xx12 = x0_12 + V(x12);
+        xx13 = x0_13 + V(x13);
+        xx14 = x0_14 + V(x14);
+        xx15 = x0_15 + V(x15);
+        xx16 = x0_16 + V(x16);
+        I(x1) <+ ddt(V(x1)) - dxdt(v, xx1, ea1 * tfe, tauinf, alpha, beta, h0) + gx * V(x1);
+        I(x2) <+ ddt(V(x2)) - dxdt(v, xx2, ea2 * tfe, tauinf, alpha, beta, h0) + gx * V(x2);
+        I(x3) <+ ddt(V(x3)) - dxdt(v, xx3, ea3 * tfe, tauinf, alpha, beta, h0) + gx * V(x3);
+        I(x4) <+ ddt(V(x4)) - dxdt(v, xx4, ea4 * tfe, tauinf, alpha, beta, h0) + gx * V(x4);
+        I(x5) <+ ddt(V(x5)) - dxdt(v, xx5, ea5 * tfe, tauinf, alpha, beta, h0) + gx * V(x5);
+        I(x6) <+ ddt(V(x6)) - dxdt(v, xx6, ea6 * tfe, tauinf, alpha, beta, h0) + gx * V(x6);
+        I(x7) <+ ddt(V(x7)) - dxdt(v, xx7, ea7 * tfe, tauinf, alpha, beta, h0) + gx * V(x7);
+        I(x8) <+ ddt(V(x8)) - dxdt(v, xx8, ea8 * tfe, tauinf, alpha, beta, h0) + gx * V(x8);
+        I(x9) <+ ddt(V(x9)) - dxdt(v, xx9, ea9 * tfe, tauinf, alpha, beta, h0) + gx * V(x9);
+        I(x10) <+ ddt(V(x10)) - dxdt(v, xx10, ea10 * tfe, tauinf, alpha, beta, h0) + gx * V(x10);
+        I(x11) <+ ddt(V(x11)) - dxdt(v, xx11, ea11 * tfe, tauinf, alpha, beta, h0) + gx * V(x11);
+        I(x12) <+ ddt(V(x12)) - dxdt(v, xx12, ea12 * tfe, tauinf, alpha, beta, h0) + gx * V(x12);
+        I(x13) <+ ddt(V(x13)) - dxdt(v, xx13, ea13 * tfe, tauinf, alpha, beta, h0) + gx * V(x13);
+        I(x14) <+ ddt(V(x14)) - dxdt(v, xx14, ea14 * tfe, tauinf, alpha, beta, h0) + gx * V(x14);
+        I(x15) <+ ddt(V(x15)) - dxdt(v, xx15, ea15 * tfe, tauinf, alpha, beta, h0) + gx * V(x15);
+        I(x16) <+ ddt(V(x16)) - dxdt(v, xx16, ea16 * tfe, tauinf, alpha, beta, h0) + gx * V(x16);
+        psum = (xx1 + xx2 + xx3 + xx4 + xx5 + xx6 + xx7 + xx8 + 
+                xx9 + xx10 + xx11 + xx12 + xx13 + xx14 + xx15 + xx16) / 16.0;   // (R4)
+        I(t, b) <+ ddt(area * (psat * psum + `P_EPS0 * epsr * v / tfe));   // (R5)
+        I(t, b) <+ gleak * vfe;
+    end
+endmodule
+
+// How to use it once OpenVAF-reloaded is approved and installed (not tested):
+//   openvaf-r fefet_preisach.va -o fefet_preisach.osdi
+//   in the netlist:   pre_osdi device/veriloga/fefet_preisach.osdi      (inside .control)
+//                     .model fe16c fe_preisach16 tfe=8e-9 psat=0.229 ...  ea1=... ea16=...
+//   FeFET subcircuit: N1 g m fe16c area={w*l}
+//                     M1 d m s b nfefet_c w={w} l={l}
+//                     Rm m s 1e25
+// The parameter values per set are the ones written into device/ngspice/fefet_preisach.lib
+// by scripts/gen_fefet_lib.py (from device/params/*.json).

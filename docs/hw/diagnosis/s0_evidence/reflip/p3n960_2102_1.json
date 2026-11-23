@@ -1,0 +1,16 @@
+{
+ "family": "p3n960",
+ "key": "2102",
+ "r": 1,
+ "n": 960,
+ "L": 10,
+ "K": 1920,
+ "kicks": 272,
+ "best_E": 4.0,
+ "last_best_frac": 0.623,
+ "mean_returned": 0.8793357933579337,
+ "median_returned": 0.9,
+ "mean_drift_nonkicked": 0.009636822684016312,
+ "frac_kicks_returned_ge_0.5": 1.0,
+ "median_hamming_successive": 9.0
+}

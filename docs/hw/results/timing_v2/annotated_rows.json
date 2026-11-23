@@ -1,0 +1,51 @@
+{
+ "lane_ratio": 1.2675956953836187,
+ "rng_ratio_nongated": 3.625660451739429,
+ "gen_idle_cycle_fj": 887.24275,
+ "sel_cycle_fj_per_lane_single": 2.7864016015625,
+ "sel_cycle_fj_per_lane_pipe": 10.5724688671875,
+ "gated": {
+  "col64_kc2_i11__cg": {
+   "cycles_per_step": 5,
+   "lane_gen_dyn_fj_per_step": 0.0,
+   "icg_dyn_fj_per_step_total": 66.31129000000001,
+   "select_dyn_fj_per_step": 3415.0150999999996,
+   "lane_dyn_fj_per_step": 1112.3829075
+  },
+  "maxcut256_kc2_i11__cg": {
+   "cycles_per_step": 6,
+   "lane_gen_dyn_fj_per_step": 0.0,
+   "icg_dyn_fj_per_step_total": 79.68599400000001,
+   "select_dyn_fj_per_step": 15936.151199999998,
+   "lane_dyn_fj_per_step": 1377.97863
+  },
+  "maxcut64_kc2_i11__cg": {
+   "cycles_per_step": 5,
+   "lane_gen_dyn_fj_per_step": 0.0,
+   "icg_dyn_fj_per_step_total": 63.83698999999999,
+   "select_dyn_fj_per_step": 3370.3098,
+   "lane_dyn_fj_per_step": 1078.1114875
+  },
+  "maxcut64_none__cg": {
+   "cycles_per_step": 5,
+   "lane_gen_dyn_fj_per_step": 1332.1702000000002,
+   "icg_dyn_fj_per_step_total": 69.01456000000002,
+   "select_dyn_fj_per_step": 3415.0558500000006,
+   "lane_dyn_fj_per_step": 2050.8063375
+  }
+ },
+ "runs": [
+  "col64_kc2_i11__cg",
+  "col64_kc2_i11__pipe",
+  "col64_kc2_i11__v1",
+  "maxcut256_kc2_i11__cg",
+  "maxcut256_kc2_i11__pipe",
+  "maxcut256_kc2_i11__v1",
+  "maxcut64_kc2_i11__cg",
+  "maxcut64_kc2_i11__pipe",
+  "maxcut64_kc2_i11__v1",
+  "maxcut64_none__cg",
+  "maxcut64_none__pipe",
+  "maxcut64_none__v1"
+ ]
+}

@@ -1,0 +1,12 @@
+p3n480.jsonl base 24/36 wins/losses vs base 0 0 median steps-to-target 100461 kicks/run 399
+p3n480.jsonl swap 31/36 wins/losses vs base 8 1 median steps-to-target 40116 kicks/run 157
+p3n480.jsonl fkick 24/36 wins/losses vs base 4 4 median steps-to-target 88586 kicks/run 375
+p3n480.jsonl swapfk 31/36 wins/losses vs base 8 1 median steps-to-target 40422 kicks/run 187
+p3n480.jsonl swapstuck 32/36 wins/losses vs base 9 1 median steps-to-target 31846 kicks/run 227
+p4n480.jsonl base 22/36 wins/losses vs base 0 0 median steps-to-target 107095 kicks/run 367
+p4n480.jsonl swap 26/36 wins/losses vs base 7 3 median steps-to-target 42905 kicks/run 188
+p4n480.jsonl fkick 23/36 wins/losses vs base 6 5 median steps-to-target 82475 kicks/run 337
+p4n480.jsonl swapfk 32/36 wins/losses vs base 12 2 median steps-to-target 30783 kicks/run 148
+p4n480.jsonl swapstuck 30/36 wins/losses vs base 9 1 median steps-to-target 36210 kicks/run 210
+maxcut base 20 mean ratio 0.9912 >=0.99: 13
+maxcut pair 20 mean ratio 0.9943 >=0.99: 19

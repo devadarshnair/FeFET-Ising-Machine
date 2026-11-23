@@ -1,0 +1,49 @@
+* t1a_nls_setA.cir -- test 1a: implementation check with parameter set A (Alessandri 2019, Table I).
+*
+* An MFM capacitor starts at -P_S (all domains x = -1). A constant voltage V_A is applied from t = 0
+* (uic). The checker (check_t1a.py) compares the simulated polarization with the analytic NLS law:
+*   single domain (fecap_a1, E_a = distribution median): P/P_S = -1 + 2*(1 - exp(-(t/tau)^beta))
+*   16 domains (fecap_a16): the same law summed over the 16 domains, and P3 eq. (5) (continuous).
+* V_A = 0.6, 1.0, 1.4, 1.8 V as in P3 Fig. 2; t = 200 ns ... 1 ms.
+* Run from the repo root: scripts/run_guarded.sh ngspice -b -n device/tb/t1a_nls_setA.cir
+.include ../ngspice/fefet_preisach.lib
+.options reltol=1e-4 abstol=1e-15 method=gear
+
+* single-domain capacitors
+V1a06 s06 0 dc 0.6
+V1a10 s10 0 dc 1.0
+V1a14 s14 0 dc 1.4
+V1a18 s18 0 dc 1.8
+X1a06 s06 0 fecap_a1 area=1e-10
+X1a10 s10 0 fecap_a1 area=1e-10
+X1a14 s14 0 fecap_a1 area=1e-10
+X1a18 s18 0 fecap_a1 area=1e-10
+* 16-domain capacitors (own sources, so their current can be checked against dP/dt)
+V16a06 m06 0 dc 0.6
+V16a10 m10 0 dc 1.0
+V16a14 m14 0 dc 1.4
+V16a18 m18 0 dc 1.8
+X16a06 m06 0 fecap_a16 area=1e-10
+X16a10 m10 0 fecap_a16 area=1e-10
+X16a14 m14 0 fecap_a16 area=1e-10
+X16a18 m18 0 fecap_a16 area=1e-10
+
+* dummy source: forces time points at 8 per decade, 1e-7 ... 1e-3 s
+Vbp bp 0 pwl(
++ 0 0 1.0000e-07 0 1.3335e-07 0 1.7783e-07 0 2.3714e-07 0 3.1623e-07 0 4.2170e-07 0
++ 5.6234e-07 0 7.4989e-07 0 1.0000e-06 0 1.3335e-06 0 1.7783e-06 0 2.3714e-06 0
++ 3.1623e-06 0 4.2170e-06 0 5.6234e-06 0 7.4989e-06 0 1.0000e-05 0 1.3335e-05 0
++ 1.7783e-05 0 2.3714e-05 0 3.1623e-05 0 4.2170e-05 0 5.6234e-05 0 7.4989e-05 0
++ 1.0000e-04 0 1.3335e-04 0 1.7783e-04 0 2.3714e-04 0 3.1623e-04 0 4.2170e-04 0
++ 5.6234e-04 0 7.4989e-04 0 1.0000e-03 0)
+Rbp bp 0 1k
+
+.control
+set wr_singlescale
+set wr_vecnames
+tran 1n 1m 0 20u uic
+wrdata sim/out/t1a/t1a.csv v(x1a06.xfe.x1) v(x1a10.xfe.x1) v(x1a14.xfe.x1) v(x1a18.xfe.x1)
++ v(x16a06.xfe.xs) v(x16a10.xfe.xs) v(x16a14.xfe.xs) v(x16a18.xfe.xs)
++ i(v16a06) i(v16a10) i(v16a14) i(v16a18)
+.endc
+.end

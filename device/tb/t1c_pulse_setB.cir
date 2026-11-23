@@ -1,0 +1,168 @@
+* t1c_pulse_setB.cir -- test 1c: set B MFM switched polarization vs pulse width and amplitude.
+*
+* 72 capacitors (fecap_b16, start x = -1 = -P_S), one per point of table T3 (Ni 2018 Fig. 4(c)):
+* amplitudes 0.5-3.0 V, widths 100 ns-1 ms (flat top), edges 5 ns, pulse starts at 10 ns.
+* The remanent P is read at 1.05 ms, after every pulse has ended (gate side back at 0 V).
+* Node pJJKK: JJ = amplitude index 1-6, KK = width index 1-12. Checker: device/tb/check_t1c.py.
+* (Deck written once with awk; it is static text.)
+.include ../ngspice/fefet_preisach.lib
+.options reltol=1e-4 abstol=1e-15 method=gear
+Vp0101 p0101 0 pulse(0 0.5 10n 5n 5n 1e-7 1)
+Xp0101 p0101 0 fecap_b16 area=1e-10
+Vp0102 p0102 0 pulse(0 0.5 10n 5n 5n 3e-7 1)
+Xp0102 p0102 0 fecap_b16 area=1e-10
+Vp0103 p0103 0 pulse(0 0.5 10n 5n 5n 5e-7 1)
+Xp0103 p0103 0 fecap_b16 area=1e-10
+Vp0104 p0104 0 pulse(0 0.5 10n 5n 5n 1e-6 1)
+Xp0104 p0104 0 fecap_b16 area=1e-10
+Vp0105 p0105 0 pulse(0 0.5 10n 5n 5n 3e-6 1)
+Xp0105 p0105 0 fecap_b16 area=1e-10
+Vp0106 p0106 0 pulse(0 0.5 10n 5n 5n 5e-6 1)
+Xp0106 p0106 0 fecap_b16 area=1e-10
+Vp0107 p0107 0 pulse(0 0.5 10n 5n 5n 7e-6 1)
+Xp0107 p0107 0 fecap_b16 area=1e-10
+Vp0108 p0108 0 pulse(0 0.5 10n 5n 5n 1e-5 1)
+Xp0108 p0108 0 fecap_b16 area=1e-10
+Vp0109 p0109 0 pulse(0 0.5 10n 5n 5n 3e-5 1)
+Xp0109 p0109 0 fecap_b16 area=1e-10
+Vp0110 p0110 0 pulse(0 0.5 10n 5n 5n 1e-4 1)
+Xp0110 p0110 0 fecap_b16 area=1e-10
+Vp0111 p0111 0 pulse(0 0.5 10n 5n 5n 3e-4 1)
+Xp0111 p0111 0 fecap_b16 area=1e-10
+Vp0112 p0112 0 pulse(0 0.5 10n 5n 5n 1e-3 1)
+Xp0112 p0112 0 fecap_b16 area=1e-10
+Vp0201 p0201 0 pulse(0 1.0 10n 5n 5n 1e-7 1)
+Xp0201 p0201 0 fecap_b16 area=1e-10
+Vp0202 p0202 0 pulse(0 1.0 10n 5n 5n 3e-7 1)
+Xp0202 p0202 0 fecap_b16 area=1e-10
+Vp0203 p0203 0 pulse(0 1.0 10n 5n 5n 5e-7 1)
+Xp0203 p0203 0 fecap_b16 area=1e-10
+Vp0204 p0204 0 pulse(0 1.0 10n 5n 5n 1e-6 1)
+Xp0204 p0204 0 fecap_b16 area=1e-10
+Vp0205 p0205 0 pulse(0 1.0 10n 5n 5n 3e-6 1)
+Xp0205 p0205 0 fecap_b16 area=1e-10
+Vp0206 p0206 0 pulse(0 1.0 10n 5n 5n 5e-6 1)
+Xp0206 p0206 0 fecap_b16 area=1e-10
+Vp0207 p0207 0 pulse(0 1.0 10n 5n 5n 7e-6 1)
+Xp0207 p0207 0 fecap_b16 area=1e-10
+Vp0208 p0208 0 pulse(0 1.0 10n 5n 5n 1e-5 1)
+Xp0208 p0208 0 fecap_b16 area=1e-10
+Vp0209 p0209 0 pulse(0 1.0 10n 5n 5n 3e-5 1)
+Xp0209 p0209 0 fecap_b16 area=1e-10
+Vp0210 p0210 0 pulse(0 1.0 10n 5n 5n 1e-4 1)
+Xp0210 p0210 0 fecap_b16 area=1e-10
+Vp0211 p0211 0 pulse(0 1.0 10n 5n 5n 3e-4 1)
+Xp0211 p0211 0 fecap_b16 area=1e-10
+Vp0212 p0212 0 pulse(0 1.0 10n 5n 5n 1e-3 1)
+Xp0212 p0212 0 fecap_b16 area=1e-10
+Vp0301 p0301 0 pulse(0 1.5 10n 5n 5n 1e-7 1)
+Xp0301 p0301 0 fecap_b16 area=1e-10
+Vp0302 p0302 0 pulse(0 1.5 10n 5n 5n 3e-7 1)
+Xp0302 p0302 0 fecap_b16 area=1e-10
+Vp0303 p0303 0 pulse(0 1.5 10n 5n 5n 5e-7 1)
+Xp0303 p0303 0 fecap_b16 area=1e-10
+Vp0304 p0304 0 pulse(0 1.5 10n 5n 5n 1e-6 1)
+Xp0304 p0304 0 fecap_b16 area=1e-10
+Vp0305 p0305 0 pulse(0 1.5 10n 5n 5n 3e-6 1)
+Xp0305 p0305 0 fecap_b16 area=1e-10
+Vp0306 p0306 0 pulse(0 1.5 10n 5n 5n 5e-6 1)
+Xp0306 p0306 0 fecap_b16 area=1e-10
+Vp0307 p0307 0 pulse(0 1.5 10n 5n 5n 7e-6 1)
+Xp0307 p0307 0 fecap_b16 area=1e-10
+Vp0308 p0308 0 pulse(0 1.5 10n 5n 5n 1e-5 1)
+Xp0308 p0308 0 fecap_b16 area=1e-10
+Vp0309 p0309 0 pulse(0 1.5 10n 5n 5n 3e-5 1)
+Xp0309 p0309 0 fecap_b16 area=1e-10
+Vp0310 p0310 0 pulse(0 1.5 10n 5n 5n 1e-4 1)
+Xp0310 p0310 0 fecap_b16 area=1e-10
+Vp0311 p0311 0 pulse(0 1.5 10n 5n 5n 3e-4 1)
+Xp0311 p0311 0 fecap_b16 area=1e-10
+Vp0312 p0312 0 pulse(0 1.5 10n 5n 5n 1e-3 1)
+Xp0312 p0312 0 fecap_b16 area=1e-10
+Vp0401 p0401 0 pulse(0 2.0 10n 5n 5n 1e-7 1)
+Xp0401 p0401 0 fecap_b16 area=1e-10
+Vp0402 p0402 0 pulse(0 2.0 10n 5n 5n 3e-7 1)
+Xp0402 p0402 0 fecap_b16 area=1e-10
+Vp0403 p0403 0 pulse(0 2.0 10n 5n 5n 5e-7 1)
+Xp0403 p0403 0 fecap_b16 area=1e-10
+Vp0404 p0404 0 pulse(0 2.0 10n 5n 5n 1e-6 1)
+Xp0404 p0404 0 fecap_b16 area=1e-10
+Vp0405 p0405 0 pulse(0 2.0 10n 5n 5n 3e-6 1)
+Xp0405 p0405 0 fecap_b16 area=1e-10
+Vp0406 p0406 0 pulse(0 2.0 10n 5n 5n 5e-6 1)
+Xp0406 p0406 0 fecap_b16 area=1e-10
+Vp0407 p0407 0 pulse(0 2.0 10n 5n 5n 7e-6 1)
+Xp0407 p0407 0 fecap_b16 area=1e-10
+Vp0408 p0408 0 pulse(0 2.0 10n 5n 5n 1e-5 1)
+Xp0408 p0408 0 fecap_b16 area=1e-10
+Vp0409 p0409 0 pulse(0 2.0 10n 5n 5n 3e-5 1)
+Xp0409 p0409 0 fecap_b16 area=1e-10
+Vp0410 p0410 0 pulse(0 2.0 10n 5n 5n 1e-4 1)
+Xp0410 p0410 0 fecap_b16 area=1e-10
+Vp0411 p0411 0 pulse(0 2.0 10n 5n 5n 3e-4 1)
+Xp0411 p0411 0 fecap_b16 area=1e-10
+Vp0412 p0412 0 pulse(0 2.0 10n 5n 5n 1e-3 1)
+Xp0412 p0412 0 fecap_b16 area=1e-10
+Vp0501 p0501 0 pulse(0 2.5 10n 5n 5n 1e-7 1)
+Xp0501 p0501 0 fecap_b16 area=1e-10
+Vp0502 p0502 0 pulse(0 2.5 10n 5n 5n 3e-7 1)
+Xp0502 p0502 0 fecap_b16 area=1e-10
+Vp0503 p0503 0 pulse(0 2.5 10n 5n 5n 5e-7 1)
+Xp0503 p0503 0 fecap_b16 area=1e-10
+Vp0504 p0504 0 pulse(0 2.5 10n 5n 5n 1e-6 1)
+Xp0504 p0504 0 fecap_b16 area=1e-10
+Vp0505 p0505 0 pulse(0 2.5 10n 5n 5n 3e-6 1)
+Xp0505 p0505 0 fecap_b16 area=1e-10
+Vp0506 p0506 0 pulse(0 2.5 10n 5n 5n 5e-6 1)
+Xp0506 p0506 0 fecap_b16 area=1e-10
+Vp0507 p0507 0 pulse(0 2.5 10n 5n 5n 7e-6 1)
+Xp0507 p0507 0 fecap_b16 area=1e-10
+Vp0508 p0508 0 pulse(0 2.5 10n 5n 5n 1e-5 1)
+Xp0508 p0508 0 fecap_b16 area=1e-10
+Vp0509 p0509 0 pulse(0 2.5 10n 5n 5n 3e-5 1)
+Xp0509 p0509 0 fecap_b16 area=1e-10
+Vp0510 p0510 0 pulse(0 2.5 10n 5n 5n 1e-4 1)
+Xp0510 p0510 0 fecap_b16 area=1e-10
+Vp0511 p0511 0 pulse(0 2.5 10n 5n 5n 3e-4 1)
+Xp0511 p0511 0 fecap_b16 area=1e-10
+Vp0512 p0512 0 pulse(0 2.5 10n 5n 5n 1e-3 1)
+Xp0512 p0512 0 fecap_b16 area=1e-10
+Vp0601 p0601 0 pulse(0 3.0 10n 5n 5n 1e-7 1)
+Xp0601 p0601 0 fecap_b16 area=1e-10
+Vp0602 p0602 0 pulse(0 3.0 10n 5n 5n 3e-7 1)
+Xp0602 p0602 0 fecap_b16 area=1e-10
+Vp0603 p0603 0 pulse(0 3.0 10n 5n 5n 5e-7 1)
+Xp0603 p0603 0 fecap_b16 area=1e-10
+Vp0604 p0604 0 pulse(0 3.0 10n 5n 5n 1e-6 1)
+Xp0604 p0604 0 fecap_b16 area=1e-10
+Vp0605 p0605 0 pulse(0 3.0 10n 5n 5n 3e-6 1)
+Xp0605 p0605 0 fecap_b16 area=1e-10
+Vp0606 p0606 0 pulse(0 3.0 10n 5n 5n 5e-6 1)
+Xp0606 p0606 0 fecap_b16 area=1e-10
+Vp0607 p0607 0 pulse(0 3.0 10n 5n 5n 7e-6 1)
+Xp0607 p0607 0 fecap_b16 area=1e-10
+Vp0608 p0608 0 pulse(0 3.0 10n 5n 5n 1e-5 1)
+Xp0608 p0608 0 fecap_b16 area=1e-10
+Vp0609 p0609 0 pulse(0 3.0 10n 5n 5n 3e-5 1)
+Xp0609 p0609 0 fecap_b16 area=1e-10
+Vp0610 p0610 0 pulse(0 3.0 10n 5n 5n 1e-4 1)
+Xp0610 p0610 0 fecap_b16 area=1e-10
+Vp0611 p0611 0 pulse(0 3.0 10n 5n 5n 3e-4 1)
+Xp0611 p0611 0 fecap_b16 area=1e-10
+Vp0612 p0612 0 pulse(0 3.0 10n 5n 5n 1e-3 1)
+Xp0612 p0612 0 fecap_b16 area=1e-10
+.control
+set wr_singlescale
+set wr_vecnames
+tran 1n 1.05m 0 2u uic
+wrdata sim/out/t1c/t1c.csv v(xp0101.xfe.xs) v(xp0102.xfe.xs) v(xp0103.xfe.xs) v(xp0104.xfe.xs) v(xp0105.xfe.xs) v(xp0106.xfe.xs) v(xp0107.xfe.xs) v(xp0108.xfe.xs)
++ v(xp0109.xfe.xs) v(xp0110.xfe.xs) v(xp0111.xfe.xs) v(xp0112.xfe.xs) v(xp0201.xfe.xs) v(xp0202.xfe.xs) v(xp0203.xfe.xs) v(xp0204.xfe.xs)
++ v(xp0205.xfe.xs) v(xp0206.xfe.xs) v(xp0207.xfe.xs) v(xp0208.xfe.xs) v(xp0209.xfe.xs) v(xp0210.xfe.xs) v(xp0211.xfe.xs) v(xp0212.xfe.xs)
++ v(xp0301.xfe.xs) v(xp0302.xfe.xs) v(xp0303.xfe.xs) v(xp0304.xfe.xs) v(xp0305.xfe.xs) v(xp0306.xfe.xs) v(xp0307.xfe.xs) v(xp0308.xfe.xs)
++ v(xp0309.xfe.xs) v(xp0310.xfe.xs) v(xp0311.xfe.xs) v(xp0312.xfe.xs) v(xp0401.xfe.xs) v(xp0402.xfe.xs) v(xp0403.xfe.xs) v(xp0404.xfe.xs)
++ v(xp0405.xfe.xs) v(xp0406.xfe.xs) v(xp0407.xfe.xs) v(xp0408.xfe.xs) v(xp0409.xfe.xs) v(xp0410.xfe.xs) v(xp0411.xfe.xs) v(xp0412.xfe.xs)
++ v(xp0501.xfe.xs) v(xp0502.xfe.xs) v(xp0503.xfe.xs) v(xp0504.xfe.xs) v(xp0505.xfe.xs) v(xp0506.xfe.xs) v(xp0507.xfe.xs) v(xp0508.xfe.xs)
++ v(xp0509.xfe.xs) v(xp0510.xfe.xs) v(xp0511.xfe.xs) v(xp0512.xfe.xs) v(xp0601.xfe.xs) v(xp0602.xfe.xs) v(xp0603.xfe.xs) v(xp0604.xfe.xs)
++ v(xp0605.xfe.xs) v(xp0606.xfe.xs) v(xp0607.xfe.xs) v(xp0608.xfe.xs) v(xp0609.xfe.xs) v(xp0610.xfe.xs) v(xp0611.xfe.xs) v(xp0612.xfe.xs)
+.endc
+.end

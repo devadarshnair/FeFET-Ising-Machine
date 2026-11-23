@@ -1,0 +1,564 @@
+{
+ "selected": {
+  "col3p": {
+   "ours.da_offset.i10": {
+    "cid": "da_div0.5",
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 0.5,
+    "sched": "",
+    "pswap": 0
+   },
+   "ours.kc2.i10": {
+    "cid": "kc2_K1_L10",
+    "pct_hi": 75,
+    "pct_lo": 5,
+    "knob": 1.0,
+    "sched": "",
+    "pswap": 0,
+    "kick_L": 10
+   },
+   "ours.mesa.i10": {
+    "cid": "mesa_ep_K40",
+    "pct_hi": 85,
+    "pct_lo": 5,
+    "knob": 40.0,
+    "sched": "",
+    "pswap": 0,
+    "epoch_sweeps": 10
+   }
+  },
+  "col4p": {
+   "ours.da_offset.i10": {
+    "cid": "da_div0.5",
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 0.5,
+    "sched": "",
+    "pswap": 0
+   },
+   "ours.kc2.i10": {
+    "cid": "kc2_K2_L10",
+    "pct_hi": 75,
+    "pct_lo": 5,
+    "knob": 2.0,
+    "sched": "",
+    "pswap": 0,
+    "kick_L": 10
+   },
+   "ours.mesa.i10": {
+    "cid": "mesa_ep_K20",
+    "pct_hi": 85,
+    "pct_lo": 5,
+    "knob": 20.0,
+    "sched": "",
+    "pswap": 0,
+    "epoch_sweeps": 10
+   }
+  },
+  "maxcut": {
+   "ours.da_offset.i10": {
+    "cid": "da_div0.5",
+    "pct_hi": 75,
+    "pct_lo": 5,
+    "knob": 0.5,
+    "sched": "",
+    "pswap": 0
+   },
+   "ours.kc2.i10": {
+    "cid": "kc2_K0.5_L10",
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 0.5,
+    "sched": "",
+    "pswap": 0,
+    "kick_L": 10
+   },
+   "ours.mesa.i10": {
+    "cid": "mesa_ep_K40",
+    "pct_hi": 75,
+    "pct_lo": 5,
+    "knob": 40.0,
+    "sched": "",
+    "pswap": 0,
+    "epoch_sweeps": 10
+   }
+  }
+ },
+ "tune_table": {
+  "col3p": {
+   "ours.da_offset.i10": {
+    "da_div0.5": {
+     "gap": 12.46875,
+     "energy": 8738066024.923359,
+     "restarts_mean": 0.0,
+     "never_triggered_frac": 1.0,
+     "n": 32
+    },
+    "da_div16": {
+     "gap": 12.46875,
+     "energy": 8738066024.923359,
+     "restarts_mean": 0.0,
+     "never_triggered_frac": 1.0,
+     "n": 32
+    },
+    "da_div1": {
+     "gap": 12.46875,
+     "energy": 8738066024.923359,
+     "restarts_mean": 0.0,
+     "never_triggered_frac": 1.0,
+     "n": 32
+    },
+    "da_div2": {
+     "gap": 12.46875,
+     "energy": 8738066024.923359,
+     "restarts_mean": 0.0,
+     "never_triggered_frac": 1.0,
+     "n": 32
+    },
+    "da_div4": {
+     "gap": 12.46875,
+     "energy": 8738066024.923359,
+     "restarts_mean": 0.0,
+     "never_triggered_frac": 1.0,
+     "n": 32
+    },
+    "da_div8": {
+     "gap": 12.46875,
+     "energy": 8738066024.923359,
+     "restarts_mean": 0.0,
+     "never_triggered_frac": 1.0,
+     "n": 32
+    },
+    "_selected": "da_div0.5"
+   },
+   "ours.kc2.i10": {
+    "kc2_K0.125_L10": {
+     "gap": 13.875,
+     "energy": 8728309747.123463,
+     "restarts_mean": 467.75,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K0.125_L40": {
+     "gap": 15.65625,
+     "energy": 8733834018.017681,
+     "restarts_mean": 308.96875,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K0.25_L10": {
+     "gap": 13.21875,
+     "energy": 8724450113.931667,
+     "restarts_mean": 251.65625,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K0.25_L40": {
+     "gap": 14.375,
+     "energy": 8728070291.477352,
+     "restarts_mean": 180.65625,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K0.5_L10": {
+     "gap": 13.0625,
+     "energy": 8722364308.532402,
+     "restarts_mean": 134.875,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K0.5_L40": {
+     "gap": 13.1875,
+     "energy": 8724792588.14204,
+     "restarts_mean": 107.6875,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K1_L10": {
+     "gap": 11.84375,
+     "energy": 8721257501.1369,
+     "restarts_mean": 72.90625,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K1_L40": {
+     "gap": 12.46875,
+     "energy": 8722792255.871494,
+     "restarts_mean": 63.15625,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K2_L10": {
+     "gap": 12.03125,
+     "energy": 8720641285.943447,
+     "restarts_mean": 38.40625,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K2_L40": {
+     "gap": 12.78125,
+     "energy": 8721551368.160494,
+     "restarts_mean": 35.53125,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K4_L10": {
+     "gap": 11.90625,
+     "energy": 8720313661.659573,
+     "restarts_mean": 20.0625,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K4_L40": {
+     "gap": 12.34375,
+     "energy": 8720814393.171902,
+     "restarts_mean": 19.125,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "_selected": "kc2_K1_L10"
+   },
+   "ours.mesa.i10": {
+    "mesa_ep_K10": {
+     "gap": 10.6875,
+     "energy": 8721807755.308311,
+     "restarts_mean": 12.65625,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "mesa_ep_K20": {
+     "gap": 9.875,
+     "energy": 8721745786.73011,
+     "restarts_mean": 5.28125,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "mesa_ep_K40": {
+     "gap": 9.71875,
+     "energy": 8721719192.522532,
+     "restarts_mean": 2.21875,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "_selected": "mesa_ep_K40"
+   }
+  },
+  "col4p": {
+   "ours.da_offset.i10": {
+    "da_div0.5": {
+     "gap": 19.25,
+     "energy": 8738065538.988049,
+     "restarts_mean": 0.0,
+     "never_triggered_frac": 1.0,
+     "n": 32
+    },
+    "da_div16": {
+     "gap": 19.25,
+     "energy": 8738065538.988049,
+     "restarts_mean": 0.0,
+     "never_triggered_frac": 1.0,
+     "n": 32
+    },
+    "da_div1": {
+     "gap": 19.25,
+     "energy": 8738065538.988049,
+     "restarts_mean": 0.0,
+     "never_triggered_frac": 1.0,
+     "n": 32
+    },
+    "da_div2": {
+     "gap": 19.25,
+     "energy": 8738065538.988049,
+     "restarts_mean": 0.0,
+     "never_triggered_frac": 1.0,
+     "n": 32
+    },
+    "da_div4": {
+     "gap": 19.25,
+     "energy": 8738065538.988049,
+     "restarts_mean": 0.0,
+     "never_triggered_frac": 1.0,
+     "n": 32
+    },
+    "da_div8": {
+     "gap": 19.25,
+     "energy": 8738065538.988049,
+     "restarts_mean": 0.0,
+     "never_triggered_frac": 1.0,
+     "n": 32
+    },
+    "_selected": "da_div0.5"
+   },
+   "ours.kc2.i10": {
+    "kc2_K0.125_L10": {
+     "gap": 20.09375,
+     "energy": 8728337175.497211,
+     "restarts_mean": 469.3125,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K0.125_L40": {
+     "gap": 21.28125,
+     "energy": 8733773196.91576,
+     "restarts_mean": 307.625,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K0.25_L10": {
+     "gap": 19.9375,
+     "energy": 8724421709.386978,
+     "restarts_mean": 250.09375,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K0.25_L40": {
+     "gap": 20.09375,
+     "energy": 8728155443.568384,
+     "restarts_mean": 182.5625,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K0.5_L10": {
+     "gap": 19.40625,
+     "energy": 8722391145.421556,
+     "restarts_mean": 136.40625,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K0.5_L40": {
+     "gap": 20.3125,
+     "energy": 8724858045.896683,
+     "restarts_mean": 109.15625,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K1_L10": {
+     "gap": 19.34375,
+     "energy": 8721272044.59226,
+     "restarts_mean": 73.75,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K1_L40": {
+     "gap": 19.46875,
+     "energy": 8722811413.7439,
+     "restarts_mean": 63.59375,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K2_L10": {
+     "gap": 18.46875,
+     "energy": 8720653074.090525,
+     "restarts_mean": 39.09375,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K2_L40": {
+     "gap": 18.8125,
+     "energy": 8721585946.7844,
+     "restarts_mean": 36.3125,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K4_L10": {
+     "gap": 19.0,
+     "energy": 8720313134.871292,
+     "restarts_mean": 20.0625,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "kc2_K4_L40": {
+     "gap": 19.28125,
+     "energy": 8720802650.41201,
+     "restarts_mean": 18.875,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "_selected": "kc2_K2_L10"
+   },
+   "ours.mesa.i10": {
+    "mesa_ep_K10": {
+     "gap": 15.375,
+     "energy": 8721763269.650578,
+     "restarts_mean": 13.59375,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "mesa_ep_K20": {
+     "gap": 15.375,
+     "energy": 8721689638.624874,
+     "restarts_mean": 5.84375,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "mesa_ep_K40": {
+     "gap": 15.8125,
+     "energy": 8721656233.797375,
+     "restarts_mean": 2.34375,
+     "never_triggered_frac": 0.0,
+     "n": 32
+    },
+    "_selected": "mesa_ep_K20"
+   }
+  },
+  "maxcut": {
+   "ours.da_offset.i10": {
+    "da_div0.5": {
+     "gap": 0.019860841498457692,
+     "energy": 1485270188146.817,
+     "restarts_mean": 0.0,
+     "never_triggered_frac": 1.0,
+     "n": 16
+    },
+    "da_div16": {
+     "gap": 0.019860841498457692,
+     "energy": 1485270188146.817,
+     "restarts_mean": 0.0,
+     "never_triggered_frac": 1.0,
+     "n": 16
+    },
+    "da_div1": {
+     "gap": 0.019860841498457692,
+     "energy": 1485270188146.817,
+     "restarts_mean": 0.0,
+     "never_triggered_frac": 1.0,
+     "n": 16
+    },
+    "da_div2": {
+     "gap": 0.019860841498457692,
+     "energy": 1485270188146.817,
+     "restarts_mean": 0.0,
+     "never_triggered_frac": 1.0,
+     "n": 16
+    },
+    "da_div4": {
+     "gap": 0.019860841498457692,
+     "energy": 1485270188146.817,
+     "restarts_mean": 0.0,
+     "never_triggered_frac": 1.0,
+     "n": 16
+    },
+    "da_div8": {
+     "gap": 0.019860841498457692,
+     "energy": 1485270188146.817,
+     "restarts_mean": 0.0,
+     "never_triggered_frac": 1.0,
+     "n": 16
+    },
+    "_selected": "da_div0.5"
+   },
+   "ours.kc2.i10": {
+    "kc2_K0.125_L10": {
+     "gap": 0.03155971681703464,
+     "energy": 1485183881318.004,
+     "restarts_mean": 445.375,
+     "never_triggered_frac": 0.0,
+     "n": 16
+    },
+    "kc2_K0.125_L40": {
+     "gap": 0.036018597754362294,
+     "energy": 1485181099387.1235,
+     "restarts_mean": 306.1875,
+     "never_triggered_frac": 0.0,
+     "n": 16
+    },
+    "kc2_K0.25_L10": {
+     "gap": 0.03066387272650136,
+     "energy": 1485167706070.5747,
+     "restarts_mean": 241.9375,
+     "never_triggered_frac": 0.0,
+     "n": 16
+    },
+    "kc2_K0.25_L40": {
+     "gap": 0.030500283524436393,
+     "energy": 1485167452384.3691,
+     "restarts_mean": 178.125,
+     "never_triggered_frac": 0.0,
+     "n": 16
+    },
+    "kc2_K0.5_L10": {
+     "gap": 0.02431842898488939,
+     "energy": 1485158731518.5522,
+     "restarts_mean": 129.0625,
+     "never_triggered_frac": 0.0,
+     "n": 16
+    },
+    "kc2_K0.5_L40": {
+     "gap": 0.02830584707064415,
+     "energy": 1485159479696.533,
+     "restarts_mean": 103.3125,
+     "never_triggered_frac": 0.0,
+     "n": 16
+    },
+    "kc2_K1_L10": {
+     "gap": 0.02486384489143808,
+     "energy": 1485153727306.1958,
+     "restarts_mean": 66.125,
+     "never_triggered_frac": 0.0,
+     "n": 16
+    },
+    "kc2_K1_L40": {
+     "gap": 0.029883533800976192,
+     "energy": 1485154510838.3655,
+     "restarts_mean": 56.6875,
+     "never_triggered_frac": 0.0,
+     "n": 16
+    },
+    "kc2_K2_L10": {
+     "gap": 0.030469855092109227,
+     "energy": 1485150959151.4316,
+     "restarts_mean": 31.3125,
+     "never_triggered_frac": 0.0,
+     "n": 16
+    },
+    "kc2_K2_L40": {
+     "gap": 0.025209357962018075,
+     "energy": 1485151520359.933,
+     "restarts_mean": 28.625,
+     "never_triggered_frac": 0.0,
+     "n": 16
+    },
+    "kc2_K4_L10": {
+     "gap": 0.027171490634898134,
+     "energy": 1485149498377.4111,
+     "restarts_mean": 12.9375,
+     "never_triggered_frac": 0.0,
+     "n": 16
+    },
+    "kc2_K4_L40": {
+     "gap": 0.025500222732244282,
+     "energy": 1485149761832.6597,
+     "restarts_mean": 12.125,
+     "never_triggered_frac": 0.0,
+     "n": 16
+    },
+    "_selected": "kc2_K0.5_L10"
+   },
+   "ours.mesa.i10": {
+    "mesa_ep_K10": {
+     "gap": 0.05560066824847088,
+     "energy": 1485273384569.4036,
+     "restarts_mean": 12.1875,
+     "never_triggered_frac": 0.0,
+     "n": 16
+    },
+    "mesa_ep_K20": {
+     "gap": 0.04872157900346334,
+     "energy": 1485273051523.1016,
+     "restarts_mean": 4.75,
+     "never_triggered_frac": 0.0,
+     "n": 16
+    },
+    "mesa_ep_K40": {
+     "gap": 0.04525374014261072,
+     "energy": 1485272890525.852,
+     "restarts_mean": 1.5,
+     "never_triggered_frac": 0.25,
+     "n": 16
+    },
+    "_selected": "mesa_ep_K40"
+   }
+  }
+ }
+}

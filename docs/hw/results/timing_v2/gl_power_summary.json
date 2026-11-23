@@ -1,0 +1,242 @@
+{
+ "col64_kc2_i11__cg": {
+  "cycles_per_step": 5,
+  "steps": 400,
+  "n": 64,
+  "mismatches": 0,
+  "lane_dyn_fj_per_step": 1112.3829075,
+  "lane_gen_dyn_fj_per_step": 0.0,
+  "select_dyn_fj_per_step": 3415.0150999999996,
+  "icg_dyn_fj_per_step_total": 66.31129000000001,
+  "lane_leak_pj_per_cycle": 1.0094075,
+  "canonical": {
+   "digital_fj_per_lane_step": 455.98514723437495,
+   "rng_fj_per_lane_step": 17.616380859375003,
+   "n": 64,
+   "rng_draws_per_step": 1.25,
+   "adds_per_step": 496.32
+  },
+  "ratio_lane_vs_digital_row": 2.4395156602068857,
+  "ratio_rng_vs_rng_row": 0.0
+ },
+ "col64_kc2_i11__pipe": {
+  "cycles_per_step": 5,
+  "steps": 400,
+  "n": 64,
+  "mismatches": 0,
+  "lane_dyn_fj_per_step": 1118.0585899999999,
+  "lane_gen_dyn_fj_per_step": 4435.8145,
+  "select_dyn_fj_per_step": 3414.1037500000007,
+  "icg_dyn_fj_per_step_total": 0.0,
+  "lane_leak_pj_per_cycle": 1.00940125,
+  "canonical": {
+   "digital_fj_per_lane_step": 455.98514723437495,
+   "rng_fj_per_lane_step": 17.616380859375003,
+   "n": 64,
+   "rng_draws_per_step": 1.25,
+   "adds_per_step": 496.32
+  },
+  "ratio_lane_vs_digital_row": 2.451962737780407,
+  "ratio_rng_vs_rng_row": 251.800556278242
+ },
+ "col64_kc2_i11__v1": {
+  "cycles_per_step": 4,
+  "steps": 400,
+  "n": 64,
+  "mismatches": 0,
+  "lane_dyn_fj_per_step": 904.7691830000002,
+  "lane_gen_dyn_fj_per_step": 3548.6516,
+  "select_dyn_fj_per_step": 323.99324,
+  "icg_dyn_fj_per_step_total": 0.0,
+  "lane_leak_pj_per_cycle": 1.0094802500000002,
+  "canonical": {
+   "digital_fj_per_lane_step": 455.98514723437495,
+   "rng_fj_per_lane_step": 17.616380859375003,
+   "n": 64,
+   "rng_draws_per_step": 1.25,
+   "adds_per_step": 496.32
+  },
+  "ratio_lane_vs_digital_row": 1.9842075744957361,
+  "ratio_rng_vs_rng_row": 201.4404450225936
+ },
+ "maxcut256_kc2_i11__cg": {
+  "cycles_per_step": 6,
+  "steps": 150,
+  "n": 256,
+  "mismatches": 0,
+  "lane_dyn_fj_per_step": 1377.97863,
+  "lane_gen_dyn_fj_per_step": 0.0,
+  "select_dyn_fj_per_step": 15936.151199999998,
+  "icg_dyn_fj_per_step_total": 79.68599400000001,
+  "lane_leak_pj_per_cycle": 1.0114567500000002,
+  "canonical": {
+   "digital_fj_per_lane_step": 1119.490996875,
+   "rng_fj_per_lane_step": 3.7581612499999997,
+   "n": 256,
+   "rng_draws_per_step": 1.0666666666666667,
+   "adds_per_step": 4864.0
+  },
+  "ratio_lane_vs_digital_row": 1.230897464871584,
+  "ratio_rng_vs_rng_row": 0.0
+ },
+ "maxcut256_kc2_i11__pipe": {
+  "cycles_per_step": 6,
+  "steps": 150,
+  "n": 256,
+  "mismatches": 0,
+  "lane_dyn_fj_per_step": 1377.97863,
+  "lane_gen_dyn_fj_per_step": 5324.4147,
+  "select_dyn_fj_per_step": 15936.151199999998,
+  "icg_dyn_fj_per_step_total": 0.0,
+  "lane_leak_pj_per_cycle": 1.0114567500000002,
+  "canonical": {
+   "digital_fj_per_lane_step": 1119.490996875,
+   "rng_fj_per_lane_step": 3.7581612499999997,
+   "n": 256,
+   "rng_draws_per_step": 1.0666666666666667,
+   "adds_per_step": 4864.0
+  },
+  "ratio_lane_vs_digital_row": 1.230897464871584,
+  "ratio_rng_vs_rng_row": 1416.760576731507
+ },
+ "maxcut256_kc2_i11__v1": {
+  "cycles_per_step": 4,
+  "steps": 150,
+  "n": 256,
+  "mismatches": 0,
+  "lane_dyn_fj_per_step": 991.5322100000001,
+  "lane_gen_dyn_fj_per_step": 3549.6098,
+  "select_dyn_fj_per_step": 3764.3,
+  "icg_dyn_fj_per_step_total": 0.0,
+  "lane_leak_pj_per_cycle": 1.011786,
+  "canonical": {
+   "digital_fj_per_lane_step": 1119.490996875,
+   "rng_fj_per_lane_step": 3.7581612499999997,
+   "n": 256,
+   "rng_draws_per_step": 1.0666666666666667,
+   "adds_per_step": 4864.0
+  },
+  "ratio_lane_vs_digital_row": 0.8856991371684183,
+  "ratio_rng_vs_rng_row": 944.5070511543379
+ },
+ "maxcut64_kc2_i11__cg": {
+  "cycles_per_step": 5,
+  "steps": 400,
+  "n": 64,
+  "mismatches": 0,
+  "lane_dyn_fj_per_step": 1078.1114875,
+  "lane_gen_dyn_fj_per_step": 0.0,
+  "select_dyn_fj_per_step": 3370.3098,
+  "icg_dyn_fj_per_step_total": 63.83698999999999,
+  "lane_leak_pj_per_cycle": 1.009311,
+  "canonical": {
+   "digital_fj_per_lane_step": 1121.8001750976562,
+   "rng_fj_per_lane_step": 17.2640532421875,
+   "n": 64,
+   "rng_draws_per_step": 1.225,
+   "adds_per_step": 1216.0
+  },
+  "ratio_lane_vs_digital_row": 0.961054839741086,
+  "ratio_rng_vs_rng_row": 0.0
+ },
+ "maxcut64_kc2_i11__pipe": {
+  "cycles_per_step": 5,
+  "steps": 400,
+  "n": 64,
+  "mismatches": 0,
+  "lane_dyn_fj_per_step": 1081.8925875,
+  "lane_gen_dyn_fj_per_step": 4435.8145,
+  "select_dyn_fj_per_step": 3383.5690499999996,
+  "icg_dyn_fj_per_step_total": 0.0,
+  "lane_leak_pj_per_cycle": 1.0093177500000001,
+  "canonical": {
+   "digital_fj_per_lane_step": 1121.8001750976562,
+   "rng_fj_per_lane_step": 17.2640532421875,
+   "n": 64,
+   "rng_draws_per_step": 1.225,
+   "adds_per_step": 1216.0
+  },
+  "ratio_lane_vs_digital_row": 0.9644254043781174,
+  "ratio_rng_vs_rng_row": 256.93934314106326
+ },
+ "maxcut64_kc2_i11__v1": {
+  "cycles_per_step": 4,
+  "steps": 400,
+  "n": 64,
+  "mismatches": 0,
+  "lane_dyn_fj_per_step": 880.65364,
+  "lane_gen_dyn_fj_per_step": 3548.6516,
+  "select_dyn_fj_per_step": 738.6413999999999,
+  "icg_dyn_fj_per_step_total": 0.0,
+  "lane_leak_pj_per_cycle": 1.009363,
+  "canonical": {
+   "digital_fj_per_lane_step": 1121.8001750976562,
+   "rng_fj_per_lane_step": 17.2640532421875,
+   "n": 64,
+   "rng_draws_per_step": 1.225,
+   "adds_per_step": 1216.0
+  },
+  "ratio_lane_vs_digital_row": 0.7850361049581192,
+  "ratio_rng_vs_rng_row": 205.5514745128506
+ },
+ "maxcut64_none__cg": {
+  "cycles_per_step": 5,
+  "steps": 400,
+  "n": 64,
+  "mismatches": 0,
+  "lane_dyn_fj_per_step": 2050.8063375,
+  "lane_gen_dyn_fj_per_step": 1332.1702000000002,
+  "select_dyn_fj_per_step": 3415.0558500000006,
+  "icg_dyn_fj_per_step_total": 69.01456000000002,
+  "lane_leak_pj_per_cycle": 1.0335785,
+  "canonical": {
+   "digital_fj_per_lane_step": 1233.1127022460937,
+   "rng_fj_per_lane_step": 916.0518046875,
+   "n": 64,
+   "rng_draws_per_step": 65.0,
+   "adds_per_step": 1216.0
+  },
+  "ratio_lane_vs_digital_row": 1.6631134638095053,
+  "ratio_rng_vs_rng_row": 1.4542520337640228
+ },
+ "maxcut64_none__pipe": {
+  "cycles_per_step": 5,
+  "steps": 400,
+  "n": 64,
+  "mismatches": 0,
+  "lane_dyn_fj_per_step": 2050.8063375,
+  "lane_gen_dyn_fj_per_step": 3956.74875,
+  "select_dyn_fj_per_step": 3415.0558500000006,
+  "icg_dyn_fj_per_step_total": 0.0,
+  "lane_leak_pj_per_cycle": 1.0335785,
+  "canonical": {
+   "digital_fj_per_lane_step": 1233.1127022460937,
+   "rng_fj_per_lane_step": 916.0518046875,
+   "n": 64,
+   "rng_draws_per_step": 65.0,
+   "adds_per_step": 1216.0
+  },
+  "ratio_lane_vs_digital_row": 1.6631134638095053,
+  "ratio_rng_vs_rng_row": 4.319350422927006
+ },
+ "maxcut64_none__v1": {
+  "cycles_per_step": 4,
+  "steps": 400,
+  "n": 64,
+  "mismatches": 0,
+  "lane_dyn_fj_per_step": 1745.3970000000004,
+  "lane_gen_dyn_fj_per_step": 3321.2928,
+  "select_dyn_fj_per_step": 849.5656,
+  "icg_dyn_fj_per_step_total": 0.0,
+  "lane_leak_pj_per_cycle": 1.033647,
+  "canonical": {
+   "digital_fj_per_lane_step": 1233.1127022460937,
+   "rng_fj_per_lane_step": 916.0518046875,
+   "n": 64,
+   "rng_draws_per_step": 65.0,
+   "adds_per_step": 1216.0
+  },
+  "ratio_lane_vs_digital_row": 1.4154399649122011,
+  "ratio_rng_vs_rng_row": 3.625660451739429
+ }
+}

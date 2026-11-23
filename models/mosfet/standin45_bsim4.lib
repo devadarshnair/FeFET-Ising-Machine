@@ -1,0 +1,55 @@
+* standin45_bsim4.lib  --  UNCALIBRATED STAND-IN, NOT A PDK.
+*
+* Two BSIM4 (ngspice level=54) model cards, nmos45 and pmos45, written by hand for this project v0.
+* They are NOT taken from PTM, FreePDK45 or any foundry. They set a handful of textbook-level
+* numbers for a "45 nm-class bulk logic transistor" and leave every other BSIM4 parameter at its
+* built-in default. Absolute currents, capacitances and leakage are only rough (about a factor 2).
+* Use them to get circuits running, never to quote a technology number.
+*
+* How to swap in a real card: every this project deck includes this file through ONE line,
+*     .include <path>/models/mosfet/standin45_bsim4.lib
+* Replace that line with a file that defines models with the same two names (nmos45, pmos45),
+* for example a small wrapper around approved FreePDK45 or PTM cards. Nothing else needs to change.
+* (The FeFET's own channel cards live with the FeFET model in device/ngspice/, because they are
+* fitted to FeFET data, not to a logic process.)
+*
+* Nominal use: VDD = 1.0 V, L = 45 nm (drawn = effective; lint = wint = 0).
+* Check deck: models/mosfet/tb_standin45.cir. Result with these cards (W = 1 um, L = 45 nm):
+*   nmos45: Vth(lin, 50 mV) 0.44 V, Vth(sat, 1 V) 0.23 V, Ion 1.6 mA/um, Ioff 6 nA/um, SS 88 mV/dec
+*   pmos45: Ion 0.64 mA/um, Ioff 2.5 nA/um
+*   (Vth = gate voltage at 100 nA * W/L.) DIBL is high (about 0.2 V/V); fine for a stand-in.
+*
+* Parameter choices (SI units unless noted):
+*  version 4.8   current BSIM4 code path in ngspice 45.
+*  toxe 1.2 nm   electrical oxide thickness (EOT plus poly depletion and quantum effects);
+*                45 nm high-performance logic has an EOT of about 1.0-1.3 nm.
+*  toxp 1.0 nm   physical oxide thickness (used in the gate-charge model).
+*  toxm 1.2 nm   thickness at which the other parameters are taken to be "extracted" (= toxe).
+*  vth0 +-0.40 V long-channel threshold at zero body bias.
+*  xj 15 nm      source/drain junction depth (shallow extensions at 45 nm).
+*  u0            low-field mobility: 0.022 m^2/Vs (220 cm^2/Vs) electrons, 0.009 m^2/Vs
+*                (90 cm^2/Vs) holes; set so that Ion lands near 1.5 / 0.6 mA/um at 1 V.
+*  vsat          saturation velocity: 1.0e5 m/s electrons, 7.0e4 m/s holes.
+*  rdsw          series source/drain resistance: 150 ohm*um (n), 200 ohm*um (p).
+*  cit 0.012 F/m^2  interface-trap capacitance; without it the default card gives an ideal
+*                ~62 mV/dec subthreshold slope. With it the slope is ~88 mV/dec, closer to 45 nm silicon.
+*  cgso/cgdo 1.0e-10 F/m  gate-overlap capacitance, 0.1 fF per um of width.
+*  cjs/cjd 1.0e-3 F/m^2, cjsws/cjswd 1.0e-10 F/m  junction capacitance (area, sidewall). Give
+*                as/ad/ps/pd on each instance, otherwise the junction capacitance is zero.
+*  ndep is left at its default: setting ndep = 3e18 cm^-3 without refitting k1/k2 gave a
+*                nonsense Vth of 8.7 V at L = 45 nm (found while writing this card).
+*  Gate tunnelling (igcmod, igbmod) is OFF: the TCAM energy numbers do not include it.
+
+.model nmos45 nmos level=54 version=4.8
++ toxe=1.2e-9 toxp=1.0e-9 toxm=1.2e-9 epsrox=3.9
++ vth0=0.40 xj=1.5e-8
++ u0=0.022 vsat=1.0e5 rdsw=150 cit=0.012
++ cgso=1.0e-10 cgdo=1.0e-10
++ cjs=1.0e-3 cjd=1.0e-3 cjsws=1.0e-10 cjswd=1.0e-10
+
+.model pmos45 pmos level=54 version=4.8
++ toxe=1.2e-9 toxp=1.0e-9 toxm=1.2e-9 epsrox=3.9
++ vth0=-0.40 xj=1.5e-8
++ u0=0.009 vsat=7.0e4 rdsw=200 cit=0.012
++ cgso=1.0e-10 cgdo=1.0e-10
++ cjs=1.0e-3 cjd=1.0e-3 cjsws=1.0e-10 cjswd=1.0e-10

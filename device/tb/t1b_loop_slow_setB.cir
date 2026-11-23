@@ -1,0 +1,14 @@
+* t1b_loop_slow_setB.cir -- diagnostic for test 1b (no pass/fail): the same set-B major loop at
+* 0.5 V/ms (100 times slower than T1's 50 V/ms), to show which sweep rate the T3-fitted
+* kinetics would need to give T1's coercive voltages. Checker: device/tb/check_t1b.py (INFO lines).
+.include ../ngspice/fefet_preisach.lib
+.options reltol=1e-4 abstol=1e-15 method=gear
+Vmaj nmaj 0 pwl(0 0 6.000000e-03 -3 1.800000e-02 3 3.000000e-02 -3 4.200000e-02 3 5.400000e-02 -3)
+Xmaj nmaj 0 fecap_b16 area=1e-10
+.control
+set wr_singlescale
+set wr_vecnames
+tran 10u 54m 0 20u uic
+wrdata sim/out/t1b/t1b_slow.csv v(nmaj) v(xmaj.xfe.xs)
+.endc
+.end

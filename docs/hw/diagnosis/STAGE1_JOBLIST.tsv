@@ -1,0 +1,321 @@
+job_id	stage	arm	cfg	cell	cond	c2c_share	k	instances	seeds	runs	est_job_min	rss_gb	lane	needs	round	depends_on
+0.5.r13_960	0d	ours	R13 identity: tiled-256 nominal vs ideal, 2 records (fresh runs, same spec)	p3n960	nominal	0.5	1	1	2	1	12.2	7.0	cloud	s0_r13_960 logic (fresh ideal + tiled nominal)	1	
+1a.ours.p3n480.c0.K0.5	1a	ours	c=0 (L=10);K=0.5n	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.ours.p3n480.c0.K1	1a	ours	c=0 (L=10);K=1n	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.ours.p3n480.c0.K2	1a	ours	c=0 (L=10);K=2n	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.ours.p3n480.c0.04.K0.5	1a	ours	c=0.04 (L=20);K=0.5n	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.ours.p3n480.c0.04.K1	1a	ours	c=0.04 (L=20);K=1n	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.ours.p3n480.c0.04.K2	1a	ours	c=0.04 (L=20);K=2n	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.ours.p3n480.c0.08.K0.5	1a	ours	c=0.08 (L=39);K=0.5n	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.ours.p3n480.c0.08.K1	1a	ours	c=0.08 (L=39);K=1n	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.ours.p3n480.c0.08.K2	1a	ours	c=0.08 (L=39);K=2n	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.B3.p3n480.g00	1a	B3	B3 p85_5 k1.0	p3n480	ideal	-	1	8	2	16	3.3	0.6	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.p3n480.g00	1a	none_B1	ours_none/B1 p85_5 sched1.0	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	shared ideal tuning (A6)	1	
+1a.B3.p3n480.g01	1a	B3	B3 p85_5 k0.5	p3n480	ideal	-	1	8	2	16	3.3	0.6	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.p3n480.g01	1a	none_B1	ours_none/B1 p85_5 sched0.5	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	shared ideal tuning (A6)	1	
+1a.B3.p3n480.g02	1a	B3	B3 p90_5 k1.0	p3n480	ideal	-	1	8	2	16	3.3	0.6	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.p3n480.g02	1a	none_B1	ours_none/B1 p90_5 sched1.0	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	shared ideal tuning (A6)	1	
+1a.B3.p3n480.g03	1a	B3	B3 p90_5 k0.5	p3n480	ideal	-	1	8	2	16	3.3	0.6	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.p3n480.g03	1a	none_B1	ours_none/B1 p90_5 sched0.5	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	shared ideal tuning (A6)	1	
+1a.B3.p3n480.g04	1a	B3	B3 p85_10 k1.0	p3n480	ideal	-	1	8	2	16	3.3	0.6	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.p3n480.g04	1a	none_B1	ours_none/B1 p85_10 sched1.0	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	shared ideal tuning (A6)	1	
+1a.B3.p3n480.g05	1a	B3	B3 p85_10 k0.5	p3n480	ideal	-	1	8	2	16	3.3	0.6	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.p3n480.g05	1a	none_B1	ours_none/B1 p85_10 sched0.5	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	shared ideal tuning (A6)	1	
+1a.B3.p3n480.g06	1a	B3	B3 p75_5 k1.0	p3n480	ideal	-	1	8	2	16	3.3	0.6	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.p3n480.g06	1a	none_B1	ours_none/B1 p75_5 sched1.0	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	shared ideal tuning (A6)	1	
+1a.B3.p3n480.g07	1a	B3	B3 p75_5 k0.5	p3n480	ideal	-	1	8	2	16	3.3	0.6	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.p3n480.g07	1a	none_B1	ours_none/B1 p75_5 sched0.5	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	shared ideal tuning (A6)	1	
+1a.B3.p3n480.g08	1a	B3	B3 p90_10 k1.0	p3n480	ideal	-	1	8	2	16	3.3	0.6	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.p3n480.g08	1a	none_B1	ours_none/B1 p90_10 sched1.0	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	shared ideal tuning (A6)	1	
+1a.B3.p3n480.g09	1a	B3	B3 p90_10 k0.5	p3n480	ideal	-	1	8	2	16	3.3	0.6	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.p3n480.g09	1a	none_B1	ours_none/B1 p90_10 sched0.5	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	shared ideal tuning (A6)	1	
+1a.B3.p3n480.g10	1a	B3	B3 p75_10 k1.0	p3n480	ideal	-	1	8	2	16	3.3	0.6	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.p3n480.g10	1a	none_B1	ours_none/B1 p75_10 sched1.0	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	shared ideal tuning (A6)	1	
+1a.B3.p3n480.g11	1a	B3	B3 p75_10 k0.5	p3n480	ideal	-	1	8	2	16	3.3	0.6	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.p3n480.g11	1a	none_B1	ours_none/B1 p75_10 sched0.5	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	shared ideal tuning (A6)	1	
+1a.kc2c.p3n480.g00	1a	kc2c	kc2c tfinal=1.0 K=0.5n c=0	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.kc2c.p3n480.g01	1a	kc2c	kc2c tfinal=1.0 K=0.5n c=0.04	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.kc2c.p3n480.g02	1a	kc2c	kc2c tfinal=1.0 K=1n c=0	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.kc2c.p3n480.g03	1a	kc2c	kc2c tfinal=1.0 K=1n c=0.04	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.kc2c.p3n480.g04	1a	kc2c	kc2c tfinal=1.0 K=2n c=0	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.kc2c.p3n480.g05	1a	kc2c	kc2c tfinal=1.0 K=2n c=0.04	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.kc2c.p3n480.g06	1a	kc2c	kc2c tfinal=0.5 K=0.5n c=0	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.kc2c.p3n480.g07	1a	kc2c	kc2c tfinal=0.5 K=0.5n c=0.04	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.kc2c.p3n480.g08	1a	kc2c	kc2c tfinal=0.5 K=1n c=0	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.kc2c.p3n480.g09	1a	kc2c	kc2c tfinal=0.5 K=1n c=0.04	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.kc2c.p3n480.g10	1a	kc2c	kc2c tfinal=0.5 K=2n c=0	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.kc2c.p3n480.g11	1a	kc2c	kc2c tfinal=0.5 K=2n c=0.04	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R4 hook (done)	1	
+1a.ours.gk.c0.K0.5	1a	ours	c=0 (L=10);K=0.5n	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.ours.gk.c0.K1	1a	ours	c=0 (L=10);K=1n	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.ours.gk.c0.K2	1a	ours	c=0 (L=10);K=2n	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.ours.gk.c0.02.K0.5	1a	ours	c=0.02 (L=20);K=0.5n	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.ours.gk.c0.02.K1	1a	ours	c=0.02 (L=20);K=1n	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.ours.gk.c0.02.K2	1a	ours	c=0.02 (L=20);K=2n	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.ours.gk.c0.04.K0.5	1a	ours	c=0.04 (L=40);K=0.5n	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.ours.gk.c0.04.K1	1a	ours	c=0.04 (L=40);K=1n	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.ours.gk.c0.04.K2	1a	ours	c=0.04 (L=40);K=2n	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.ours.gk.c0.08.K0.5	1a	ours	c=0.08 (L=80);K=0.5n	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.ours.gk.c0.08.K1	1a	ours	c=0.08 (L=80);K=1n	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.ours.gk.c0.08.K2	1a	ours	c=0.08 (L=80);K=2n	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.B3.gk.g00	1a	B3	B3 p85_5 k1.0	gk	ideal	-	1	5	3	15	6.5	0.8	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.gk.g00	1a	none_B1	ours_none/B1 p85_5 sched1.0	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	shared ideal tuning (A6)	1	
+1a.B3.gk.g01	1a	B3	B3 p85_5 k0.5	gk	ideal	-	1	5	3	15	6.5	0.8	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.gk.g01	1a	none_B1	ours_none/B1 p85_5 sched0.5	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	shared ideal tuning (A6)	1	
+1a.B3.gk.g02	1a	B3	B3 p90_5 k1.0	gk	ideal	-	1	5	3	15	6.5	0.8	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.gk.g02	1a	none_B1	ours_none/B1 p90_5 sched1.0	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	shared ideal tuning (A6)	1	
+1a.B3.gk.g03	1a	B3	B3 p90_5 k0.5	gk	ideal	-	1	5	3	15	6.5	0.8	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.gk.g03	1a	none_B1	ours_none/B1 p90_5 sched0.5	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	shared ideal tuning (A6)	1	
+1a.B3.gk.g04	1a	B3	B3 p85_10 k1.0	gk	ideal	-	1	5	3	15	6.5	0.8	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.gk.g04	1a	none_B1	ours_none/B1 p85_10 sched1.0	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	shared ideal tuning (A6)	1	
+1a.B3.gk.g05	1a	B3	B3 p85_10 k0.5	gk	ideal	-	1	5	3	15	6.5	0.8	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.gk.g05	1a	none_B1	ours_none/B1 p85_10 sched0.5	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	shared ideal tuning (A6)	1	
+1a.B3.gk.g06	1a	B3	B3 p75_5 k1.0	gk	ideal	-	1	5	3	15	6.5	0.8	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.gk.g06	1a	none_B1	ours_none/B1 p75_5 sched1.0	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	shared ideal tuning (A6)	1	
+1a.B3.gk.g07	1a	B3	B3 p75_5 k0.5	gk	ideal	-	1	5	3	15	6.5	0.8	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.gk.g07	1a	none_B1	ours_none/B1 p75_5 sched0.5	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	shared ideal tuning (A6)	1	
+1a.B3.gk.g08	1a	B3	B3 p90_10 k1.0	gk	ideal	-	1	5	3	15	6.5	0.8	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.gk.g08	1a	none_B1	ours_none/B1 p90_10 sched1.0	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	shared ideal tuning (A6)	1	
+1a.B3.gk.g09	1a	B3	B3 p90_10 k0.5	gk	ideal	-	1	5	3	15	6.5	0.8	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.gk.g09	1a	none_B1	ours_none/B1 p90_10 sched0.5	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	shared ideal tuning (A6)	1	
+1a.B3.gk.g10	1a	B3	B3 p75_10 k1.0	gk	ideal	-	1	5	3	15	6.5	0.8	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.gk.g10	1a	none_B1	ours_none/B1 p75_10 sched1.0	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	shared ideal tuning (A6)	1	
+1a.B3.gk.g11	1a	B3	B3 p75_10 k0.5	gk	ideal	-	1	5	3	15	6.5	0.8	cloud	prereg/hw/S1_tuning_grids.json	1	
+1a.none_B1.gk.g11	1a	none_B1	ours_none/B1 p75_10 sched0.5	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	shared ideal tuning (A6)	1	
+1a.kc2c.gk.g00	1a	kc2c	kc2c tfinal=1.0 K=0.5n c=0	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.kc2c.gk.g01	1a	kc2c	kc2c tfinal=1.0 K=0.5n c=0.04	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.kc2c.gk.g02	1a	kc2c	kc2c tfinal=1.0 K=1n c=0	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.kc2c.gk.g03	1a	kc2c	kc2c tfinal=1.0 K=1n c=0.04	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.kc2c.gk.g04	1a	kc2c	kc2c tfinal=1.0 K=2n c=0	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.kc2c.gk.g05	1a	kc2c	kc2c tfinal=1.0 K=2n c=0.04	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.kc2c.gk.g06	1a	kc2c	kc2c tfinal=0.5 K=0.5n c=0	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.kc2c.gk.g07	1a	kc2c	kc2c tfinal=0.5 K=0.5n c=0.04	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.kc2c.gk.g08	1a	kc2c	kc2c tfinal=0.5 K=1n c=0	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.kc2c.gk.g09	1a	kc2c	kc2c tfinal=0.5 K=1n c=0.04	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.kc2c.gk.g10	1a	kc2c	kc2c tfinal=0.5 K=2n c=0	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+1a.kc2c.gk.g11	1a	kc2c	kc2c tfinal=0.5 K=2n c=0.04	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R4 hook (done)	1	
+SEL.1a	1a	ours	select round-1 top configs per arm (registered rule)	-	-	-	1	0	0	0	1.0	1.0	cloud	evaluate_s1	1	1a.ours.p3n480.c0.K0.5,1a.ours.p3n480.c0.K1,1a.ours.p3n480.c0.K2,1a.ours.p3n480.c0.04.K0.5,1a.ours.p3n480.c0.04.K1,1a.ours.p3n480.c0.04.K2,1a.ours.p3n480.c0.08.K0.5,1a.ours.p3n480.c0.08.K1,1a.ours.p3n480.c0.08.K2,1a.B3.p3n480.g00,1a.none_B1.p3n480.g00,1a.B3.p3n480.g01,1a.none_B1.p3n480.g01,1a.B3.p3n480.g02,1a.none_B1.p3n480.g02,1a.B3.p3n480.g03,1a.none_B1.p3n480.g03,1a.B3.p3n480.g04,1a.none_B1.p3n480.g04,1a.B3.p3n480.g05,1a.none_B1.p3n480.g05,1a.B3.p3n480.g06,1a.none_B1.p3n480.g06,1a.B3.p3n480.g07,1a.none_B1.p3n480.g07,1a.B3.p3n480.g08,1a.none_B1.p3n480.g08,1a.B3.p3n480.g09,1a.none_B1.p3n480.g09,1a.B3.p3n480.g10,1a.none_B1.p3n480.g10,1a.B3.p3n480.g11,1a.none_B1.p3n480.g11,1a.kc2c.p3n480.g00,1a.kc2c.p3n480.g01,1a.kc2c.p3n480.g02,1a.kc2c.p3n480.g03,1a.kc2c.p3n480.g04,1a.kc2c.p3n480.g05,1a.kc2c.p3n480.g06,1a.kc2c.p3n480.g07,1a.kc2c.p3n480.g08,1a.kc2c.p3n480.g09,1a.kc2c.p3n480.g10,1a.kc2c.p3n480.g11,1a.ours.gk.c0.K0.5,1a.ours.gk.c0.K1,1a.ours.gk.c0.K2,1a.ours.gk.c0.02.K0.5,1a.ours.gk.c0.02.K1,1a.ours.gk.c0.02.K2,1a.ours.gk.c0.04.K0.5,1a.ours.gk.c0.04.K1,1a.ours.gk.c0.04.K2,1a.ours.gk.c0.08.K0.5,1a.ours.gk.c0.08.K1,1a.ours.gk.c0.08.K2,1a.B3.gk.g00,1a.none_B1.gk.g00,1a.B3.gk.g01,1a.none_B1.gk.g01,1a.B3.gk.g02,1a.none_B1.gk.g02,1a.B3.gk.g03,1a.none_B1.gk.g03,1a.B3.gk.g04,1a.none_B1.gk.g04,1a.B3.gk.g05,1a.none_B1.gk.g05,1a.B3.gk.g06,1a.none_B1.gk.g06,1a.B3.gk.g07,1a.none_B1.gk.g07,1a.B3.gk.g08,1a.none_B1.gk.g08,1a.B3.gk.g09,1a.none_B1.gk.g09,1a.B3.gk.g10,1a.none_B1.gk.g10,1a.B3.gk.g11,1a.none_B1.gk.g11,1a.kc2c.gk.g00,1a.kc2c.gk.g01,1a.kc2c.gk.g02,1a.kc2c.gk.g03,1a.kc2c.gk.g04,1a.kc2c.gk.g05,1a.kc2c.gk.g06,1a.kc2c.gk.g07,1a.kc2c.gk.g08,1a.kc2c.gk.g09,1a.kc2c.gk.g10,1a.kc2c.gk.g11
+1a.ours.p3n960.ref.p00	1a	ours	registered reference c=0 K=2n	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	-	2	SEL.1a
+1a.ours.p3n960.ref.p01	1a	ours	registered reference c=0 K=2n	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	-	2	SEL.1a
+1a.ours.p3n960.ref.p02	1a	ours	registered reference c=0 K=2n	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	-	2	SEL.1a
+1a.ours.p3n960.ref.p03	1a	ours	registered reference c=0 K=2n	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	-	2	SEL.1a
+1a.ours.p3n960.ref.p04	1a	ours	registered reference c=0 K=2n	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	-	2	SEL.1a
+1a.ours.p3n960.ref.p05	1a	ours	registered reference c=0 K=2n	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	-	2	SEL.1a
+1a.ours.p3n960.top0.p00	1a	ours	round-1 rank 1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top0.p01	1a	ours	round-1 rank 1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top0.p02	1a	ours	round-1 rank 1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top0.p03	1a	ours	round-1 rank 1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top0.p04	1a	ours	round-1 rank 1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top0.p05	1a	ours	round-1 rank 1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top1.p00	1a	ours	round-1 rank 2	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top1.p01	1a	ours	round-1 rank 2	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top1.p02	1a	ours	round-1 rank 2	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top1.p03	1a	ours	round-1 rank 2	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top1.p04	1a	ours	round-1 rank 2	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top1.p05	1a	ours	round-1 rank 2	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top2.p00	1a	ours	round-1 rank 3	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top2.p01	1a	ours	round-1 rank 3	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top2.p02	1a	ours	round-1 rank 3	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top2.p03	1a	ours	round-1 rank 3	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top2.p04	1a	ours	round-1 rank 3	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top2.p05	1a	ours	round-1 rank 3	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top3.p00	1a	ours	round-1 rank 4	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top3.p01	1a	ours	round-1 rank 4	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top3.p02	1a	ours	round-1 rank 4	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top3.p03	1a	ours	round-1 rank 4	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top3.p04	1a	ours	round-1 rank 4	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.ours.p3n960.top3.p05	1a	ours	round-1 rank 4	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.B3.p3n960.top0.p00	1a	B3	round-1 rank 1	p3n960	ideal	-	1	2	3	6	8.9	1.0	cloud	SEL.1a	2	SEL.1a
+1a.B3.p3n960.top0.p01	1a	B3	round-1 rank 1	p3n960	ideal	-	1	2	3	6	8.9	1.0	cloud	SEL.1a	2	SEL.1a
+1a.B3.p3n960.top0.p02	1a	B3	round-1 rank 1	p3n960	ideal	-	1	2	3	6	8.9	1.0	cloud	SEL.1a	2	SEL.1a
+1a.B3.p3n960.top1.p00	1a	B3	round-1 rank 2	p3n960	ideal	-	1	2	3	6	8.9	1.0	cloud	SEL.1a	2	SEL.1a
+1a.B3.p3n960.top1.p01	1a	B3	round-1 rank 2	p3n960	ideal	-	1	2	3	6	8.9	1.0	cloud	SEL.1a	2	SEL.1a
+1a.B3.p3n960.top1.p02	1a	B3	round-1 rank 2	p3n960	ideal	-	1	2	3	6	8.9	1.0	cloud	SEL.1a	2	SEL.1a
+1a.B3.p3n960.top2.p00	1a	B3	round-1 rank 3	p3n960	ideal	-	1	2	3	6	8.9	1.0	cloud	SEL.1a	2	SEL.1a
+1a.B3.p3n960.top2.p01	1a	B3	round-1 rank 3	p3n960	ideal	-	1	2	3	6	8.9	1.0	cloud	SEL.1a	2	SEL.1a
+1a.B3.p3n960.top2.p02	1a	B3	round-1 rank 3	p3n960	ideal	-	1	2	3	6	8.9	1.0	cloud	SEL.1a	2	SEL.1a
+1a.B3.p3n960.top3.p00	1a	B3	round-1 rank 4	p3n960	ideal	-	1	2	3	6	8.9	1.0	cloud	SEL.1a	2	SEL.1a
+1a.B3.p3n960.top3.p01	1a	B3	round-1 rank 4	p3n960	ideal	-	1	2	3	6	8.9	1.0	cloud	SEL.1a	2	SEL.1a
+1a.B3.p3n960.top3.p02	1a	B3	round-1 rank 4	p3n960	ideal	-	1	2	3	6	8.9	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top0.p00	1a	kc2c	round-1 rank 1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top0.p01	1a	kc2c	round-1 rank 1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top0.p02	1a	kc2c	round-1 rank 1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top0.p03	1a	kc2c	round-1 rank 1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top0.p04	1a	kc2c	round-1 rank 1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top0.p05	1a	kc2c	round-1 rank 1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top1.p00	1a	kc2c	round-1 rank 2	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top1.p01	1a	kc2c	round-1 rank 2	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top1.p02	1a	kc2c	round-1 rank 2	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top1.p03	1a	kc2c	round-1 rank 2	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top1.p04	1a	kc2c	round-1 rank 2	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top1.p05	1a	kc2c	round-1 rank 2	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top2.p00	1a	kc2c	round-1 rank 3	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top2.p01	1a	kc2c	round-1 rank 3	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top2.p02	1a	kc2c	round-1 rank 3	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top2.p03	1a	kc2c	round-1 rank 3	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top2.p04	1a	kc2c	round-1 rank 3	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top2.p05	1a	kc2c	round-1 rank 3	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top3.p00	1a	kc2c	round-1 rank 4	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top3.p01	1a	kc2c	round-1 rank 4	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top3.p02	1a	kc2c	round-1 rank 4	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top3.p03	1a	kc2c	round-1 rank 4	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top3.p04	1a	kc2c	round-1 rank 4	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.kc2c.p3n960.top3.p05	1a	kc2c	round-1 rank 4	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top0.p00	1a	none_B1	round-1 rank 1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top0.p01	1a	none_B1	round-1 rank 1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top0.p02	1a	none_B1	round-1 rank 1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top0.p03	1a	none_B1	round-1 rank 1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top0.p04	1a	none_B1	round-1 rank 1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top0.p05	1a	none_B1	round-1 rank 1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top1.p00	1a	none_B1	round-1 rank 2	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top1.p01	1a	none_B1	round-1 rank 2	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top1.p02	1a	none_B1	round-1 rank 2	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top1.p03	1a	none_B1	round-1 rank 2	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top1.p04	1a	none_B1	round-1 rank 2	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top1.p05	1a	none_B1	round-1 rank 2	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top2.p00	1a	none_B1	round-1 rank 3	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top2.p01	1a	none_B1	round-1 rank 3	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top2.p02	1a	none_B1	round-1 rank 3	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top2.p03	1a	none_B1	round-1 rank 3	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top2.p04	1a	none_B1	round-1 rank 3	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top2.p05	1a	none_B1	round-1 rank 3	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top3.p00	1a	none_B1	round-1 rank 4	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top3.p01	1a	none_B1	round-1 rank 4	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top3.p02	1a	none_B1	round-1 rank 4	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top3.p03	1a	none_B1	round-1 rank 4	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top3.p04	1a	none_B1	round-1 rank 4	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1a.none_B1.p3n960.top3.p05	1a	none_B1	round-1 rank 4	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	SEL.1a	2	SEL.1a
+1b.ours.p3n480.base	1b	ours	base	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R6 / R5 hooks (done); R5 only if pre-registered as a design contribution	1	SEL.1a
+1b.ours.p3n480.tabu0.5	1b	ours	tabu0.5	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R6 / R5 hooks (done); R5 only if pre-registered as a design contribution	1	SEL.1a
+1b.ours.p3n480.tabu1	1b	ours	tabu1	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R6 / R5 hooks (done); R5 only if pre-registered as a design contribution	1	SEL.1a
+1b.ours.p3n480.tabu2	1b	ours	tabu2	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R6 / R5 hooks (done); R5 only if pre-registered as a design contribution	1	SEL.1a
+1b.ours.p3n480.R5	1b	ours	R5	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R6 / R5 hooks (done); R5 only if pre-registered as a design contribution	1	SEL.1a
+1b.ours.p3n480.R5+tabu1	1b	ours	R5+tabu1	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R6 / R5 hooks (done); R5 only if pre-registered as a design contribution	1	SEL.1a
+1b.ours.p3n480.R5+tabu2	1b	ours	R5+tabu2	p3n480	ideal	-	1	8	2	16	4.2	0.6	cloud	R6 / R5 hooks (done); R5 only if pre-registered as a design contribution	1	SEL.1a
+1b.ours.gk.base	1b	ours	base	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R6 hook; gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	SEL.1a
+1b.ours.gk.tabu0.5	1b	ours	tabu0.5	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R6 hook; gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	SEL.1a
+1b.ours.gk.tabu1	1b	ours	tabu1	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R6 hook; gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	SEL.1a
+1b.ours.gk.tabu2	1b	ours	tabu2	gk	ideal	-	1	5	3	15	8.1	0.8	cloud	R6 hook; gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	SEL.1a
+1b.ours.p3n960.base.p00	1b	ours	base	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	R6/R5 hooks	1	SEL.1a
+1b.ours.p3n960.base.p01	1b	ours	base	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	R6/R5 hooks	1	SEL.1a
+1b.ours.p3n960.base.p02	1b	ours	base	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	R6/R5 hooks	1	SEL.1a
+1b.ours.p3n960.base.p03	1b	ours	base	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	R6/R5 hooks	1	SEL.1a
+1b.ours.p3n960.base.p04	1b	ours	base	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	R6/R5 hooks	1	SEL.1a
+1b.ours.p3n960.base.p05	1b	ours	base	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	R6/R5 hooks	1	SEL.1a
+1b.ours.p3n960.tabu1.p00	1b	ours	tabu1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	R6/R5 hooks	1	SEL.1a
+1b.ours.p3n960.tabu1.p01	1b	ours	tabu1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	R6/R5 hooks	1	SEL.1a
+1b.ours.p3n960.tabu1.p02	1b	ours	tabu1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	R6/R5 hooks	1	SEL.1a
+1b.ours.p3n960.tabu1.p03	1b	ours	tabu1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	R6/R5 hooks	1	SEL.1a
+1b.ours.p3n960.tabu1.p04	1b	ours	tabu1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	R6/R5 hooks	1	SEL.1a
+1b.ours.p3n960.tabu1.p05	1b	ours	tabu1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	R6/R5 hooks	1	SEL.1a
+1b.ours.p3n960.R5+tabu1.p00	1b	ours	R5+tabu1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	R6/R5 hooks	1	SEL.1a
+1b.ours.p3n960.R5+tabu1.p01	1b	ours	R5+tabu1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	R6/R5 hooks	1	SEL.1a
+1b.ours.p3n960.R5+tabu1.p02	1b	ours	R5+tabu1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	R6/R5 hooks	1	SEL.1a
+1b.ours.p3n960.R5+tabu1.p03	1b	ours	R5+tabu1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	R6/R5 hooks	1	SEL.1a
+1b.ours.p3n960.R5+tabu1.p04	1b	ours	R5+tabu1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	R6/R5 hooks	1	SEL.1a
+1b.ours.p3n960.R5+tabu1.p05	1b	ours	R5+tabu1	p3n960	ideal	-	1	1	3	3	5.6	1.0	cloud	R6/R5 hooks	1	SEL.1a
+1c.k.M0.k2.s0	1c.k	ours	M0 k=2	p3n240	nominal	0	2	10	5	50	5.0	1.0	cloud	--k (done)	1	
+1c.k.B1wvcal.k2.s0	1c.k	B1nom	B1 wv+cal k=2	p3n240	nominal	0	2	6	4	24	4.3	1.0	cloud		1	
+1c.k.B1bs.k2.s0	1c.k	B1bs	B1 bit-sliced wv+diff+cal+bin k=2	p3n240	nominal	0	2	6	4	24	8.6	1.0	cloud	B1 bit-sliced arm (H-2)	1	
+1c.k.M0.k2.s0.03	1c.k	ours	M0 k=2	p3n240	nominal	0.03	2	10	5	50	5.0	1.0	cloud	--k (done)	1	
+1c.k.B1wvcal.k2.s0.03	1c.k	B1nom	B1 wv+cal k=2	p3n240	nominal	0.03	2	6	4	24	4.3	1.0	cloud		1	
+1c.k.B1bs.k2.s0.03	1c.k	B1bs	B1 bit-sliced wv+diff+cal+bin k=2	p3n240	nominal	0.03	2	6	4	24	8.6	1.0	cloud	B1 bit-sliced arm (H-2)	1	
+1c.k.M0.k2.s0.1	1c.k	ours	M0 k=2	p3n240	nominal	0.1	2	10	5	50	5.0	1.0	cloud	--k (done)	1	
+1c.k.B1wvcal.k2.s0.1	1c.k	B1nom	B1 wv+cal k=2	p3n240	nominal	0.1	2	6	4	24	4.3	1.0	cloud		1	
+1c.k.B1bs.k2.s0.1	1c.k	B1bs	B1 bit-sliced wv+diff+cal+bin k=2	p3n240	nominal	0.1	2	6	4	24	8.6	1.0	cloud	B1 bit-sliced arm (H-2)	1	
+1c.k.M0.k2.s0.25	1c.k	ours	M0 k=2	p3n240	nominal	0.25	2	10	5	50	5.0	1.0	cloud	--k (done)	1	
+1c.k.B1wvcal.k2.s0.25	1c.k	B1nom	B1 wv+cal k=2	p3n240	nominal	0.25	2	6	4	24	4.3	1.0	cloud		1	
+1c.k.B1bs.k2.s0.25	1c.k	B1bs	B1 bit-sliced wv+diff+cal+bin k=2	p3n240	nominal	0.25	2	6	4	24	8.6	1.0	cloud	B1 bit-sliced arm (H-2)	1	
+1c.k.M0.k2.s0.5	1c.k	ours	M0 k=2	p3n240	nominal	0.5	2	10	5	50	5.0	1.0	cloud	--k (done)	1	
+1c.k.B1wvcal.k2.s0.5	1c.k	B1nom	B1 wv+cal k=2	p3n240	nominal	0.5	2	6	4	24	4.3	1.0	cloud		1	
+1c.k.B1bs.k2.s0.5	1c.k	B1bs	B1 bit-sliced wv+diff+cal+bin k=2	p3n240	nominal	0.5	2	6	4	24	8.6	1.0	cloud	B1 bit-sliced arm (H-2)	1	
+1c.k.M0.k3.s0	1c.k	ours	M0 k=3	p3n240	nominal	0	3	10	5	50	5.0	1.0	cloud	--k (done)	1	
+1c.k.B1wvcal.k3.s0	1c.k	B1nom	B1 wv+cal k=3	p3n240	nominal	0	3	6	4	24	4.3	1.0	cloud		1	
+1c.k.B1bs.k3.s0	1c.k	B1bs	B1 bit-sliced wv+diff+cal+bin k=3	p3n240	nominal	0	3	6	4	24	8.6	1.0	cloud	B1 bit-sliced arm (H-2)	1	
+1c.k.M0.k3.s0.03	1c.k	ours	M0 k=3	p3n240	nominal	0.03	3	10	5	50	5.0	1.0	cloud	--k (done)	1	
+1c.k.B1wvcal.k3.s0.03	1c.k	B1nom	B1 wv+cal k=3	p3n240	nominal	0.03	3	6	4	24	4.3	1.0	cloud		1	
+1c.k.B1bs.k3.s0.03	1c.k	B1bs	B1 bit-sliced wv+diff+cal+bin k=3	p3n240	nominal	0.03	3	6	4	24	8.6	1.0	cloud	B1 bit-sliced arm (H-2)	1	
+1c.k.M0.k3.s0.1	1c.k	ours	M0 k=3	p3n240	nominal	0.1	3	10	5	50	5.0	1.0	cloud	--k (done)	1	
+1c.k.B1wvcal.k3.s0.1	1c.k	B1nom	B1 wv+cal k=3	p3n240	nominal	0.1	3	6	4	24	4.3	1.0	cloud		1	
+1c.k.B1bs.k3.s0.1	1c.k	B1bs	B1 bit-sliced wv+diff+cal+bin k=3	p3n240	nominal	0.1	3	6	4	24	8.6	1.0	cloud	B1 bit-sliced arm (H-2)	1	
+1c.k.M0.k3.s0.25	1c.k	ours	M0 k=3	p3n240	nominal	0.25	3	10	5	50	5.0	1.0	cloud	--k (done)	1	
+1c.k.B1wvcal.k3.s0.25	1c.k	B1nom	B1 wv+cal k=3	p3n240	nominal	0.25	3	6	4	24	4.3	1.0	cloud		1	
+1c.k.B1bs.k3.s0.25	1c.k	B1bs	B1 bit-sliced wv+diff+cal+bin k=3	p3n240	nominal	0.25	3	6	4	24	8.6	1.0	cloud	B1 bit-sliced arm (H-2)	1	
+1c.k.M0.k3.s0.5	1c.k	ours	M0 k=3	p3n240	nominal	0.5	3	10	5	50	5.0	1.0	cloud	--k (done)	1	
+1c.k.B1wvcal.k3.s0.5	1c.k	B1nom	B1 wv+cal k=3	p3n240	nominal	0.5	3	6	4	24	4.3	1.0	cloud		1	
+1c.k.B1bs.k3.s0.5	1c.k	B1bs	B1 bit-sliced wv+diff+cal+bin k=3	p3n240	nominal	0.5	3	6	4	24	8.6	1.0	cloud	B1 bit-sliced arm (H-2)	1	
+1c.k.B1bs.k1.s0.p00	1c.k	B1bs	B1 bit-sliced k=1	p3n240	nominal	0	1	6	4	24	8.6	1.0	cloud		1	
+1c.k.B1bs.k1.s0.p01	1c.k	B1bs	B1 bit-sliced k=1	p3n240	nominal	0	1	2	4	8	2.9	1.0	cloud		1	
+1c.k.B1bs.k1.s0.1.p00	1c.k	B1bs	B1 bit-sliced k=1	p3n240	nominal	0.1	1	6	4	24	8.6	1.0	cloud		1	
+1c.k.B1bs.k1.s0.1.p01	1c.k	B1bs	B1 bit-sliced k=1	p3n240	nominal	0.1	1	2	4	8	2.9	1.0	cloud		1	
+1c.k.B1bs.k1.s0.2.p00	1c.k	B1bs	B1 bit-sliced k=1	p3n240	nominal	0.2	1	6	4	24	8.6	1.0	cloud		1	
+1c.k.B1bs.k1.s0.2.p01	1c.k	B1bs	B1 bit-sliced k=1	p3n240	nominal	0.2	1	2	4	8	2.9	1.0	cloud		1	
+1c.k.B1bs.k1.s0.5.p00	1c.k	B1bs	B1 bit-sliced k=1	p3n240	nominal	0.5	1	6	4	24	8.6	1.0	cloud		1	
+1c.k.B1bs.k1.s0.5.p01	1c.k	B1bs	B1 bit-sliced k=1	p3n240	nominal	0.5	1	2	4	8	2.9	1.0	cloud		1	
+1c.R10_dither.p3n240.s0	1c	ours	R10 dither +-LSB/2, tolerance 1 (falsification arm)	p3n240	nominal	0	1	12	5	60	6.0	1.0	cloud	R10 hook (done)	1	
+1c.nodiff_M0.p3n240.s0	1c	ours	wv+cal, NO diff (single-sign columns)	p3n240	nominal	0	1	12	5	60	6.0	1.0	cloud		1	
+1c.R10_dither.p3n240.s0.01	1c	ours	R10 dither +-LSB/2, tolerance 1 (falsification arm)	p3n240	nominal	0.01	1	12	5	60	6.0	1.0	cloud	R10 hook (done)	1	
+1c.nodiff_M0.p3n240.s0.01	1c	ours	wv+cal, NO diff (single-sign columns)	p3n240	nominal	0.01	1	12	5	60	6.0	1.0	cloud		1	
+1c.R10_dither.p3n240.s0.03	1c	ours	R10 dither +-LSB/2, tolerance 1 (falsification arm)	p3n240	nominal	0.03	1	12	5	60	6.0	1.0	cloud	R10 hook (done)	1	
+1c.nodiff_M0.p3n240.s0.03	1c	ours	wv+cal, NO diff (single-sign columns)	p3n240	nominal	0.03	1	12	5	60	6.0	1.0	cloud		1	
+1c.Metropolis_ctrl.p3n240	1c	ours	Metropolis T=1 (LSB), exact field: matched control for R10 (ideal device, share-independent)	p3n240	ideal	-	1	12	5	60	2.9	0.5	cloud	i11_temp hook (done)	1	
+1c.M0_onecol_legacy.p3n480.s0	1c	ours	M0_onecol_legacy	p3n480	nominal	0	1	6	3	18	6.6	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.M0_onecol_legacy.p3n480.s0.03	1c	ours	M0_onecol_legacy	p3n480	nominal	0.03	1	6	3	18	6.6	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.M0_tiled256.p3n480.s0.p00	1c	ours	M0_tiled256	p3n480	nominal	0	1	2	3	6	7.8	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.M0_tiled256.p3n480.s0.p01	1c	ours	M0_tiled256	p3n480	nominal	0	1	2	3	6	7.8	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.M0_tiled256.p3n480.s0.p02	1c	ours	M0_tiled256	p3n480	nominal	0	1	2	3	6	7.8	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.M0_tiled256.p3n480.s0.03.p00	1c	ours	M0_tiled256	p3n480	nominal	0.03	1	2	3	6	7.8	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.M0_tiled256.p3n480.s0.03.p01	1c	ours	M0_tiled256	p3n480	nominal	0.03	1	2	3	6	7.8	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.M0_tiled256.p3n480.s0.03.p02	1c	ours	M0_tiled256	p3n480	nominal	0.03	1	2	3	6	7.8	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.tiled256+R9_refcol.p3n480.s0.p00	1c	ours	tiled256+R9_refcol	p3n480	nominal	0	1	2	3	6	7.8	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.tiled256+R9_refcol.p3n480.s0.p01	1c	ours	tiled256+R9_refcol	p3n480	nominal	0	1	2	3	6	7.8	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.tiled256+R9_refcol.p3n480.s0.p02	1c	ours	tiled256+R9_refcol	p3n480	nominal	0	1	2	3	6	7.8	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.tiled256+R9_refcol.p3n480.s0.03.p00	1c	ours	tiled256+R9_refcol	p3n480	nominal	0.03	1	2	3	6	7.8	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.tiled256+R9_refcol.p3n480.s0.03.p01	1c	ours	tiled256+R9_refcol	p3n480	nominal	0.03	1	2	3	6	7.8	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.tiled256+R9_refcol.p3n480.s0.03.p02	1c	ours	tiled256+R9_refcol	p3n480	nominal	0.03	1	2	3	6	7.8	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.tiled256+R11_oppoint_cal.p3n480.s0.p00	1c	ours	tiled256+R11_oppoint_cal	p3n480	nominal	0	1	2	3	6	7.8	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.tiled256+R11_oppoint_cal.p3n480.s0.p01	1c	ours	tiled256+R11_oppoint_cal	p3n480	nominal	0	1	2	3	6	7.8	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.tiled256+R11_oppoint_cal.p3n480.s0.p02	1c	ours	tiled256+R11_oppoint_cal	p3n480	nominal	0	1	2	3	6	7.8	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.tiled256+R11_oppoint_cal.p3n480.s0.03.p00	1c	ours	tiled256+R11_oppoint_cal	p3n480	nominal	0.03	1	2	3	6	7.8	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.tiled256+R11_oppoint_cal.p3n480.s0.03.p01	1c	ours	tiled256+R11_oppoint_cal	p3n480	nominal	0.03	1	2	3	6	7.8	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.tiled256+R11_oppoint_cal.p3n480.s0.03.p02	1c	ours	tiled256+R11_oppoint_cal	p3n480	nominal	0.03	1	2	3	6	7.8	3.0	cloud	R13 / R9 / R11 hooks (done)	1	
+1c.fmc.nodiff.p3n240.s0	1c	ours	field-error MC 10 draws x 20 states, mit wv+cal, tile 0	p3n240	nominal	0	1	1	1	1	1.3	2.0	cloud	s0_h4_field --mit (done)	1	
+1c.fmc.nodiff.p3n240.s0.5	1c	ours	field-error MC 10 draws x 20 states, mit wv+cal, tile 0	p3n240	nominal	0.5	1	1	1	1	1.3	2.0	cloud	s0_h4_field --mit (done)	1	
+1c.fmc.tiled256.p3n480.s0	1c	ours	field-error MC 10 draws x 20 states, mit wv+diff+cal, tile 256	p3n480	nominal	0	1	1	1	1	1.3	2.0	cloud	s0_h4_field --mit (done)	1	
+1c.fmc.onecol.p3n480.s0	1c	ours	field-error MC 10 draws x 20 states, mit wv+diff+cal, tile 0	p3n480	nominal	0	1	1	1	1	1.3	2.0	cloud	s0_h4_field --mit (done)	1	
+1d.maxcut.ours_none_T.p00	1d	ours	ours_none_T	gk	ideal	-	1	3	5	15	8.1	0.8	cloud	R12 hook (done); gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	
+1d.maxcut.ours_none_T.p01	1d	ours	ours_none_T	gk	ideal	-	1	2	5	10	5.4	0.8	cloud	R12 hook (done); gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	
+1d.maxcut.hyb_f0.1.p00	1d	ours	hyb_f0.1	gk	ideal	-	1	3	5	15	8.1	0.8	cloud	R12 hook (done); gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	
+1d.maxcut.hyb_f0.1.p01	1d	ours	hyb_f0.1	gk	ideal	-	1	2	5	10	5.4	0.8	cloud	R12 hook (done); gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	
+1d.maxcut.hyb_f0.25.p00	1d	ours	hyb_f0.25	gk	ideal	-	1	3	5	15	8.1	0.8	cloud	R12 hook (done); gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	
+1d.maxcut.hyb_f0.25.p01	1d	ours	hyb_f0.25	gk	ideal	-	1	2	5	10	5.4	0.8	cloud	R12 hook (done); gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	
+1d.maxcut.hyb_f0.5.p00	1d	ours	hyb_f0.5	gk	ideal	-	1	3	5	15	8.1	0.8	cloud	R12 hook (done); gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	
+1d.maxcut.hyb_f0.5.p01	1d	ours	hyb_f0.5	gk	ideal	-	1	2	5	10	5.4	0.8	cloud	R12 hook (done); gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	
+1d.maxcut.I11_T1.p00	1d	ours	I11_T1	gk	ideal	-	1	3	5	15	8.1	0.8	cloud	R12 hook (done); gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	
+1d.maxcut.I11_T1.p01	1d	ours	I11_T1	gk	ideal	-	1	2	5	10	5.4	0.8	cloud	R12 hook (done); gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	
+1d.maxcut.I11_T2.p00	1d	ours	I11_T2	gk	ideal	-	1	3	5	15	8.1	0.8	cloud	R12 hook (done); gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	
+1d.maxcut.I11_T2.p01	1d	ours	I11_T2	gk	ideal	-	1	2	5	10	5.4	0.8	cloud	R12 hook (done); gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	
+1d.maxcut.I11_T3.p00	1d	ours	I11_T3	gk	ideal	-	1	3	5	15	8.1	0.8	cloud	R12 hook (done); gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	
+1d.maxcut.I11_T3.p01	1d	ours	I11_T3	gk	ideal	-	1	2	5	10	5.4	0.8	cloud	R12 hook (done); gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	
+SEL.2	1e	ours	final stack + Stage 2 gate (registered rule)	-	-	-	1	0	0	0	1.0	1.0	cloud	evaluate_s1	1	1a.ours.p3n960.ref.p00,1a.ours.p3n960.ref.p01,1a.ours.p3n960.ref.p02,1a.ours.p3n960.ref.p03,1a.ours.p3n960.ref.p04,1a.ours.p3n960.ref.p05,1a.ours.p3n960.top0.p00,1a.ours.p3n960.top0.p01,1a.ours.p3n960.top0.p02,1a.ours.p3n960.top0.p03,1a.ours.p3n960.top0.p04,1a.ours.p3n960.top0.p05,1a.ours.p3n960.top1.p00,1a.ours.p3n960.top1.p01,1a.ours.p3n960.top1.p02,1a.ours.p3n960.top1.p03,1a.ours.p3n960.top1.p04,1a.ours.p3n960.top1.p05,1a.ours.p3n960.top2.p00,1a.ours.p3n960.top2.p01,1a.ours.p3n960.top2.p02,1a.ours.p3n960.top2.p03,1a.ours.p3n960.top2.p04,1a.ours.p3n960.top2.p05,1a.ours.p3n960.top3.p00,1a.ours.p3n960.top3.p01,1a.ours.p3n960.top3.p02,1a.ours.p3n960.top3.p03,1a.ours.p3n960.top3.p04,1a.ours.p3n960.top3.p05,1a.B3.p3n960.top0.p00,1a.B3.p3n960.top0.p01,1a.B3.p3n960.top0.p02,1a.B3.p3n960.top1.p00,1a.B3.p3n960.top1.p01,1a.B3.p3n960.top1.p02,1a.B3.p3n960.top2.p00,1a.B3.p3n960.top2.p01,1a.B3.p3n960.top2.p02,1a.B3.p3n960.top3.p00,1a.B3.p3n960.top3.p01,1a.B3.p3n960.top3.p02,1a.kc2c.p3n960.top0.p00,1a.kc2c.p3n960.top0.p01,1a.kc2c.p3n960.top0.p02,1a.kc2c.p3n960.top0.p03,1a.kc2c.p3n960.top0.p04,1a.kc2c.p3n960.top0.p05,1a.kc2c.p3n960.top1.p00,1a.kc2c.p3n960.top1.p01,1a.kc2c.p3n960.top1.p02,1a.kc2c.p3n960.top1.p03,1a.kc2c.p3n960.top1.p04,1a.kc2c.p3n960.top1.p05,1a.kc2c.p3n960.top2.p00,1a.kc2c.p3n960.top2.p01,1a.kc2c.p3n960.top2.p02,1a.kc2c.p3n960.top2.p03,1a.kc2c.p3n960.top2.p04,1a.kc2c.p3n960.top2.p05,1a.kc2c.p3n960.top3.p00,1a.kc2c.p3n960.top3.p01,1a.kc2c.p3n960.top3.p02,1a.kc2c.p3n960.top3.p03,1a.kc2c.p3n960.top3.p04,1a.kc2c.p3n960.top3.p05,1a.none_B1.p3n960.top0.p00,1a.none_B1.p3n960.top0.p01,1a.none_B1.p3n960.top0.p02,1a.none_B1.p3n960.top0.p03,1a.none_B1.p3n960.top0.p04,1a.none_B1.p3n960.top0.p05,1a.none_B1.p3n960.top1.p00,1a.none_B1.p3n960.top1.p01,1a.none_B1.p3n960.top1.p02,1a.none_B1.p3n960.top1.p03,1a.none_B1.p3n960.top1.p04,1a.none_B1.p3n960.top1.p05,1a.none_B1.p3n960.top2.p00,1a.none_B1.p3n960.top2.p01,1a.none_B1.p3n960.top2.p02,1a.none_B1.p3n960.top2.p03,1a.none_B1.p3n960.top2.p04,1a.none_B1.p3n960.top2.p05,1a.none_B1.p3n960.top3.p00,1a.none_B1.p3n960.top3.p01,1a.none_B1.p3n960.top3.p02,1a.none_B1.p3n960.top3.p03,1a.none_B1.p3n960.top3.p04,1a.none_B1.p3n960.top3.p05,1b.ours.p3n480.base,1b.ours.p3n480.tabu0.5,1b.ours.p3n480.tabu1,1b.ours.p3n480.tabu2,1b.ours.p3n480.R5,1b.ours.p3n480.R5+tabu1,1b.ours.p3n480.R5+tabu2,1b.ours.gk.base,1b.ours.gk.tabu0.5,1b.ours.gk.tabu1,1b.ours.gk.tabu2,1b.ours.p3n960.base.p00,1b.ours.p3n960.base.p01,1b.ours.p3n960.base.p02,1b.ours.p3n960.base.p03,1b.ours.p3n960.base.p04,1b.ours.p3n960.base.p05,1b.ours.p3n960.tabu1.p00,1b.ours.p3n960.tabu1.p01,1b.ours.p3n960.tabu1.p02,1b.ours.p3n960.tabu1.p03,1b.ours.p3n960.tabu1.p04,1b.ours.p3n960.tabu1.p05,1b.ours.p3n960.R5+tabu1.p00,1b.ours.p3n960.R5+tabu1.p01,1b.ours.p3n960.R5+tabu1.p02,1b.ours.p3n960.R5+tabu1.p03,1b.ours.p3n960.R5+tabu1.p04,1b.ours.p3n960.R5+tabu1.p05,1d.maxcut.ours_none_T.p00,1d.maxcut.ours_none_T.p01,1d.maxcut.hyb_f0.1.p00,1d.maxcut.hyb_f0.1.p01,1d.maxcut.hyb_f0.25.p00,1d.maxcut.hyb_f0.25.p01,1d.maxcut.hyb_f0.5.p00,1d.maxcut.hyb_f0.5.p01,1d.maxcut.I11_T1.p00,1d.maxcut.I11_T1.p01,1d.maxcut.I11_T2.p00,1d.maxcut.I11_T2.p01,1d.maxcut.I11_T3.p00,1d.maxcut.I11_T3.p01
+1e.ours_sel.p3n480.p00	1e	ours	ours_sel	p3n480	nominal	0.5	1	2	3	6	7.8	3.0	cloud	selection; skipped if stage2_go is false	1	SEL.2
+1e.ours_sel.p3n480.p01	1e	ours	ours_sel	p3n480	nominal	0.5	1	2	3	6	7.8	3.0	cloud	selection; skipped if stage2_go is false	1	SEL.2
+1e.ours_sel.p3n480.p02	1e	ours	ours_sel	p3n480	nominal	0.5	1	2	3	6	7.8	3.0	cloud	selection; skipped if stage2_go is false	1	SEL.2
+1e.ours_sel.gk.p00	1e	ours	ours_sel	gk	nominal	0.5	1	1	3	3	9.8	6.5	cloud	selection; skipped if stage2_go is false; gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	SEL.2,0.5.r13_960
+1e.ours_sel.gk.p01	1e	ours	ours_sel	gk	nominal	0.5	1	1	3	3	9.8	6.5	cloud	selection; skipped if stage2_go is false; gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	SEL.2,0.5.r13_960
+1e.ours_sel.gk.p02	1e	ours	ours_sel	gk	nominal	0.5	1	1	3	3	9.8	6.5	cloud	selection; skipped if stage2_go is false; gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	SEL.2,0.5.r13_960
+1e.ours_sel.gk.p03	1e	ours	ours_sel	gk	nominal	0.5	1	1	3	3	9.8	6.5	cloud	selection; skipped if stage2_go is false; gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	SEL.2,0.5.r13_960
+1e.ours_sel.gk.p04	1e	ours	ours_sel	gk	nominal	0.5	1	1	3	3	9.8	6.5	cloud	selection; skipped if stage2_go is false; gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	SEL.2,0.5.r13_960
+1e.B3_sel.p3n480	1e	B3	B3_sel	p3n480	nominal	0.5	1	6	3	18	5.3	3.0	cloud	selection; skipped if stage2_go is false	1	SEL.2
+1e.B3_sel.gk.p00	1e	B3	B3_sel	gk	nominal	0.5	1	1	3	3	7.8	6.5	cloud	selection; skipped if stage2_go is false; gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	SEL.2,0.5.r13_960
+1e.B3_sel.gk.p01	1e	B3	B3_sel	gk	nominal	0.5	1	1	3	3	7.8	6.5	cloud	selection; skipped if stage2_go is false; gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	SEL.2,0.5.r13_960
+1e.B3_sel.gk.p02	1e	B3	B3_sel	gk	nominal	0.5	1	1	3	3	7.8	6.5	cloud	selection; skipped if stage2_go is false; gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	SEL.2,0.5.r13_960
+1e.B3_sel.gk.p03	1e	B3	B3_sel	gk	nominal	0.5	1	1	3	3	7.8	6.5	cloud	selection; skipped if stage2_go is false; gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	SEL.2,0.5.r13_960
+1e.B3_sel.gk.p04	1e	B3	B3_sel	gk	nominal	0.5	1	1	3	3	7.8	6.5	cloud	selection; skipped if stage2_go is false; gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	SEL.2,0.5.r13_960
+1e.B1_sel.p3n480.p00	1e	B1nom	B1_sel	p3n480	nominal	0.5	1	5	3	15	9.9	1.0	cloud	selection; skipped if stage2_go is false	1	SEL.2
+1e.B1_sel.p3n480.p01	1e	B1nom	B1_sel	p3n480	nominal	0.5	1	1	3	3	2.0	1.0	cloud	selection; skipped if stage2_go is false	1	SEL.2
+1e.B1_sel.gk.p00	1e	B1nom	B1_sel	gk	nominal	0.5	1	1	3	3	17.6	2.1666666666666665	cloud	selection; skipped if stage2_go is false; gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	SEL.2,0.5.r13_960
+1e.B1_sel.gk.p01	1e	B1nom	B1_sel	gk	nominal	0.5	1	1	3	3	17.6	2.1666666666666665	cloud	selection; skipped if stage2_go is false; gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	SEL.2,0.5.r13_960
+1e.B1_sel.gk.p02	1e	B1nom	B1_sel	gk	nominal	0.5	1	1	3	3	17.6	2.1666666666666665	cloud	selection; skipped if stage2_go is false; gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	SEL.2,0.5.r13_960
+1e.B1_sel.gk.p03	1e	B1nom	B1_sel	gk	nominal	0.5	1	1	3	3	17.6	2.1666666666666665	cloud	selection; skipped if stage2_go is false; gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	SEL.2,0.5.r13_960
+1e.B1_sel.gk.p04	1e	B1nom	B1_sel	gk	nominal	0.5	1	1	3	3	17.6	2.1666666666666665	cloud	selection; skipped if stage2_go is false; gk = G43-47 TUNING-ONLY (P4.02-used) until the rudy generator exists; no result on gk is confirmatory	1	SEL.2,0.5.r13_960
+report_s1	rep	ours	evaluate_s1 report	-	-	-	1	0	0	0	2.0	2.0	cloud		1	*

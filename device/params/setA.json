@@ -1,0 +1,16 @@
+{
+  "name": "A",
+  "what": "P3 film: 8.3 nm Hf0.5Zr0.5O2 MFM capacitor (Alessandri et al., IEEE TED 2019, Table I). Implementation check only.",
+  "t_fe_m": 8.3e-9,
+  "P_S_C_per_m2": 0.229,
+  "eps_r": 30.0,
+  "eps_r_note": "not reported in P3; 30 is a placeholder (it does not enter the switching check)",
+  "tau_inf_s": 387e-9,
+  "alpha": 4.11,
+  "beta": 2.07,
+  "h0": 1e-6,
+  "V_imp_V": 0.08,
+  "V_imp_note": "P3: V_FE = V_A + V_OS, V_OS = +80 mV",
+  "dist": {"type": "gb2", "a": 12.1, "b_MV_per_cm": 1.79, "p": 0.691, "q": 0.633},
+  "N": 16
+}

@@ -1,0 +1,99 @@
+{
+ "family": "p3n240",
+ "share": 0.5,
+ "leak": "none",
+ "tile_rows": 0,
+ "n_draws": 10,
+ "n_states": 20,
+ "n_act": 240,
+ "mean": 0.0,
+ "sd": 0.0,
+ "frac_nonzero": 0.0,
+ "frac_neg": 0.0,
+ "frac_pos": 0.0,
+ "hist": {
+  "0": 48000
+ },
+ "draws": [
+  {
+   "draw": 0,
+   "mean": 0.0,
+   "sd": 0.0,
+   "frac_nonzero": 0.0,
+   "frac_neg": 0.0,
+   "frac_pos": 0.0
+  },
+  {
+   "draw": 1,
+   "mean": 0.0,
+   "sd": 0.0,
+   "frac_nonzero": 0.0,
+   "frac_neg": 0.0,
+   "frac_pos": 0.0
+  },
+  {
+   "draw": 2,
+   "mean": 0.0,
+   "sd": 0.0,
+   "frac_nonzero": 0.0,
+   "frac_neg": 0.0,
+   "frac_pos": 0.0
+  },
+  {
+   "draw": 3,
+   "mean": 0.0,
+   "sd": 0.0,
+   "frac_nonzero": 0.0,
+   "frac_neg": 0.0,
+   "frac_pos": 0.0
+  },
+  {
+   "draw": 4,
+   "mean": 0.0,
+   "sd": 0.0,
+   "frac_nonzero": 0.0,
+   "frac_neg": 0.0,
+   "frac_pos": 0.0
+  },
+  {
+   "draw": 5,
+   "mean": 0.0,
+   "sd": 0.0,
+   "frac_nonzero": 0.0,
+   "frac_neg": 0.0,
+   "frac_pos": 0.0
+  },
+  {
+   "draw": 6,
+   "mean": 0.0,
+   "sd": 0.0,
+   "frac_nonzero": 0.0,
+   "frac_neg": 0.0,
+   "frac_pos": 0.0
+  },
+  {
+   "draw": 7,
+   "mean": 0.0,
+   "sd": 0.0,
+   "frac_nonzero": 0.0,
+   "frac_neg": 0.0,
+   "frac_pos": 0.0
+  },
+  {
+   "draw": 8,
+   "mean": 0.0,
+   "sd": 0.0,
+   "frac_nonzero": 0.0,
+   "frac_neg": 0.0,
+   "frac_pos": 0.0
+  },
+  {
+   "draw": 9,
+   "mean": 0.0,
+   "sd": 0.0,
+   "frac_nonzero": 0.0,
+   "frac_neg": 0.0,
+   "frac_pos": 0.0
+  }
+ ]
+}

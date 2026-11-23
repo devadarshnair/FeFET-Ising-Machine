@@ -1,0 +1,35 @@
+{
+  "name": "C",
+  "what": "28 nm-class TCAM FeFET: 8 nm doped HfO2 on 1 nm SiO2 (Ni et al. Nat. Electron. 2019 SI; Yin 2024). Kinetics and vth0 fitted to the Ni 2019 targets by device/py/fit_fefet.py.",
+  "t_fe_m": 8e-09,
+  "P_S_C_per_m2": 0.01718,
+  "eps_r": 30.0,
+  "tau_inf_s": 5.6451e-09,
+  "alpha": 3.7631,
+  "beta": 1.0,
+  "h0": 1e-06,
+  "V_imp_V": 0.0,
+  "dist": {
+    "type": "lognormal",
+    "median_MV_per_cm": 2.4427,
+    "sigma_ln": 0.0504
+  },
+  "N": 16,
+  "fefet": {
+    "W_m": 2e-07,
+    "L_m": 1e-07,
+    "r_A": 1.0,
+    "card": {
+      "name": "nfefet_c",
+      "toxe": 1e-09,
+      "toxp": 1e-09,
+      "toxm": 1e-09,
+      "vth0": 0.8133,
+      "u0": 0.022,
+      "vsat": 100000.0,
+      "rdsw": 150,
+      "cit": 0.012,
+      "xj": 1.5e-08
+    }
+  }
+}

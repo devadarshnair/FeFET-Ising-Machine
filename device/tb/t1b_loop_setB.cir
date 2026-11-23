@@ -1,0 +1,29 @@
+* t1b_loop_setB.cir -- test 1b: set B (Ni 2018 film) MFM loop and minor loops at 50 V/ms.
+*
+* Four 16-domain capacitors (fecap_b16), each on its own triangle source (all ramps 50 V/ms):
+*   Vmaj: 0 -> -3 -> +3 -> -3 -> +3 -> -3 V (major loop; the cycle 0.30-0.54 ms is checked vs T1)
+*   Vc, Vd, Ve: the P1 Fig. 5 waveforms (c), (d), (e), each after a first ramp 0 -> +3 V.
+* Start state: all domains at x = -1. Checker: device/tb/check_t1b.py.
+* Run from the repo root: scripts/run_guarded.sh ngspice -b -n device/tb/t1b_loop_setB.cir
+.include ../ngspice/fefet_preisach.lib
+.options reltol=1e-4 abstol=1e-15 method=gear
+
+Vmaj nmaj 0 pwl(0 0 6.000000e-05 -3 1.800000e-04 3 3.000000e-04 -3 4.200000e-04 3 5.400000e-04 -3)
+Vc nwc 0 pwl(0 0 6.000000e-05 3 1.800000e-04 -3 2.640000e-04 1.2 3.120000e-04 -1.2 3.600000e-04 1.2
++ 4.440000e-04 -3 5.640000e-04 3)
+Vd nwd 0 pwl(0 0 6.000000e-05 3 1.800000e-04 -3 2.800000e-04 2 3.400000e-04 -1 3.800000e-04 1
++ 4.400000e-04 -2 5.400000e-04 3)
+Ve nwe 0 pwl(0 0 6.000000e-05 3 1.800000e-04 -3 2.800000e-04 2 3.500000e-04 -1.5 3.800000e-04 0
++ 4.200000e-04 -2 4.900000e-04 1.5 5.200000e-04 0 5.800000e-04 3)
+Xmaj nmaj 0 fecap_b16 area=1e-10
+Xc nwc 0 fecap_b16 area=1e-10
+Xd nwd 0 fecap_b16 area=1e-10
+Xe nwe 0 fecap_b16 area=1e-10
+
+.control
+set wr_singlescale
+set wr_vecnames
+tran 0.1u 0.58m 0 0.2u uic
+wrdata sim/out/t1b/t1b.csv v(nmaj) v(xmaj.xfe.xs) v(nwc) v(xc.xfe.xs) v(nwd) v(xd.xfe.xs) v(nwe) v(xe.xfe.xs)
+.endc
+.end

@@ -1,0 +1,16 @@
+{
+ "family": "maxcut",
+ "key": "G43",
+ "r": 0,
+ "n": 1000,
+ "L": 10,
+ "K": 1000,
+ "kicks": 125,
+ "best_E": -6570.0,
+ "last_best_frac": 0.944,
+ "mean_returned": 0.9790322580645163,
+ "median_returned": 1.0,
+ "mean_drift_nonkicked": 0.010891169762137505,
+ "frac_kicks_returned_ge_0.5": 1.0,
+ "median_hamming_successive": 9.0
+}

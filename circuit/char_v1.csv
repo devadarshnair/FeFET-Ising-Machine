@@ -1,0 +1,62 @@
+block,key,param,unit,value,sigma,band_lo_x,band_hi_x,source,note
+crossbar_read,e_read_fJ,level=0,fJ per cell per 20 ns read,0.145668,,0.5,2.0,SPICE,"BL + WL supply; WL = gate charge only, no driver; cim_cell_v1.csv"
+crossbar_read,i_read_nA,level=0,nA,0.059344,4.86356,0.5,2.0,SPICE,"sigma = Monte Carlo (sigma_Vth 0.15 V LVT-HVT 0.10 V, Ni 2019) after nominal write, t4e"
+crossbar_write,e_write_fJ,level=0,fJ per cell (erase+program),3.31531,,0.5,2.0,SPICE,gate supply; verify read excluded
+crossbar_write,t_write_us,level=0,us per cell,2.02,,0.5,2.0,SPICE,pulses only
+crossbar_read,e_read_fJ,level=1,fJ per cell per 20 ns read,0.164547,,0.5,2.0,SPICE,"BL + WL supply; WL = gate charge only, no driver; cim_cell_v1.csv"
+crossbar_read,i_read_nA,level=1,nA,14.1598,31.1771,0.5,2.0,SPICE,"sigma = Monte Carlo (sigma_Vth 0.15 V LVT-HVT 0.10 V, Ni 2019) after nominal write, t4e"
+crossbar_write,e_write_fJ,level=1,fJ per cell (erase+program),4.48754,,0.5,2.0,SPICE,gate supply; verify read excluded
+crossbar_write,t_write_us,level=1,us per cell,2.02,,0.5,2.0,SPICE,pulses only
+crossbar_read,e_read_fJ,level=2,fJ per cell per 20 ns read,0.186194,,0.5,2.0,SPICE,"BL + WL supply; WL = gate charge only, no driver; cim_cell_v1.csv"
+crossbar_read,i_read_nA,level=2,nA,28.3177,34.3184,0.5,2.0,SPICE,"sigma = Monte Carlo (sigma_Vth 0.15 V LVT-HVT 0.10 V, Ni 2019) after nominal write, t4e"
+crossbar_write,e_write_fJ,level=2,fJ per cell (erase+program),4.58438,,0.5,2.0,SPICE,gate supply; verify read excluded
+crossbar_write,t_write_us,level=2,us per cell,2.02,,0.5,2.0,SPICE,pulses only
+crossbar_read,e_read_fJ,level=3,fJ per cell per 20 ns read,0.208157,,0.5,2.0,SPICE,"BL + WL supply; WL = gate charge only, no driver; cim_cell_v1.csv"
+crossbar_read,i_read_nA,level=3,nA,42.475,34.3629,0.5,2.0,SPICE,"sigma = Monte Carlo (sigma_Vth 0.15 V LVT-HVT 0.10 V, Ni 2019) after nominal write, t4e"
+crossbar_write,e_write_fJ,level=3,fJ per cell (erase+program),4.65015,,0.5,2.0,SPICE,gate supply; verify read excluded
+crossbar_write,t_write_us,level=3,us per cell,2.02,,0.5,2.0,SPICE,pulses only
+crossbar_read,e_read_fJ,level=4,fJ per cell per 20 ns read,0.230432,,0.5,2.0,SPICE,"BL + WL supply; WL = gate charge only, no driver; cim_cell_v1.csv"
+crossbar_read,i_read_nA,level=4,nA,56.6363,32.6464,0.5,2.0,SPICE,"sigma = Monte Carlo (sigma_Vth 0.15 V LVT-HVT 0.10 V, Ni 2019) after nominal write, t4e"
+crossbar_write,e_write_fJ,level=4,fJ per cell (erase+program),4.70889,,0.5,2.0,SPICE,gate supply; verify read excluded
+crossbar_write,t_write_us,level=4,us per cell,2.02,,0.5,2.0,SPICE,pulses only
+crossbar_read,e_read_fJ,level=5,fJ per cell per 20 ns read,0.253143,,0.5,2.0,SPICE,"BL + WL supply; WL = gate charge only, no driver; cim_cell_v1.csv"
+crossbar_read,i_read_nA,level=5,nA,70.8058,31.7887,0.5,2.0,SPICE,"sigma = Monte Carlo (sigma_Vth 0.15 V LVT-HVT 0.10 V, Ni 2019) after nominal write, t4e"
+crossbar_write,e_write_fJ,level=5,fJ per cell (erase+program),4.77826,,0.5,2.0,SPICE,gate supply; verify read excluded
+crossbar_write,t_write_us,level=5,us per cell,2.02,,0.5,2.0,SPICE,pulses only
+crossbar_read,e_read_fJ,level=6,fJ per cell per 20 ns read,0.276809,,0.5,2.0,SPICE,"BL + WL supply; WL = gate charge only, no driver; cim_cell_v1.csv"
+crossbar_read,i_read_nA,level=6,nA,84.9784,27.6494,0.5,2.0,SPICE,"sigma = Monte Carlo (sigma_Vth 0.15 V LVT-HVT 0.10 V, Ni 2019) after nominal write, t4e"
+crossbar_write,e_write_fJ,level=6,fJ per cell (erase+program),4.89777,,0.5,2.0,SPICE,gate supply; verify read excluded
+crossbar_write,t_write_us,level=6,us per cell,2.02,,0.5,2.0,SPICE,pulses only
+crossbar_read,e_read_fJ,level=7,fJ per cell per 20 ns read,0.357719,,0.5,2.0,SPICE,"BL + WL supply; WL = gate charge only, no driver; cim_cell_v1.csv"
+crossbar_read,i_read_nA,level=7,nA,99.154,0.152215,0.5,2.0,SPICE,"sigma = Monte Carlo (sigma_Vth 0.15 V LVT-HVT 0.10 V, Ni 2019) after nominal write, t4e"
+crossbar_write,e_write_fJ,level=7,fJ per cell (erase+program),6.85774,,0.5,2.0,SPICE,gate supply; verify read excluded
+crossbar_write,t_write_us,level=7,us per cell,2.02,,0.5,2.0,SPICE,pulses only
+crossbar_read,t_settle_ps,column=32 mixed,ps,1981.69,,0.5,2.0,SPICE,"t4c, 32-cell column"
+crossbar_read,col_inl_max_lsb,"column=32,adc=8b",LSB,0.289998,,0.5,2.0,SPICE,t4b
+crossbar_read,adc_lsb_nA,"adc=8b,FS=32*I7",nA,12.3943,,0.5,2.0,SPICE,t4b
+crossbar_read,dvth_read_disturb_mV,"1e6 reads, level 0",mV,0.00280667,,0.5,2.0,SPICE,t4d
+crossbar_write,dvth_write_disturb_mV,"HVT, +2 V, 255x10 us (P1.07)",mV,-156.7,,0.5,2.0,SPICE,P1.07 FAIL value; LVT 0 mV at +2 V; -1 V <= 0.1 mV on HVT; cell-by-cell programming fallback in use (R4)
+adc,e_adc_fJ,bits=3,fJ per conversion,77.47,,0.5,2.0,SPICE,comparator SPICE pdk45 + analytic C-DAC (C_u 1 fF); SAR logic/sampling driver excluded (lower bound); offset sigma 7.4 mV > 1 LSB at b>=7 not costed
+adc,e_adc_per_bit_fJ,bits=3,fJ per conversion-bit,25.8233,,0.25,4.0,SPICE,e_adc / bits (cost model prices adc_conv_bits)
+adc,t_conv_ns,bits=3,ns,4,,0.5,2.0,SPICE,(b+1) ns
+adc,e_adc_fJ,bits=4,fJ per conversion,107.2,,0.5,2.0,SPICE,comparator SPICE pdk45 + analytic C-DAC (C_u 1 fF); SAR logic/sampling driver excluded (lower bound); offset sigma 7.4 mV > 1 LSB at b>=7 not costed
+adc,e_adc_per_bit_fJ,bits=4,fJ per conversion-bit,26.8,,0.25,4.0,SPICE,e_adc / bits (cost model prices adc_conv_bits)
+adc,t_conv_ns,bits=4,ns,5,,0.5,2.0,SPICE,(b+1) ns
+adc,e_adc_fJ,bits=5,fJ per conversion,142.2,,0.5,2.0,SPICE,comparator SPICE pdk45 + analytic C-DAC (C_u 1 fF); SAR logic/sampling driver excluded (lower bound); offset sigma 7.4 mV > 1 LSB at b>=7 not costed
+adc,e_adc_per_bit_fJ,bits=5,fJ per conversion-bit,28.44,,0.25,4.0,SPICE,e_adc / bits (cost model prices adc_conv_bits)
+adc,t_conv_ns,bits=5,ns,6,,0.5,2.0,SPICE,(b+1) ns
+adc,e_adc_fJ,bits=6,fJ per conversion,187.9,,0.5,2.0,SPICE,comparator SPICE pdk45 + analytic C-DAC (C_u 1 fF); SAR logic/sampling driver excluded (lower bound); offset sigma 7.4 mV > 1 LSB at b>=7 not costed
+adc,e_adc_per_bit_fJ,bits=6,fJ per conversion-bit,31.3167,,0.25,4.0,SPICE,e_adc / bits (cost model prices adc_conv_bits)
+adc,t_conv_ns,bits=6,ns,7,,0.5,2.0,SPICE,(b+1) ns
+adc,e_adc_fJ,bits=7,fJ per conversion,255,,0.5,2.0,SPICE,comparator SPICE pdk45 + analytic C-DAC (C_u 1 fF); SAR logic/sampling driver excluded (lower bound); offset sigma 7.4 mV > 1 LSB at b>=7 not costed
+adc,e_adc_per_bit_fJ,bits=7,fJ per conversion-bit,36.4286,,0.25,4.0,SPICE,e_adc / bits (cost model prices adc_conv_bits)
+adc,t_conv_ns,bits=7,ns,8,,0.5,2.0,SPICE,(b+1) ns
+adc,e_adc_fJ,bits=8,fJ per conversion,364.7,,0.5,2.0,SPICE,comparator SPICE pdk45 + analytic C-DAC (C_u 1 fF); SAR logic/sampling driver excluded (lower bound); offset sigma 7.4 mV > 1 LSB at b>=7 not costed
+adc,e_adc_per_bit_fJ,bits=8,fJ per conversion-bit,45.5875,,0.25,4.0,SPICE,e_adc / bits (cost model prices adc_conv_bits)
+adc,t_conv_ns,bits=8,ns,9,,0.5,2.0,SPICE,(b+1) ns
+level0_verify,attempts,"binary window (+-5% of 99 nA, ours/B1 bit-slice/B2 levels 0/7)",mean attempts per level-0 cell,1.44584,,0.25,4.0,SPICE,"geometric; each erase redraws N(mu0, sigma0) from cim_cell_v1 level 0 (no erase-physics model)"
+level0_verify,e_verify_fJ,"binary window (+-5% of 99 nA, ours/B1 bit-slice/B2 levels 0/7)",fJ per cell (one-time programming),5.00401,,0.25,4.0,SPICE,attempts x (e_write level 0 + verify read)
+level0_verify,t_verify_us,"binary window (+-5% of 99 nA, ours/B1 bit-slice/B2 levels 0/7)",us per cell (one-time programming),2.94951,,0.25,4.0,SPICE,"attempts x (t_write + 20 ns verify read); write-once, many-solve"
+level0_verify,attempts,"3-bit window (+-5% of 14.2 nA step, B1 3-bit)",mean attempts per level-0 cell,8.63753,,0.25,4.0,SPICE,"geometric; each erase redraws N(mu0, sigma0) from cim_cell_v1 level 0 (no erase-physics model)"
+level0_verify,e_verify_fJ,"3-bit window (+-5% of 14.2 nA step, B1 3-bit)",fJ per cell (one-time programming),29.8943,,0.25,4.0,SPICE,attempts x (e_write level 0 + verify read)
+level0_verify,t_verify_us,"3-bit window (+-5% of 14.2 nA step, B1 3-bit)",us per cell (one-time programming),17.6206,,0.25,4.0,SPICE,"attempts x (t_write + 20 ns verify read); write-once, many-solve"

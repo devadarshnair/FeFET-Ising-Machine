@@ -1,0 +1,42 @@
+* mos_table.cir -- tabulate the FeFET channel MOSFETs (nfefet_b, nfefet_c) for the offline
+* reduced FeFET model (device/py/fefet_ref.py, MosTable). V_S = V_B = 0. Sizes = each set's
+* FeFET (B: 1 x 1 um, C: 200 x 100 nm).
+*  1) DC sweep -8 ... +8 V: drain current at V_D = 50 mV  -> sim/out/mos/mos_dc.txt
+*  2) slow transient gate ramp -8 ... +8 V (1 V/us): gate charge = integral of the gate-source
+*     current, at V_D = 0 and at V_D = 50 mV                -> sim/out/mos/mos_q.txt
+* The charge must come from the terminal current: BSIM4's reported qg/cgg leave out the fringing
+* and overlap charge (about 0.09 fF for the set-C device), which the terminal current includes.
+* Run from the repo root: scripts/run_guarded.sh ngspice -b -n device/tb/mos_table.cir
+.include ../ngspice/fefet_preisach.lib
+Vg g 0 dc 0
+Vrb rb 0 dc 0.05
+Vrc rc 0 dc 0.05
+Mbr rb g 0 0 nfefet_b w=1u l=1u as=0.09p ad=0.09p ps=2.18u pd=2.18u
+Mcr rc g 0 0 nfefet_c w=200n l=100n as=0.018p ad=0.018p ps=0.58u pd=0.58u
+Vt1 t1 0 pwl(0 -8 16u 8)
+Vt2 t2 0 pwl(0 -8 16u 8)
+Vt3 t3 0 pwl(0 -8 16u 8)
+Vt4 t4 0 pwl(0 -8 16u 8)
+Vz z 0 dc 0
+Vzr zr 0 dc 0.05
+Mb0 z t1 0 0 nfefet_b w=1u l=1u as=0.09p ad=0.09p ps=2.18u pd=2.18u
+Mbq zr t2 0 0 nfefet_b w=1u l=1u as=0.09p ad=0.09p ps=2.18u pd=2.18u
+Mc0 z t3 0 0 nfefet_c w=200n l=100n as=0.018p ad=0.018p ps=0.58u pd=0.58u
+Mcq zr t4 0 0 nfefet_c w=200n l=100n as=0.018p ad=0.018p ps=0.58u pd=0.58u
+.options reltol=1e-5 abstol=1e-18
+.control
+set wr_singlescale
+set wr_vecnames
+dc vg -8 8 0.01
+let id_b = -i(vrb)
+let id_c = -i(vrc)
+wrdata sim/out/mos/mos_dc.txt id_b id_c
+tran 1n 16u 0 2n
+let qb0 = integ(-i(vt1))
+let qbr = integ(-i(vt2))
+let qc0 = integ(-i(vt3))
+let qcr = integ(-i(vt4))
+linearize v(t1) qb0 qbr qc0 qcr
+wrdata sim/out/mos/mos_q.txt v(t1) qb0 qbr qc0 qcr
+.endc
+.end

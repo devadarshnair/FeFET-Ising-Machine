@@ -1,0 +1,15 @@
+# simulator outputs
+*.vcd
+*.fst
+*.vvp
+*.raw
+*.osdi
+*.log
+sim/out/
+.tmp/
+__pycache__/
+# third-party model cards are added only after review
+models/mosfet/third_party/
+
+hs_err_pid*.log
+*.npz

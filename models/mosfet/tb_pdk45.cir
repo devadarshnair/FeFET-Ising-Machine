@@ -1,0 +1,36 @@
+* tb_pdk45.cir -- sanity check of the stand-in 45 nm cards (W = 1 um, L = 45 nm).
+* Run from this folder:  ../../scripts/run_guarded.sh ngspice -b -n tb_pdk45.cir
+* Prints Vth (gate voltage at 100 nA * W/L) at |Vds| = 50 mV and 1 V, Ion and Ioff at
+* |Vds| = 1 V, and the nmos subthreshold slope. Information only: the cards are uncalibrated.
+.include ../../models/mosfet/pdk45.lib
+.param wn=1u lch=45n
+Vg g 0 dc 0
+Egp gp 0 g 0 -1
+Vn1 dn1 0 dc 0.05
+Vn2 dn2 0 dc 1.0
+Vp1 dp1 0 dc -0.05
+Vp2 dp2 0 dc -1.0
+Mn1 dn1 g 0 0 nmos45 w={wn} l={lch} as={wn*90n} ad={wn*90n} ps={2*wn+180n} pd={2*wn+180n}
+Mn2 dn2 g 0 0 nmos45 w={wn} l={lch} as={wn*90n} ad={wn*90n} ps={2*wn+180n} pd={2*wn+180n}
+Mp1 dp1 gp 0 0 pmos45 w={wn} l={lch} as={wn*90n} ad={wn*90n} ps={2*wn+180n} pd={2*wn+180n}
+Mp2 dp2 gp 0 0 pmos45 w={wn} l={lch} as={wn*90n} ad={wn*90n} ps={2*wn+180n} pd={2*wn+180n}
+.control
+dc vg 0 1 0.005
+let in1 = -i(vn1)
+let in2 = -i(vn2)
+let ip1 = i(vp1)
+let ip2 = i(vp2)
+meas dc vthn_lin find v(g) when in1=2.222e-6
+meas dc vthn_sat find v(g) when in2=2.222e-6
+meas dc vthp_lin find v(g) when ip1=2.222e-6
+meas dc vthp_sat find v(g) when ip2=2.222e-6
+meas dc ion_n find in2 at=1.0
+meas dc ioff_n find in2 at=0.0
+meas dc ion_p find ip2 at=1.0
+meas dc ioff_p find ip2 at=0.0
+meas dc vg_n_1 find v(g) when in1=1e-8
+meas dc vg_n_2 find v(g) when in1=1e-7
+let ss_n_mv_per_dec = (vg_n_2 - vg_n_1)*1000
+print ss_n_mv_per_dec
+.endc
+.end

@@ -1,0 +1,41 @@
+{
+ "stage": "2",
+ "rule": "highest pooled success; ties lower mean best_E; ties grid order (prereg/hw/S1_tuning_grids.json)",
+ "final": {
+  "final": {
+   "cid": "c0.04_K0.5",
+   "cfg_over": {
+    "kick_c": 0.04,
+    "knob": 0.5
+   }
+  },
+  "final_gk": {
+   "cid": "c0.08_K0.5",
+   "cfg_over": {
+    "kick_c": 0.08,
+    "knob": 0.5
+   }
+  }
+ },
+ "stage2_go": true,
+ "gate": {
+  "p3n960": {
+   "best_cid": "c0.04_K0.5",
+   "success": 0.16666666666666666,
+   "ref_success": 0.0,
+   "diff": 0.16666666666666666,
+   "newcombe_lo": -0.039887660932653335,
+   "pass": false
+  },
+  "gk": {
+   "best_cid": "c0.08_K0.5",
+   "success": 1.0,
+   "ref_success": 0.26666666666666666,
+   "diff": 0.7333333333333334,
+   "newcombe_lo": 0.40852565771576405,
+   "pass": true
+  }
+ },
+ "variant_1b": null,
+ "note": "B3 / none_B1 / kc2c selections are the rank-1 entries of selection_1a.json (1e reads them via --sel 1a:<arm>:<col|gk>:0)"
+}

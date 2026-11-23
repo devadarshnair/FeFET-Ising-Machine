@@ -1,0 +1,4435 @@
+{
+ "not_evaluable": {
+  "corners (SS, FF)": "no process-corner card in the repo (models/mosfet: TT only; docs/device/STATUS.md: no corners)",
+  "corner records written by the runner": [
+   "corner_FF",
+   "corner_SS"
+  ],
+  "B2 points other than device sigma and read noise": "ratiometric filter (array and replica scale together): not applied",
+  "B3 temperature/corner": "no model",
+  "endurance (point 6)": "not applicable: array writes = 0 in every record"
+ },
+ "families": {
+  "maxcut": {
+   "points": {
+    "b1.mesa|combined": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2116666666666667,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.49666543164134863,
+     "energy_fJ_per_run": 1845053782764.6685,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "b1.mesa|dev_x0": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2144444444444444,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.0,
+     "energy_fJ_per_run": 2277852152550.2803,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "b1.mesa|dev_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2105555555555556,
+     "false_stall_rate": 0.13492427719137218,
+     "false_reset_rate": 0.31165593185123625,
+     "energy_fJ_per_run": 2277849753446.073,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "b1.mesa|dev_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 1.21,
+     "false_stall_rate": 0.09090909090909091,
+     "false_reset_rate": 0.41224696356275303,
+     "energy_fJ_per_run": 2277848005340.373,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "b1.mesa|drift_0.02": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2127777777777777,
+     "false_stall_rate": 0.1429225836005497,
+     "false_reset_rate": 0.32488232777064613,
+     "energy_fJ_per_run": 2277848927198.9375,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "b1.mesa|drift_0.05": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2144444444444444,
+     "false_stall_rate": 0.02333028362305581,
+     "false_reset_rate": 0.3890640286987716,
+     "energy_fJ_per_run": 2277844695787.7637,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "b1.mesa|l0_measured": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2094444444444445,
+     "false_stall_rate": 0.14836931557188793,
+     "false_reset_rate": 0.2945261437908497,
+     "energy_fJ_per_run": 2277850297003.2793,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "b1.mesa|mismatch_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2133333333333334,
+     "false_stall_rate": 0.14514652014652016,
+     "false_reset_rate": 0.22767580944524643,
+     "energy_fJ_per_run": 2277850893918.7637,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "b1.mesa|nominal": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2144444444444444,
+     "false_stall_rate": 0.16468435498627632,
+     "false_reset_rate": 0.21621621621621623,
+     "energy_fJ_per_run": 2277851314835.644,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "b1.mesa|read_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2144444444444444,
+     "false_stall_rate": 0.16468435498627632,
+     "false_reset_rate": 0.21621621621621623,
+     "energy_fJ_per_run": 2277851314835.644,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "b1.mesa|read_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2144444444444444,
+     "false_stall_rate": 0.16468435498627632,
+     "false_reset_rate": 0.21621621621621623,
+     "energy_fJ_per_run": 2277851314835.644,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "b1.mesa|supply_0.9": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2094444444444445,
+     "false_stall_rate": 0.17225539733578318,
+     "false_reset_rate": 0.3091854051760713,
+     "energy_fJ_per_run": 1845058072440.1218,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "b1.mesa|supply_1.1": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2133333333333334,
+     "false_stall_rate": 0.16025641025641027,
+     "false_reset_rate": 0.2539736219141021,
+     "energy_fJ_per_run": 2756198934782.712,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "b1.mesa|temp_0": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2138888888888888,
+     "false_stall_rate": 0.15194508009153318,
+     "false_reset_rate": 0.21651204002918795,
+     "energy_fJ_per_run": 2277851190720.5986,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "b1.mesa|temp_45": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2144444444444444,
+     "false_stall_rate": 0.15736505032021958,
+     "false_reset_rate": 0.2314881380301941,
+     "energy_fJ_per_run": 2277851015389.4043,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "b1.mesa|temp_85": {
+     "success": 0.0,
+     "restarts_per_1000": 1.215,
+     "false_stall_rate": 0.15363511659807957,
+     "false_reset_rate": 0.29824006744651704,
+     "energy_fJ_per_run": 2277849791077.821,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "b1.mesa|write_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2155555555555555,
+     "false_stall_rate": 0.14945155393053017,
+     "false_reset_rate": 0.21570658930791545,
+     "energy_fJ_per_run": 2277851089095.614,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "b1.mesa|write_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2133333333333334,
+     "false_stall_rate": 0.15705128205128205,
+     "false_reset_rate": 0.2128662159393567,
+     "energy_fJ_per_run": 2277851265011.6504,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7.sm|combined": {
+     "success": 0.0,
+     "restarts_per_1000": 0.31777777777777777,
+     "false_stall_rate": 0.5804195804195804,
+     "false_reset_rate": 0.652636822115684,
+     "energy_fJ_per_run": 891398486914.6168,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7.sm|dev_x0": {
+     "success": 0.0,
+     "restarts_per_1000": 0.30944444444444447,
+     "false_stall_rate": 0.6427289048473968,
+     "false_reset_rate": 0.6072629112763573,
+     "energy_fJ_per_run": 1103805642177.243,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7.sm|dev_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.2972222222222222,
+     "false_stall_rate": 0.6261682242990654,
+     "false_reset_rate": 0.5775175644028103,
+     "energy_fJ_per_run": 1103094944033.6934,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7.sm|dev_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.2961111111111111,
+     "false_stall_rate": 0.6529080675422139,
+     "false_reset_rate": 0.5870525413672621,
+     "energy_fJ_per_run": 1102999487621.7246,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7.sm|drift_0.02": {
+     "success": 0.0,
+     "restarts_per_1000": 0.3038888888888889,
+     "false_stall_rate": 0.6179159049360147,
+     "false_reset_rate": 0.5642852430899136,
+     "energy_fJ_per_run": 1102559657168.446,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7.sm|drift_0.05": {
+     "success": 0.0,
+     "restarts_per_1000": 0.3038888888888889,
+     "false_stall_rate": 0.5521023765996343,
+     "false_reset_rate": 0.6162136832239925,
+     "energy_fJ_per_run": 1100599497109.6416,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7.sm|l0_measured": {
+     "success": 0.0,
+     "restarts_per_1000": 0.2966666666666667,
+     "false_stall_rate": 0.6441947565543071,
+     "false_reset_rate": 0.5744951183629798,
+     "energy_fJ_per_run": 1103190598223.1216,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7.sm|mismatch_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.29944444444444446,
+     "false_stall_rate": 0.62152133580705,
+     "false_reset_rate": 0.5920297196892942,
+     "energy_fJ_per_run": 1102291297908.5276,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7.sm|nominal": {
+     "success": 0.0,
+     "restarts_per_1000": 0.29944444444444446,
+     "false_stall_rate": 0.62152133580705,
+     "false_reset_rate": 0.5711287466386831,
+     "energy_fJ_per_run": 1103168318527.0676,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7.sm|read_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.29944444444444446,
+     "false_stall_rate": 0.62152133580705,
+     "false_reset_rate": 0.5711287466386831,
+     "energy_fJ_per_run": 1103168318527.0676,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7.sm|read_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.2972222222222222,
+     "false_stall_rate": 0.6467289719626168,
+     "false_reset_rate": 0.5715993623804463,
+     "energy_fJ_per_run": 1103200040905.487,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7.sm|supply_0.9": {
+     "success": 0.0,
+     "restarts_per_1000": 0.3016666666666667,
+     "false_stall_rate": 0.5911602209944752,
+     "false_reset_rate": 0.5643855295807758,
+     "energy_fJ_per_run": 893182929623.1539,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7.sm|supply_1.1": {
+     "success": 0.0,
+     "restarts_per_1000": 0.3022222222222222,
+     "false_stall_rate": 0.6378676470588235,
+     "false_reset_rate": 0.5784054731423153,
+     "energy_fJ_per_run": 1334812155414.2305,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7.sm|temp_0": {
+     "success": 0.0,
+     "restarts_per_1000": 0.29888888888888887,
+     "false_stall_rate": 0.6319702602230484,
+     "false_reset_rate": 0.5777983593543266,
+     "energy_fJ_per_run": 1103422261040.8943,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7.sm|temp_45": {
+     "success": 0.0,
+     "restarts_per_1000": 0.28944444444444445,
+     "false_stall_rate": 0.6410748560460653,
+     "false_reset_rate": 0.572945366574827,
+     "energy_fJ_per_run": 1103079856041.5984,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7.sm|temp_85": {
+     "success": 0.0,
+     "restarts_per_1000": 0.2966666666666667,
+     "false_stall_rate": 0.6142322097378277,
+     "false_reset_rate": 0.5686894510226049,
+     "energy_fJ_per_run": 1102822330089.2363,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7.sm|write_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.30444444444444446,
+     "false_stall_rate": 0.6222627737226277,
+     "false_reset_rate": 0.5675939800638478,
+     "energy_fJ_per_run": 1103104021495.1301,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7.sm|write_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.29833333333333334,
+     "false_stall_rate": 0.5977653631284916,
+     "false_reset_rate": 0.5820265379975874,
+     "energy_fJ_per_run": 1103087018718.5613,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7|combined": {
+     "success": 0.0,
+     "restarts_per_1000": 0.3161111111111111,
+     "false_stall_rate": 0.5483304042179262,
+     "false_reset_rate": 0.6749500646222536,
+     "energy_fJ_per_run": 891419843030.1921,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7|dev_x0": {
+     "success": 0.0,
+     "restarts_per_1000": 0.30944444444444447,
+     "false_stall_rate": 0.6427289048473968,
+     "false_reset_rate": 0.6072629112763573,
+     "energy_fJ_per_run": 1103805642177.243,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7|dev_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.30333333333333334,
+     "false_stall_rate": 0.6446886446886447,
+     "false_reset_rate": 0.5892386722866175,
+     "energy_fJ_per_run": 1102785503175.409,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7|dev_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.3022222222222222,
+     "false_stall_rate": 0.6213235294117647,
+     "false_reset_rate": 0.6109922872512801,
+     "energy_fJ_per_run": 1102530900443.5452,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7|drift_0.02": {
+     "success": 0.0,
+     "restarts_per_1000": 0.30333333333333334,
+     "false_stall_rate": 0.608058608058608,
+     "false_reset_rate": 0.5732946298984035,
+     "energy_fJ_per_run": 1102188381952.575,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7|drift_0.05": {
+     "success": 0.0,
+     "restarts_per_1000": 0.30277777777777776,
+     "false_stall_rate": 0.5743119266055046,
+     "false_reset_rate": 0.6158785365527389,
+     "energy_fJ_per_run": 1100635305160.3762,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7|l0_measured": {
+     "success": 0.0,
+     "restarts_per_1000": 0.3011111111111111,
+     "false_stall_rate": 0.6162361623616236,
+     "false_reset_rate": 0.5875188265339533,
+     "energy_fJ_per_run": 1102592232932.0188,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7|mismatch_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.30777777777777776,
+     "false_stall_rate": 0.5703971119133574,
+     "false_reset_rate": 0.5980805395240257,
+     "energy_fJ_per_run": 1101833455877.9895,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7|nominal": {
+     "success": 0.0,
+     "restarts_per_1000": 0.29,
+     "false_stall_rate": 0.6226053639846744,
+     "false_reset_rate": 0.5782028829314293,
+     "energy_fJ_per_run": 1102753632746.9988,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7|read_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.29,
+     "false_stall_rate": 0.6226053639846744,
+     "false_reset_rate": 0.5782028829314293,
+     "energy_fJ_per_run": 1102753632746.9988,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7|read_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.295,
+     "false_stall_rate": 0.6459510357815442,
+     "false_reset_rate": 0.5843793584379359,
+     "energy_fJ_per_run": 1102784137140.875,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7|supply_0.9": {
+     "success": 0.0,
+     "restarts_per_1000": 0.3038888888888889,
+     "false_stall_rate": 0.5685557586837294,
+     "false_reset_rate": 0.5869919759932155,
+     "energy_fJ_per_run": 892872836582.5854,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7|supply_1.1": {
+     "success": 0.0,
+     "restarts_per_1000": 0.3,
+     "false_stall_rate": 0.6351851851851852,
+     "false_reset_rate": 0.597827526824745,
+     "energy_fJ_per_run": 1334347841066.671,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7|temp_0": {
+     "success": 0.0,
+     "restarts_per_1000": 0.29555555555555557,
+     "false_stall_rate": 0.6390977443609023,
+     "false_reset_rate": 0.5799609453908827,
+     "energy_fJ_per_run": 1102805375901.8506,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7|temp_45": {
+     "success": 0.0,
+     "restarts_per_1000": 0.29944444444444446,
+     "false_stall_rate": 0.6178107606679035,
+     "false_reset_rate": 0.5801496652225285,
+     "energy_fJ_per_run": 1102616453815.0688,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7|temp_85": {
+     "success": 0.0,
+     "restarts_per_1000": 0.2916666666666667,
+     "false_stall_rate": 0.6495238095238095,
+     "false_reset_rate": 0.5681045403026869,
+     "energy_fJ_per_run": 1102287576585.611,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7|write_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.3016666666666667,
+     "false_stall_rate": 0.6427255985267035,
+     "false_reset_rate": 0.5758544873076155,
+     "energy_fJ_per_run": 1102660015136.2969,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7|write_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.30444444444444446,
+     "false_stall_rate": 0.6277372262773723,
+     "false_reset_rate": 0.5796843009048279,
+     "energy_fJ_per_run": 1102766425159.6003,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7i10|combined": {
+     "success": 0.0,
+     "restarts_per_1000": 0.3161111111111111,
+     "false_stall_rate": 0.5483304042179262,
+     "false_reset_rate": 0.6749500646222536,
+     "energy_fJ_per_run": 891419843030.1921,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7i10|dev_x0": {
+     "success": 0.0,
+     "restarts_per_1000": 0.30944444444444447,
+     "false_stall_rate": 0.6427289048473968,
+     "false_reset_rate": 0.6072629112763573,
+     "energy_fJ_per_run": 1103805642177.243,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7i10|dev_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.30333333333333334,
+     "false_stall_rate": 0.6446886446886447,
+     "false_reset_rate": 0.5892386722866175,
+     "energy_fJ_per_run": 1102785503175.409,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7i10|dev_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.3022222222222222,
+     "false_stall_rate": 0.6213235294117647,
+     "false_reset_rate": 0.6109922872512801,
+     "energy_fJ_per_run": 1102530900443.5452,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7i10|drift_0.02": {
+     "success": 0.0,
+     "restarts_per_1000": 0.30333333333333334,
+     "false_stall_rate": 0.608058608058608,
+     "false_reset_rate": 0.5732946298984035,
+     "energy_fJ_per_run": 1102188381952.575,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7i10|drift_0.05": {
+     "success": 0.0,
+     "restarts_per_1000": 0.30277777777777776,
+     "false_stall_rate": 0.5743119266055046,
+     "false_reset_rate": 0.6158785365527389,
+     "energy_fJ_per_run": 1100635305160.3762,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7i10|l0_measured": {
+     "success": 0.0,
+     "restarts_per_1000": 0.3011111111111111,
+     "false_stall_rate": 0.6162361623616236,
+     "false_reset_rate": 0.5875188265339533,
+     "energy_fJ_per_run": 1102592232932.0188,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7i10|mismatch_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.30777777777777776,
+     "false_stall_rate": 0.5703971119133574,
+     "false_reset_rate": 0.5980805395240257,
+     "energy_fJ_per_run": 1101833455877.9895,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7i10|nominal": {
+     "success": 0.0,
+     "restarts_per_1000": 0.29,
+     "false_stall_rate": 0.6226053639846744,
+     "false_reset_rate": 0.5782028829314293,
+     "energy_fJ_per_run": 1102753632746.9988,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7i10|read_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.29,
+     "false_stall_rate": 0.6226053639846744,
+     "false_reset_rate": 0.5782028829314293,
+     "energy_fJ_per_run": 1102753632746.9988,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7i10|read_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.295,
+     "false_stall_rate": 0.6459510357815442,
+     "false_reset_rate": 0.5843793584379359,
+     "energy_fJ_per_run": 1102784137140.875,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7i10|supply_0.9": {
+     "success": 0.0,
+     "restarts_per_1000": 0.3038888888888889,
+     "false_stall_rate": 0.5685557586837294,
+     "false_reset_rate": 0.5869919759932155,
+     "energy_fJ_per_run": 892872836582.5854,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7i10|supply_1.1": {
+     "success": 0.0,
+     "restarts_per_1000": 0.3,
+     "false_stall_rate": 0.6351851851851852,
+     "false_reset_rate": 0.597827526824745,
+     "energy_fJ_per_run": 1334347841066.671,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7i10|temp_0": {
+     "success": 0.0,
+     "restarts_per_1000": 0.29555555555555557,
+     "false_stall_rate": 0.6390977443609023,
+     "false_reset_rate": 0.5799609453908827,
+     "energy_fJ_per_run": 1102805375901.8506,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7i10|temp_45": {
+     "success": 0.0,
+     "restarts_per_1000": 0.29944444444444446,
+     "false_stall_rate": 0.6178107606679035,
+     "false_reset_rate": 0.5801496652225285,
+     "energy_fJ_per_run": 1102616453815.0688,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7i10|temp_85": {
+     "success": 0.0,
+     "restarts_per_1000": 0.2916666666666667,
+     "false_stall_rate": 0.6495238095238095,
+     "false_reset_rate": 0.5681045403026869,
+     "energy_fJ_per_run": 1102287576585.611,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7i10|write_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.3016666666666667,
+     "false_stall_rate": 0.6427255985267035,
+     "false_reset_rate": 0.5758544873076155,
+     "energy_fJ_per_run": 1102660015136.2969,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.kc2.i7i10|write_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.30444444444444446,
+     "false_stall_rate": 0.6277372262773723,
+     "false_reset_rate": 0.5796843009048279,
+     "energy_fJ_per_run": 1102766425159.6003,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.mesa.i7|combined": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2122222222222223,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.42115831748044813,
+     "energy_fJ_per_run": 891477469999.5731,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.mesa.i7|dev_x0": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2144444444444444,
+     "false_stall_rate": 0.06312900274473925,
+     "false_reset_rate": 0.1976609875830205,
+     "energy_fJ_per_run": 1102172118376.9526,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.mesa.i7|dev_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 1.205,
+     "false_stall_rate": 0.04979253112033195,
+     "false_reset_rate": 0.21319873436793732,
+     "energy_fJ_per_run": 1102056463240.4856,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.mesa.i7|dev_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2016666666666667,
+     "false_stall_rate": 0.047619047619047616,
+     "false_reset_rate": 0.23187094828885874,
+     "energy_fJ_per_run": 1101967502721.911,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.mesa.i7|drift_0.02": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2072222222222222,
+     "false_stall_rate": 0.05660377358490566,
+     "false_reset_rate": 0.22833071540768243,
+     "energy_fJ_per_run": 1101722867871.947,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.mesa.i7|drift_0.05": {
+     "success": 0.0,
+     "restarts_per_1000": 1.208888888888889,
+     "false_stall_rate": 0.012867647058823529,
+     "false_reset_rate": 0.2942842430484037,
+     "energy_fJ_per_run": 1100688306466.0525,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.mesa.i7|l0_measured": {
+     "success": 0.0,
+     "restarts_per_1000": 1.201111111111111,
+     "false_stall_rate": 0.04764107308048104,
+     "false_reset_rate": 0.21188118811881188,
+     "energy_fJ_per_run": 1102008795505.9033,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.mesa.i7|mismatch_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2083333333333333,
+     "false_stall_rate": 0.028505747126436783,
+     "false_reset_rate": 0.29141393718830033,
+     "energy_fJ_per_run": 1101560743349.4075,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.mesa.i7|nominal": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2061111111111111,
+     "false_stall_rate": 0.04375863657300783,
+     "false_reset_rate": 0.2088474270237737,
+     "energy_fJ_per_run": 1101987360494.803,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.mesa.i7|read_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2061111111111111,
+     "false_stall_rate": 0.04375863657300783,
+     "false_reset_rate": 0.2088474270237737,
+     "energy_fJ_per_run": 1101987360494.803,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.mesa.i7|read_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2061111111111111,
+     "false_stall_rate": 0.04237678489175495,
+     "false_reset_rate": 0.2127377266696152,
+     "energy_fJ_per_run": 1101919565313.6646,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.mesa.i7|supply_0.9": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2005555555555556,
+     "false_stall_rate": 0.04905136510874595,
+     "false_reset_rate": 0.23417809167705303,
+     "energy_fJ_per_run": 892427124146.3906,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.mesa.i7|supply_1.1": {
+     "success": 0.0,
+     "restarts_per_1000": 1.1994444444444445,
+     "false_stall_rate": 0.04631773969430292,
+     "false_reset_rate": 0.22837691474547422,
+     "energy_fJ_per_run": 1333383995431.1545,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.mesa.i7|temp_0": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2022222222222223,
+     "false_stall_rate": 0.04390018484288355,
+     "false_reset_rate": 0.2033641460827398,
+     "energy_fJ_per_run": 1101964477465.8706,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.mesa.i7|temp_45": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2022222222222223,
+     "false_stall_rate": 0.05406654343807763,
+     "false_reset_rate": 0.21641791044776118,
+     "energy_fJ_per_run": 1101959853134.5557,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.mesa.i7|temp_85": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2038888888888888,
+     "false_stall_rate": 0.044300876788186436,
+     "false_reset_rate": 0.22885502586327416,
+     "energy_fJ_per_run": 1101761591381.2314,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.mesa.i7|write_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2022222222222223,
+     "false_stall_rate": 0.048983364140480594,
+     "false_reset_rate": 0.21451009723261033,
+     "energy_fJ_per_run": 1102010872306.9658,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.mesa.i7|write_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 1.2038888888888888,
+     "false_stall_rate": 0.05583756345177665,
+     "false_reset_rate": 0.2089574373424292,
+     "energy_fJ_per_run": 1102039918750.9731,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.none.i7|combined": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 891269793009.9165,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.none.i7|dev_x0": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 1103425907619.4883,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.none.i7|dev_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 1102402185565.067,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.none.i7|dev_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 1102247757859.9175,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.none.i7|drift_0.02": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 1101879277928.8997,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.none.i7|drift_0.05": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 1100434098718.8691,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.none.i7|l0_measured": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 1102495056490.403,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.none.i7|mismatch_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 1101701688434.87,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.none.i7|nominal": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 1102554682956.0105,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.none.i7|read_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 1102554682956.0105,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.none.i7|read_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 1102518649968.535,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.none.i7|supply_0.9": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 892685000608.8862,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.none.i7|supply_1.1": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 1333938824612.3916,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.none.i7|temp_0": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 1102419559012.16,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.none.i7|temp_45": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 1102499132031.1318,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.none.i7|temp_85": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 1102041212088.6401,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.none.i7|write_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 1102586640485.3232,
+     "array_writes": 0,
+     "runs": 15
+    },
+    "ours.none.i7|write_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 1102498273760.2534,
+     "array_writes": 0,
+     "runs": 15
+    }
+   },
+   "loss_points": {
+    "ours_kc2": {
+     "dev": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "write": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "read": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "drift_v_per_decade": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.02,
+       0.05
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_hot_C_above_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       20.0,
+       60.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_cold_C_below_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       25.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_low": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_high": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "mismatch": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "l0_measured": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     },
+     "combined": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     }
+    },
+    "ours_mesa": {
+     "dev": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "write": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "read": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "drift_v_per_decade": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.02,
+       0.05
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_hot_C_above_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       20.0,
+       60.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_cold_C_below_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       25.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_low": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_high": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "mismatch": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "l0_measured": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     },
+     "combined": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     }
+    },
+    "ours_none": {
+     "dev": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "write": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "read": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "drift_v_per_decade": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.02,
+       0.05
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_hot_C_above_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       20.0,
+       60.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_cold_C_below_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       25.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_low": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_high": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "mismatch": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "l0_measured": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     },
+     "combined": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     }
+    },
+    "b1_mesa": {
+     "dev": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "write": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "read": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "drift_v_per_decade": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.02,
+       0.05
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_hot_C_above_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       20.0,
+       60.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_cold_C_below_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       25.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_low": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_high": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "mismatch": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "l0_measured": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     },
+     "combined": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     }
+    },
+    "ours_kc2_i10": {
+     "dev": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "write": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "read": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "drift_v_per_decade": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.02,
+       0.05
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_hot_C_above_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       20.0,
+       60.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_cold_C_below_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       25.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_low": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_high": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "mismatch": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "l0_measured": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     },
+     "combined": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     }
+    }
+   },
+   "loss_point_ratio_ours_over_b1": {},
+   "kc2_vs_mesa": {
+    "nominal": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "dev_x0": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "dev_x2": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "dev_x4": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "l0_measured": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "write_x2": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "write_x4": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "read_x2": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "read_x4": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "drift_0.02": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "drift_0.05": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "temp_0": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "temp_45": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "temp_85": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "supply_0.9": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "supply_1.1": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "mismatch_x2": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "combined": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    }
+   },
+   "nominal_escalation": {
+    "kc2": {
+     "h5_nominal": 0.0,
+     "h5_dev_x0": 0.0,
+     "h2_i7i10_legacy": 0.0,
+     "escalate_to_author": false
+    },
+    "mesa": {
+     "h5_nominal": 0.0,
+     "h5_dev_x0": 0.0,
+     "h2_i7i10_legacy": 0.0,
+     "escalate_to_author": false
+    },
+    "none": {
+     "h5_nominal": 0.0,
+     "h5_dev_x0": 0.0,
+     "h2_i7i10_legacy": 0.0,
+     "escalate_to_author": false
+    }
+   },
+   "b3_supply_ets99": {
+    "0.9": 246951929787.26242,
+    "1.0": 301171570291.95605,
+    "1.1": 361098541376.0912
+   },
+   "t7_sign_magnitude_extra": {
+    "arm": "ours.kc2.i7.sm",
+    "note": "extra arm, not in the 24-point decision; compare with loss_points.ours_kc2",
+    "loss_points": {
+     "dev": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "write": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "read": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "drift_v_per_decade": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.02,
+       0.05
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_hot_C_above_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       20.0,
+       60.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_cold_C_below_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       25.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_low": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_high": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "mismatch": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "l0_measured": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     },
+     "combined": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     }
+    },
+    "points": {
+     "ours.kc2.i7.sm|combined": {
+      "success": 0.0,
+      "restarts_per_1000": 0.31777777777777777,
+      "false_stall_rate": 0.5804195804195804,
+      "false_reset_rate": 0.652636822115684,
+      "energy_fJ_per_run": 891398486914.6168,
+      "array_writes": 0,
+      "runs": 15
+     },
+     "ours.kc2.i7.sm|dev_x0": {
+      "success": 0.0,
+      "restarts_per_1000": 0.30944444444444447,
+      "false_stall_rate": 0.6427289048473968,
+      "false_reset_rate": 0.6072629112763573,
+      "energy_fJ_per_run": 1103805642177.243,
+      "array_writes": 0,
+      "runs": 15
+     },
+     "ours.kc2.i7.sm|dev_x2": {
+      "success": 0.0,
+      "restarts_per_1000": 0.2972222222222222,
+      "false_stall_rate": 0.6261682242990654,
+      "false_reset_rate": 0.5775175644028103,
+      "energy_fJ_per_run": 1103094944033.6934,
+      "array_writes": 0,
+      "runs": 15
+     },
+     "ours.kc2.i7.sm|dev_x4": {
+      "success": 0.0,
+      "restarts_per_1000": 0.2961111111111111,
+      "false_stall_rate": 0.6529080675422139,
+      "false_reset_rate": 0.5870525413672621,
+      "energy_fJ_per_run": 1102999487621.7246,
+      "array_writes": 0,
+      "runs": 15
+     },
+     "ours.kc2.i7.sm|drift_0.02": {
+      "success": 0.0,
+      "restarts_per_1000": 0.3038888888888889,
+      "false_stall_rate": 0.6179159049360147,
+      "false_reset_rate": 0.5642852430899136,
+      "energy_fJ_per_run": 1102559657168.446,
+      "array_writes": 0,
+      "runs": 15
+     },
+     "ours.kc2.i7.sm|drift_0.05": {
+      "success": 0.0,
+      "restarts_per_1000": 0.3038888888888889,
+      "false_stall_rate": 0.5521023765996343,
+      "false_reset_rate": 0.6162136832239925,
+      "energy_fJ_per_run": 1100599497109.6416,
+      "array_writes": 0,
+      "runs": 15
+     },
+     "ours.kc2.i7.sm|l0_measured": {
+      "success": 0.0,
+      "restarts_per_1000": 0.2966666666666667,
+      "false_stall_rate": 0.6441947565543071,
+      "false_reset_rate": 0.5744951183629798,
+      "energy_fJ_per_run": 1103190598223.1216,
+      "array_writes": 0,
+      "runs": 15
+     },
+     "ours.kc2.i7.sm|mismatch_x2": {
+      "success": 0.0,
+      "restarts_per_1000": 0.29944444444444446,
+      "false_stall_rate": 0.62152133580705,
+      "false_reset_rate": 0.5920297196892942,
+      "energy_fJ_per_run": 1102291297908.5276,
+      "array_writes": 0,
+      "runs": 15
+     },
+     "ours.kc2.i7.sm|nominal": {
+      "success": 0.0,
+      "restarts_per_1000": 0.29944444444444446,
+      "false_stall_rate": 0.62152133580705,
+      "false_reset_rate": 0.5711287466386831,
+      "energy_fJ_per_run": 1103168318527.0676,
+      "array_writes": 0,
+      "runs": 15
+     },
+     "ours.kc2.i7.sm|read_x2": {
+      "success": 0.0,
+      "restarts_per_1000": 0.29944444444444446,
+      "false_stall_rate": 0.62152133580705,
+      "false_reset_rate": 0.5711287466386831,
+      "energy_fJ_per_run": 1103168318527.0676,
+      "array_writes": 0,
+      "runs": 15
+     },
+     "ours.kc2.i7.sm|read_x4": {
+      "success": 0.0,
+      "restarts_per_1000": 0.2972222222222222,
+      "false_stall_rate": 0.6467289719626168,
+      "false_reset_rate": 0.5715993623804463,
+      "energy_fJ_per_run": 1103200040905.487,
+      "array_writes": 0,
+      "runs": 15
+     },
+     "ours.kc2.i7.sm|supply_0.9": {
+      "success": 0.0,
+      "restarts_per_1000": 0.3016666666666667,
+      "false_stall_rate": 0.5911602209944752,
+      "false_reset_rate": 0.5643855295807758,
+      "energy_fJ_per_run": 893182929623.1539,
+      "array_writes": 0,
+      "runs": 15
+     },
+     "ours.kc2.i7.sm|supply_1.1": {
+      "success": 0.0,
+      "restarts_per_1000": 0.3022222222222222,
+      "false_stall_rate": 0.6378676470588235,
+      "false_reset_rate": 0.5784054731423153,
+      "energy_fJ_per_run": 1334812155414.2305,
+      "array_writes": 0,
+      "runs": 15
+     },
+     "ours.kc2.i7.sm|temp_0": {
+      "success": 0.0,
+      "restarts_per_1000": 0.29888888888888887,
+      "false_stall_rate": 0.6319702602230484,
+      "false_reset_rate": 0.5777983593543266,
+      "energy_fJ_per_run": 1103422261040.8943,
+      "array_writes": 0,
+      "runs": 15
+     },
+     "ours.kc2.i7.sm|temp_45": {
+      "success": 0.0,
+      "restarts_per_1000": 0.28944444444444445,
+      "false_stall_rate": 0.6410748560460653,
+      "false_reset_rate": 0.572945366574827,
+      "energy_fJ_per_run": 1103079856041.5984,
+      "array_writes": 0,
+      "runs": 15
+     },
+     "ours.kc2.i7.sm|temp_85": {
+      "success": 0.0,
+      "restarts_per_1000": 0.2966666666666667,
+      "false_stall_rate": 0.6142322097378277,
+      "false_reset_rate": 0.5686894510226049,
+      "energy_fJ_per_run": 1102822330089.2363,
+      "array_writes": 0,
+      "runs": 15
+     },
+     "ours.kc2.i7.sm|write_x2": {
+      "success": 0.0,
+      "restarts_per_1000": 0.30444444444444446,
+      "false_stall_rate": 0.6222627737226277,
+      "false_reset_rate": 0.5675939800638478,
+      "energy_fJ_per_run": 1103104021495.1301,
+      "array_writes": 0,
+      "runs": 15
+     },
+     "ours.kc2.i7.sm|write_x4": {
+      "success": 0.0,
+      "restarts_per_1000": 0.29833333333333334,
+      "false_stall_rate": 0.5977653631284916,
+      "false_reset_rate": 0.5820265379975874,
+      "energy_fJ_per_run": 1103087018718.5613,
+      "array_writes": 0,
+      "runs": 15
+     }
+    }
+   },
+   "h2_restart_verdict_level_dependent": false,
+   "h2_restart_ci_not_inside_band": [
+    "nominal",
+    "dev_x0",
+    "dev_x2",
+    "dev_x4",
+    "l0_measured",
+    "write_x2",
+    "write_x4",
+    "read_x2",
+    "read_x4",
+    "drift_0.02",
+    "drift_0.05",
+    "temp_0",
+    "temp_45",
+    "temp_85",
+    "supply_0.9",
+    "supply_1.1",
+    "mismatch_x2",
+    "combined"
+   ]
+  },
+  "maxsat": {
+   "points": {
+    "b1.mesa|combined": {
+     "success": 0.0,
+     "restarts_per_1000": 3.078481012658228,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.9968561064087061,
+     "energy_fJ_per_run": 137830949053.21753,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "b1.mesa|dev_x0": {
+     "success": 0.0,
+     "restarts_per_1000": 3.1434599156118144,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.0,
+     "energy_fJ_per_run": 170162090580.5938,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "b1.mesa|dev_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 3.078481012658228,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.9923973644196655,
+     "energy_fJ_per_run": 170161665061.5757,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "b1.mesa|dev_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 3.080168776371308,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.9975961538461539,
+     "energy_fJ_per_run": 170161664834.5192,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "b1.mesa|drift_0.02": {
+     "success": 0.0,
+     "restarts_per_1000": 3.141772151898734,
+     "false_stall_rate": 0.008863819500402902,
+     "false_reset_rate": 0.887292817679558,
+     "energy_fJ_per_run": 170161830382.1014,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "b1.mesa|drift_0.05": {
+     "success": 0.0,
+     "restarts_per_1000": 3.1434599156118144,
+     "false_stall_rate": 0.008590604026845637,
+     "false_reset_rate": 0.8834827144686299,
+     "energy_fJ_per_run": 170161828410.1501,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "b1.mesa|l0_measured": {
+     "success": 0.0,
+     "restarts_per_1000": 3.0962025316455697,
+     "false_stall_rate": 0.0002725538293813028,
+     "false_reset_rate": 0.9868656716417911,
+     "energy_fJ_per_run": 170161697793.49033,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "b1.mesa|mismatch_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 3.0945147679324894,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.9905607995558023,
+     "energy_fJ_per_run": 170161691913.415,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "b1.mesa|nominal": {
+     "success": 0.0,
+     "restarts_per_1000": 3.138396624472574,
+     "false_stall_rate": 0.006184458187684862,
+     "false_reset_rate": 0.9333333333333333,
+     "energy_fJ_per_run": 170161805099.0161,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "b1.mesa|read_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 3.138396624472574,
+     "false_stall_rate": 0.006184458187684862,
+     "false_reset_rate": 0.9333333333333333,
+     "energy_fJ_per_run": 170161805099.0161,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "b1.mesa|read_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 3.138396624472574,
+     "false_stall_rate": 0.006184458187684862,
+     "false_reset_rate": 0.9333333333333333,
+     "energy_fJ_per_run": 170161805099.0161,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "b1.mesa|supply_0.9": {
+     "success": 0.0,
+     "restarts_per_1000": 3.1426160337552744,
+     "false_stall_rate": 0.011815252416756176,
+     "false_reset_rate": 0.8857142857142857,
+     "energy_fJ_per_run": 137831087994.33282,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "b1.mesa|supply_1.1": {
+     "success": 0.0,
+     "restarts_per_1000": 3.141772151898734,
+     "false_stall_rate": 0.0064464141821112,
+     "false_reset_rate": 0.9291338582677166,
+     "energy_fJ_per_run": 205895793121.28497,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "b1.mesa|temp_0": {
+     "success": 0.0,
+     "restarts_per_1000": 3.1333333333333333,
+     "false_stall_rate": 0.005117155938594129,
+     "false_reset_rate": 0.9424083769633508,
+     "energy_fJ_per_run": 170161793129.6983,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "b1.mesa|temp_45": {
+     "success": 0.0,
+     "restarts_per_1000": 3.141772151898734,
+     "false_stall_rate": 0.006177813591189901,
+     "false_reset_rate": 0.9232456140350878,
+     "energy_fJ_per_run": 170161816859.1667,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "b1.mesa|temp_85": {
+     "success": 0.0,
+     "restarts_per_1000": 3.1392405063291138,
+     "false_stall_rate": 0.01021505376344086,
+     "false_reset_rate": 0.9151376146788991,
+     "energy_fJ_per_run": 170161816545.41592,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "b1.mesa|write_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 3.141772151898734,
+     "false_stall_rate": 0.0059092130002686,
+     "false_reset_rate": 0.9197002141327623,
+     "energy_fJ_per_run": 170161813805.6008,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "b1.mesa|write_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 3.141772151898734,
+     "false_stall_rate": 0.008863819500402902,
+     "false_reset_rate": 0.9151515151515152,
+     "energy_fJ_per_run": 170161826019.86444,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7.sm|combined": {
+     "success": 0.0,
+     "restarts_per_1000": 0.7957805907172996,
+     "false_stall_rate": 0.4708377518557794,
+     "false_reset_rate": 0.9720002779128744,
+     "energy_fJ_per_run": 98320632471.22803,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7.sm|dev_x0": {
+     "success": 0.0,
+     "restarts_per_1000": 0.810970464135021,
+     "false_stall_rate": 0.554630593132154,
+     "false_reset_rate": 0.8221262595105902,
+     "energy_fJ_per_run": 121384218156.1086,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7.sm|dev_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.7721518987341772,
+     "false_stall_rate": 0.5387978142076503,
+     "false_reset_rate": 0.9391530568001156,
+     "energy_fJ_per_run": 121383826451.0367,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7.sm|dev_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.7932489451476793,
+     "false_stall_rate": 0.5191489361702127,
+     "false_reset_rate": 0.951229452520038,
+     "energy_fJ_per_run": 121383422626.63768,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7.sm|drift_0.02": {
+     "success": 0.0,
+     "restarts_per_1000": 0.7932489451476793,
+     "false_stall_rate": 0.5297872340425532,
+     "false_reset_rate": 0.9389408558591736,
+     "energy_fJ_per_run": 121383905200.59192,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7.sm|drift_0.05": {
+     "success": 0.0,
+     "restarts_per_1000": 0.7856540084388186,
+     "false_stall_rate": 0.5155746509129968,
+     "false_reset_rate": 0.9368536052439913,
+     "energy_fJ_per_run": 121383441162.10231,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7.sm|l0_measured": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8075949367088607,
+     "false_stall_rate": 0.5005224660397074,
+     "false_reset_rate": 0.9298665506237308,
+     "energy_fJ_per_run": 121383487211.40945,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7.sm|mismatch_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8421940928270042,
+     "false_stall_rate": 0.5430861723446894,
+     "false_reset_rate": 0.9516754576481539,
+     "energy_fJ_per_run": 121383938994.86295,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7.sm|nominal": {
+     "success": 0.0,
+     "restarts_per_1000": 0.7940928270042195,
+     "false_stall_rate": 0.5175345377258236,
+     "false_reset_rate": 0.936745886654479,
+     "energy_fJ_per_run": 121383872501.71999,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7.sm|read_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.7940928270042195,
+     "false_stall_rate": 0.5175345377258236,
+     "false_reset_rate": 0.936745886654479,
+     "energy_fJ_per_run": 121383872501.71999,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7.sm|read_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.7940928270042195,
+     "false_stall_rate": 0.5175345377258236,
+     "false_reset_rate": 0.936745886654479,
+     "energy_fJ_per_run": 121383872501.71999,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7.sm|supply_0.9": {
+     "success": 0.0,
+     "restarts_per_1000": 0.7966244725738396,
+     "false_stall_rate": 0.5074152542372882,
+     "false_reset_rate": 0.9341844596081884,
+     "energy_fJ_per_run": 98320801428.70786,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7.sm|supply_1.1": {
+     "success": 0.0,
+     "restarts_per_1000": 0.789873417721519,
+     "false_stall_rate": 0.49572649572649574,
+     "false_reset_rate": 0.9401197604790419,
+     "energy_fJ_per_run": 146874850379.16513,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7.sm|temp_0": {
+     "success": 0.0,
+     "restarts_per_1000": 0.7789029535864979,
+     "false_stall_rate": 0.49295774647887325,
+     "false_reset_rate": 0.9362327358213341,
+     "energy_fJ_per_run": 121384081906.92555,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7.sm|temp_45": {
+     "success": 0.0,
+     "restarts_per_1000": 0.7915611814345992,
+     "false_stall_rate": 0.5191897654584222,
+     "false_reset_rate": 0.9319371727748691,
+     "energy_fJ_per_run": 121383488025.75766,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7.sm|temp_85": {
+     "success": 0.0,
+     "restarts_per_1000": 0.7932489451476793,
+     "false_stall_rate": 0.5148936170212766,
+     "false_reset_rate": 0.9337971596614546,
+     "energy_fJ_per_run": 121383698382.3966,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7.sm|write_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.7755274261603375,
+     "false_stall_rate": 0.4940152339499456,
+     "false_reset_rate": 0.9359267734553776,
+     "energy_fJ_per_run": 121384626329.17117,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7.sm|write_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.7940928270042195,
+     "false_stall_rate": 0.5281615302869288,
+     "false_reset_rate": 0.9322424854033013,
+     "energy_fJ_per_run": 121385699377.43037,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7|combined": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8278481012658228,
+     "false_stall_rate": 0.509683995922528,
+     "false_reset_rate": 0.9746366685299049,
+     "energy_fJ_per_run": 98320184429.88374,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7|dev_x0": {
+     "success": 0.0,
+     "restarts_per_1000": 0.810970464135021,
+     "false_stall_rate": 0.554630593132154,
+     "false_reset_rate": 0.8221262595105902,
+     "energy_fJ_per_run": 121384218156.1086,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7|dev_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8160337552742616,
+     "false_stall_rate": 0.5211995863495347,
+     "false_reset_rate": 0.9530122256591546,
+     "energy_fJ_per_run": 121383987499.59956,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7|dev_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.7940928270042195,
+     "false_stall_rate": 0.5132837407013815,
+     "false_reset_rate": 0.9636863823933975,
+     "energy_fJ_per_run": 121383493342.3678,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7|drift_0.02": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8118143459915612,
+     "false_stall_rate": 0.5374220374220374,
+     "false_reset_rate": 0.9475979249680475,
+     "energy_fJ_per_run": 121383668424.13336,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7|drift_0.05": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8236286919831224,
+     "false_stall_rate": 0.5297131147540983,
+     "false_reset_rate": 0.9461028809647882,
+     "energy_fJ_per_run": 121383486402.56569,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7|l0_measured": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8067510548523207,
+     "false_stall_rate": 0.5313807531380753,
+     "false_reset_rate": 0.9503514281441603,
+     "energy_fJ_per_run": 121384450583.90363,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7|mismatch_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8573839662447258,
+     "false_stall_rate": 0.5610236220472441,
+     "false_reset_rate": 0.9585900912003944,
+     "energy_fJ_per_run": 121383178083.64389,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7|nominal": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8067510548523207,
+     "false_stall_rate": 0.5177824267782427,
+     "false_reset_rate": 0.9497352467193615,
+     "energy_fJ_per_run": 121383899075.13797,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7|read_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8067510548523207,
+     "false_stall_rate": 0.5177824267782427,
+     "false_reset_rate": 0.9497352467193615,
+     "energy_fJ_per_run": 121383899075.13797,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7|read_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8067510548523207,
+     "false_stall_rate": 0.5177824267782427,
+     "false_reset_rate": 0.9497352467193615,
+     "energy_fJ_per_run": 121383899075.13797,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7|supply_0.9": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8075949367088607,
+     "false_stall_rate": 0.5276907001044933,
+     "false_reset_rate": 0.9532831164878642,
+     "energy_fJ_per_run": 98320931768.11942,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7|supply_1.1": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8050632911392405,
+     "false_stall_rate": 0.5324947589098532,
+     "false_reset_rate": 0.9482913669064749,
+     "energy_fJ_per_run": 146875306043.3544,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7|temp_0": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8168776371308016,
+     "false_stall_rate": 0.5051652892561983,
+     "false_reset_rate": 0.9432900757632585,
+     "energy_fJ_per_run": 121384265025.26836,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7|temp_45": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8042194092827004,
+     "false_stall_rate": 0.4963273871983211,
+     "false_reset_rate": 0.9468953636431728,
+     "energy_fJ_per_run": 121383549066.5814,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7|temp_85": {
+     "success": 0.0,
+     "restarts_per_1000": 0.7974683544303798,
+     "false_stall_rate": 0.5206349206349207,
+     "false_reset_rate": 0.9548553249507651,
+     "energy_fJ_per_run": 121384189816.90903,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7|write_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8151898734177215,
+     "false_stall_rate": 0.510351966873706,
+     "false_reset_rate": 0.9474586376509166,
+     "energy_fJ_per_run": 121383882317.83984,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7|write_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8067510548523207,
+     "false_stall_rate": 0.5345188284518828,
+     "false_reset_rate": 0.9465228541258108,
+     "energy_fJ_per_run": 121384588459.03088,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7i10|combined": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8278481012658228,
+     "false_stall_rate": 0.509683995922528,
+     "false_reset_rate": 0.9746366685299049,
+     "energy_fJ_per_run": 98320184429.88374,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7i10|dev_x0": {
+     "success": 0.0,
+     "restarts_per_1000": 0.810970464135021,
+     "false_stall_rate": 0.554630593132154,
+     "false_reset_rate": 0.8221262595105902,
+     "energy_fJ_per_run": 121384218156.1086,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7i10|dev_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8160337552742616,
+     "false_stall_rate": 0.5211995863495347,
+     "false_reset_rate": 0.9530122256591546,
+     "energy_fJ_per_run": 121383987499.59956,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7i10|dev_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.7940928270042195,
+     "false_stall_rate": 0.5132837407013815,
+     "false_reset_rate": 0.9636863823933975,
+     "energy_fJ_per_run": 121383493342.3678,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7i10|drift_0.02": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8118143459915612,
+     "false_stall_rate": 0.5374220374220374,
+     "false_reset_rate": 0.9475979249680475,
+     "energy_fJ_per_run": 121383668424.13336,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7i10|drift_0.05": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8236286919831224,
+     "false_stall_rate": 0.5297131147540983,
+     "false_reset_rate": 0.9461028809647882,
+     "energy_fJ_per_run": 121383486402.56569,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7i10|l0_measured": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8067510548523207,
+     "false_stall_rate": 0.5313807531380753,
+     "false_reset_rate": 0.9503514281441603,
+     "energy_fJ_per_run": 121384450583.90363,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7i10|mismatch_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8573839662447258,
+     "false_stall_rate": 0.5610236220472441,
+     "false_reset_rate": 0.9585900912003944,
+     "energy_fJ_per_run": 121383178083.64389,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7i10|nominal": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8067510548523207,
+     "false_stall_rate": 0.5177824267782427,
+     "false_reset_rate": 0.9497352467193615,
+     "energy_fJ_per_run": 121383899075.13797,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7i10|read_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8067510548523207,
+     "false_stall_rate": 0.5177824267782427,
+     "false_reset_rate": 0.9497352467193615,
+     "energy_fJ_per_run": 121383899075.13797,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7i10|read_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8067510548523207,
+     "false_stall_rate": 0.5177824267782427,
+     "false_reset_rate": 0.9497352467193615,
+     "energy_fJ_per_run": 121383899075.13797,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7i10|supply_0.9": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8075949367088607,
+     "false_stall_rate": 0.5276907001044933,
+     "false_reset_rate": 0.9532831164878642,
+     "energy_fJ_per_run": 98320931768.11942,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7i10|supply_1.1": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8050632911392405,
+     "false_stall_rate": 0.5324947589098532,
+     "false_reset_rate": 0.9482913669064749,
+     "energy_fJ_per_run": 146875306043.3544,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7i10|temp_0": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8168776371308016,
+     "false_stall_rate": 0.5051652892561983,
+     "false_reset_rate": 0.9432900757632585,
+     "energy_fJ_per_run": 121384265025.26836,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7i10|temp_45": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8042194092827004,
+     "false_stall_rate": 0.4963273871983211,
+     "false_reset_rate": 0.9468953636431728,
+     "energy_fJ_per_run": 121383549066.5814,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7i10|temp_85": {
+     "success": 0.0,
+     "restarts_per_1000": 0.7974683544303798,
+     "false_stall_rate": 0.5206349206349207,
+     "false_reset_rate": 0.9548553249507651,
+     "energy_fJ_per_run": 121384189816.90903,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7i10|write_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8151898734177215,
+     "false_stall_rate": 0.510351966873706,
+     "false_reset_rate": 0.9474586376509166,
+     "energy_fJ_per_run": 121383882317.83984,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.kc2.i7i10|write_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.8067510548523207,
+     "false_stall_rate": 0.5345188284518828,
+     "false_reset_rate": 0.9465228541258108,
+     "energy_fJ_per_run": 121384588459.03088,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.mesa.i7|combined": {
+     "success": 0.0,
+     "restarts_per_1000": 3.0945147679324894,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.9980206729711898,
+     "energy_fJ_per_run": 98334810006.58635,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.mesa.i7|dev_x0": {
+     "success": 0.0,
+     "restarts_per_1000": 3.1434599156118144,
+     "false_stall_rate": 0.013154362416107382,
+     "false_reset_rate": 0.711453744493392,
+     "energy_fJ_per_run": 121431859277.8576,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.mesa.i7|dev_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 3.081856540084388,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.996504436676526,
+     "energy_fJ_per_run": 121401187060.57416,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.mesa.i7|dev_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 3.0869198312236286,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.995279307631786,
+     "energy_fJ_per_run": 121401508622.93681,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.mesa.i7|drift_0.02": {
+     "success": 0.0,
+     "restarts_per_1000": 3.0835443037974684,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.9960127591706539,
+     "energy_fJ_per_run": 121401846996.28671,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.mesa.i7|drift_0.05": {
+     "success": 0.0,
+     "restarts_per_1000": 3.0843881856540083,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.9965923984272608,
+     "energy_fJ_per_run": 121401364372.43158,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.mesa.i7|l0_measured": {
+     "success": 0.0,
+     "restarts_per_1000": 3.0843881856540083,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.9956780118854673,
+     "energy_fJ_per_run": 121401780169.0191,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.mesa.i7|mismatch_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 3.0953586497890297,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.9957360861759426,
+     "energy_fJ_per_run": 121401559346.5325,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.mesa.i7|nominal": {
+     "success": 0.0,
+     "restarts_per_1000": 3.081856540084388,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.9957570936091222,
+     "energy_fJ_per_run": 121401915234.05685,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.mesa.i7|read_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 3.081856540084388,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.9957570936091222,
+     "energy_fJ_per_run": 121401915234.05685,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.mesa.i7|read_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 3.081856540084388,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.9957570936091222,
+     "energy_fJ_per_run": 121401915234.05685,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.mesa.i7|supply_0.9": {
+     "success": 0.0,
+     "restarts_per_1000": 3.0843881856540083,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.9960243837794858,
+     "energy_fJ_per_run": 98335665323.4411,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.mesa.i7|supply_1.1": {
+     "success": 0.0,
+     "restarts_per_1000": 3.087763713080169,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.9956686518678939,
+     "energy_fJ_per_run": 146896160844.66586,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.mesa.i7|temp_0": {
+     "success": 0.0,
+     "restarts_per_1000": 3.0827004219409284,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.9957378795950985,
+     "energy_fJ_per_run": 121402157959.92715,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.mesa.i7|temp_45": {
+     "success": 0.0,
+     "restarts_per_1000": 3.089451476793249,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.9962284482758621,
+     "energy_fJ_per_run": 121401754881.2558,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.mesa.i7|temp_85": {
+     "success": 0.0,
+     "restarts_per_1000": 3.0835443037974684,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.9960212201591512,
+     "energy_fJ_per_run": 121401951121.91844,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.mesa.i7|write_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 3.087763713080169,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.996259684744857,
+     "energy_fJ_per_run": 121401821707.14728,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.mesa.i7|write_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 3.087763713080169,
+     "false_stall_rate": 0.0,
+     "false_reset_rate": 0.996279564177518,
+     "energy_fJ_per_run": 121401335552.21959,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.none.i7|combined": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 98265917773.21564,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.none.i7|dev_x0": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 121317257684.1733,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.none.i7|dev_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 121317016404.59512,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.none.i7|dev_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 121316568309.42845,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.none.i7|drift_0.02": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 121316706191.53316,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.none.i7|drift_0.05": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 121316499375.94469,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.none.i7|l0_measured": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 121317498963.75142,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.none.i7|mismatch_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 121316120212.88573,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.none.i7|nominal": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 121316947465.60692,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.none.i7|read_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 121316947465.60692,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.none.i7|read_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 121316947465.60692,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.none.i7|supply_0.9": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 98266699530.19531,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.none.i7|supply_1.1": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 146794298867.07263,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.none.i7|temp_0": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 121317292153.66739,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.none.i7|temp_45": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 121316602777.54645,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.none.i7|temp_85": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 121317257685.54938,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.none.i7|write_x2": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 121316912996.11281,
+     "array_writes": 0,
+     "runs": 25
+    },
+    "ours.none.i7|write_x4": {
+     "success": 0.0,
+     "restarts_per_1000": 0.0,
+     "false_stall_rate": null,
+     "false_reset_rate": null,
+     "energy_fJ_per_run": 121317636836.22342,
+     "array_writes": 0,
+     "runs": 25
+    }
+   },
+   "loss_points": {
+    "ours_kc2": {
+     "dev": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "write": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "read": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "drift_v_per_decade": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.02,
+       0.05
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_hot_C_above_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       20.0,
+       60.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_cold_C_below_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       25.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_low": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_high": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "mismatch": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "l0_measured": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     },
+     "combined": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     }
+    },
+    "ours_mesa": {
+     "dev": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "write": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "read": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "drift_v_per_decade": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.02,
+       0.05
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_hot_C_above_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       20.0,
+       60.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_cold_C_below_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       25.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_low": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_high": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "mismatch": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "l0_measured": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     },
+     "combined": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     }
+    },
+    "ours_none": {
+     "dev": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "write": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "read": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "drift_v_per_decade": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.02,
+       0.05
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_hot_C_above_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       20.0,
+       60.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_cold_C_below_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       25.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_low": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_high": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "mismatch": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "l0_measured": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     },
+     "combined": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     }
+    },
+    "b1_mesa": {
+     "dev": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "write": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "read": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "drift_v_per_decade": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.02,
+       0.05
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_hot_C_above_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       20.0,
+       60.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_cold_C_below_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       25.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_low": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_high": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "mismatch": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "l0_measured": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     },
+     "combined": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     }
+    },
+    "ours_kc2_i10": {
+     "dev": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "write": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "read": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "drift_v_per_decade": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.02,
+       0.05
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_hot_C_above_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       20.0,
+       60.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_cold_C_below_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       25.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_low": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_high": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "mismatch": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "l0_measured": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     },
+     "combined": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     }
+    }
+   },
+   "loss_point_ratio_ours_over_b1": {},
+   "kc2_vs_mesa": {
+    "nominal": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "dev_x0": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "dev_x2": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "dev_x4": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "l0_measured": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "write_x2": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "write_x4": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "read_x2": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "read_x4": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "drift_0.02": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "drift_0.05": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "temp_0": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "temp_45": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "temp_85": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "supply_0.9": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "supply_1.1": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "mismatch_x2": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    },
+    "combined": {
+     "ets_ratio": NaN,
+     "ci": [
+      NaN,
+      NaN
+     ],
+     "inside_band": false,
+     "entirely_outside_band": false
+    }
+   },
+   "nominal_escalation": {
+    "kc2": {
+     "h5_nominal": 0.0,
+     "h5_dev_x0": 0.0,
+     "h2_i7i10_legacy": 0.0,
+     "escalate_to_author": false
+    },
+    "mesa": {
+     "h5_nominal": 0.0,
+     "h5_dev_x0": 0.0,
+     "h2_i7i10_legacy": 0.0,
+     "escalate_to_author": false
+    },
+    "none": {
+     "h5_nominal": 0.0,
+     "h5_dev_x0": 0.0,
+     "h2_i7i10_legacy": 0.0,
+     "escalate_to_author": false
+    }
+   },
+   "b3_supply_ets99": {
+    "0.9": Infinity,
+    "1.0": Infinity,
+    "1.1": Infinity
+   },
+   "t7_sign_magnitude_extra": {
+    "arm": "ours.kc2.i7.sm",
+    "note": "extra arm, not in the 24-point decision; compare with loss_points.ours_kc2",
+    "loss_points": {
+     "dev": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "write": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "read": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0,
+       4.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "drift_v_per_decade": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.02,
+       0.05
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_hot_C_above_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       20.0,
+       60.0
+      ],
+      "success": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "temp_cold_C_below_25": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       25.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_low": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "supply_high": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       0.0,
+       0.1
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "mismatch": {
+      "point": Infinity,
+      "ci": null,
+      "frac_resamples_reached": 0.0,
+      "levels": [
+       1.0,
+       2.0
+      ],
+      "success": [
+       0.0,
+       0.0
+      ]
+     },
+     "l0_measured": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     },
+     "combined": {
+      "success_nominal": 0.0,
+      "success": 0.0,
+      "lost_10pct": false
+     }
+    },
+    "points": {
+     "ours.kc2.i7.sm|combined": {
+      "success": 0.0,
+      "restarts_per_1000": 0.7957805907172996,
+      "false_stall_rate": 0.4708377518557794,
+      "false_reset_rate": 0.9720002779128744,
+      "energy_fJ_per_run": 98320632471.22803,
+      "array_writes": 0,
+      "runs": 25
+     },
+     "ours.kc2.i7.sm|dev_x0": {
+      "success": 0.0,
+      "restarts_per_1000": 0.810970464135021,
+      "false_stall_rate": 0.554630593132154,
+      "false_reset_rate": 0.8221262595105902,
+      "energy_fJ_per_run": 121384218156.1086,
+      "array_writes": 0,
+      "runs": 25
+     },
+     "ours.kc2.i7.sm|dev_x2": {
+      "success": 0.0,
+      "restarts_per_1000": 0.7721518987341772,
+      "false_stall_rate": 0.5387978142076503,
+      "false_reset_rate": 0.9391530568001156,
+      "energy_fJ_per_run": 121383826451.0367,
+      "array_writes": 0,
+      "runs": 25
+     },
+     "ours.kc2.i7.sm|dev_x4": {
+      "success": 0.0,
+      "restarts_per_1000": 0.7932489451476793,
+      "false_stall_rate": 0.5191489361702127,
+      "false_reset_rate": 0.951229452520038,
+      "energy_fJ_per_run": 121383422626.63768,
+      "array_writes": 0,
+      "runs": 25
+     },
+     "ours.kc2.i7.sm|drift_0.02": {
+      "success": 0.0,
+      "restarts_per_1000": 0.7932489451476793,
+      "false_stall_rate": 0.5297872340425532,
+      "false_reset_rate": 0.9389408558591736,
+      "energy_fJ_per_run": 121383905200.59192,
+      "array_writes": 0,
+      "runs": 25
+     },
+     "ours.kc2.i7.sm|drift_0.05": {
+      "success": 0.0,
+      "restarts_per_1000": 0.7856540084388186,
+      "false_stall_rate": 0.5155746509129968,
+      "false_reset_rate": 0.9368536052439913,
+      "energy_fJ_per_run": 121383441162.10231,
+      "array_writes": 0,
+      "runs": 25
+     },
+     "ours.kc2.i7.sm|l0_measured": {
+      "success": 0.0,
+      "restarts_per_1000": 0.8075949367088607,
+      "false_stall_rate": 0.5005224660397074,
+      "false_reset_rate": 0.9298665506237308,
+      "energy_fJ_per_run": 121383487211.40945,
+      "array_writes": 0,
+      "runs": 25
+     },
+     "ours.kc2.i7.sm|mismatch_x2": {
+      "success": 0.0,
+      "restarts_per_1000": 0.8421940928270042,
+      "false_stall_rate": 0.5430861723446894,
+      "false_reset_rate": 0.9516754576481539,
+      "energy_fJ_per_run": 121383938994.86295,
+      "array_writes": 0,
+      "runs": 25
+     },
+     "ours.kc2.i7.sm|nominal": {
+      "success": 0.0,
+      "restarts_per_1000": 0.7940928270042195,
+      "false_stall_rate": 0.5175345377258236,
+      "false_reset_rate": 0.936745886654479,
+      "energy_fJ_per_run": 121383872501.71999,
+      "array_writes": 0,
+      "runs": 25
+     },
+     "ours.kc2.i7.sm|read_x2": {
+      "success": 0.0,
+      "restarts_per_1000": 0.7940928270042195,
+      "false_stall_rate": 0.5175345377258236,
+      "false_reset_rate": 0.936745886654479,
+      "energy_fJ_per_run": 121383872501.71999,
+      "array_writes": 0,
+      "runs": 25
+     },
+     "ours.kc2.i7.sm|read_x4": {
+      "success": 0.0,
+      "restarts_per_1000": 0.7940928270042195,
+      "false_stall_rate": 0.5175345377258236,
+      "false_reset_rate": 0.936745886654479,
+      "energy_fJ_per_run": 121383872501.71999,
+      "array_writes": 0,
+      "runs": 25
+     },
+     "ours.kc2.i7.sm|supply_0.9": {
+      "success": 0.0,
+      "restarts_per_1000": 0.7966244725738396,
+      "false_stall_rate": 0.5074152542372882,
+      "false_reset_rate": 0.9341844596081884,
+      "energy_fJ_per_run": 98320801428.70786,
+      "array_writes": 0,
+      "runs": 25
+     },
+     "ours.kc2.i7.sm|supply_1.1": {
+      "success": 0.0,
+      "restarts_per_1000": 0.789873417721519,
+      "false_stall_rate": 0.49572649572649574,
+      "false_reset_rate": 0.9401197604790419,
+      "energy_fJ_per_run": 146874850379.16513,
+      "array_writes": 0,
+      "runs": 25
+     },
+     "ours.kc2.i7.sm|temp_0": {
+      "success": 0.0,
+      "restarts_per_1000": 0.7789029535864979,
+      "false_stall_rate": 0.49295774647887325,
+      "false_reset_rate": 0.9362327358213341,
+      "energy_fJ_per_run": 121384081906.92555,
+      "array_writes": 0,
+      "runs": 25
+     },
+     "ours.kc2.i7.sm|temp_45": {
+      "success": 0.0,
+      "restarts_per_1000": 0.7915611814345992,
+      "false_stall_rate": 0.5191897654584222,
+      "false_reset_rate": 0.9319371727748691,
+      "energy_fJ_per_run": 121383488025.75766,
+      "array_writes": 0,
+      "runs": 25
+     },
+     "ours.kc2.i7.sm|temp_85": {
+      "success": 0.0,
+      "restarts_per_1000": 0.7932489451476793,
+      "false_stall_rate": 0.5148936170212766,
+      "false_reset_rate": 0.9337971596614546,
+      "energy_fJ_per_run": 121383698382.3966,
+      "array_writes": 0,
+      "runs": 25
+     },
+     "ours.kc2.i7.sm|write_x2": {
+      "success": 0.0,
+      "restarts_per_1000": 0.7755274261603375,
+      "false_stall_rate": 0.4940152339499456,
+      "false_reset_rate": 0.9359267734553776,
+      "energy_fJ_per_run": 121384626329.17117,
+      "array_writes": 0,
+      "runs": 25
+     },
+     "ours.kc2.i7.sm|write_x4": {
+      "success": 0.0,
+      "restarts_per_1000": 0.7940928270042195,
+      "false_stall_rate": 0.5281615302869288,
+      "false_reset_rate": 0.9322424854033013,
+      "energy_fJ_per_run": 121385699377.43037,
+      "array_writes": 0,
+      "runs": 25
+     }
+    }
+   },
+   "h2_restart_verdict_level_dependent": false,
+   "h2_restart_ci_not_inside_band": [
+    "nominal",
+    "dev_x0",
+    "dev_x2",
+    "dev_x4",
+    "l0_measured",
+    "write_x2",
+    "write_x4",
+    "read_x2",
+    "read_x4",
+    "drift_0.02",
+    "drift_0.05",
+    "temp_0",
+    "temp_45",
+    "temp_85",
+    "supply_0.9",
+    "supply_1.1",
+    "mismatch_x2",
+    "combined"
+   ]
+  }
+ },
+ "labels": "stand-in models; temperature, drift and mismatch mappings are parametric (plan.py constants)",
+ "b2_qkp": {
+  "dev_x0": {
+   "success": 0.4,
+   "mean_gap": 0.012967670305008172,
+   "false_accept_states_per_run": 0.0,
+   "runs": 15
+  },
+  "dev_x2": {
+   "success": 0.4666666666666667,
+   "mean_gap": 0.017956105407203927,
+   "false_accept_states_per_run": 183.06666666666666,
+   "runs": 15
+  },
+  "dev_x4": {
+   "success": 0.2,
+   "mean_gap": 0.02645745211657761,
+   "false_accept_states_per_run": 298.4,
+   "runs": 15
+  },
+  "nominal": {
+   "success": 0.5333333333333333,
+   "mean_gap": 0.012568087990839224,
+   "false_accept_states_per_run": 138.26666666666668,
+   "runs": 15
+  },
+  "read_x2": {
+   "success": 0.4,
+   "mean_gap": 0.017582580226098106,
+   "false_accept_states_per_run": 142.33333333333334,
+   "runs": 15
+  },
+  "read_x4": {
+   "success": 0.4666666666666667,
+   "mean_gap": 0.0163584807378474,
+   "false_accept_states_per_run": 139.0,
+   "runs": 15
+  }
+ }
+}

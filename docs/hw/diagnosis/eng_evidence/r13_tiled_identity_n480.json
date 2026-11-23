@@ -1,0 +1,95 @@
+{
+ "rows": [
+  {
+   "instance": "1101",
+   "r": 0,
+   "n_act": 480,
+   "best_E_stored": 2.0,
+   "best_E_tiled": 2.0,
+   "curve_identical": true,
+   "sim_tile_rows": 256,
+   "file": "h8_main_ours_kc2_i11_p3n480_nominal_000.json"
+  },
+  {
+   "instance": "1101",
+   "r": 1,
+   "n_act": 480,
+   "best_E_stored": 3.0,
+   "best_E_tiled": 3.0,
+   "curve_identical": true,
+   "sim_tile_rows": 256,
+   "file": "h8_main_ours_kc2_i11_p3n480_nominal_000.json"
+  },
+  {
+   "instance": "1101",
+   "r": 2,
+   "n_act": 480,
+   "best_E_stored": 2.0,
+   "best_E_tiled": 2.0,
+   "curve_identical": true,
+   "sim_tile_rows": 256,
+   "file": "h8_main_ours_kc2_i11_p3n480_nominal_000.json"
+  },
+  {
+   "instance": "1201",
+   "r": 0,
+   "n_act": 480,
+   "best_E_stored": 4.0,
+   "best_E_tiled": 4.0,
+   "curve_identical": true,
+   "sim_tile_rows": 256,
+   "file": "h8_main_ours_kc2_i11_p4n480_nominal_000.json"
+  },
+  {
+   "instance": "1201",
+   "r": 1,
+   "n_act": 480,
+   "best_E_stored": 2.0,
+   "best_E_tiled": 2.0,
+   "curve_identical": true,
+   "sim_tile_rows": 256,
+   "file": "h8_main_ours_kc2_i11_p4n480_nominal_000.json"
+  },
+  {
+   "instance": "1201",
+   "r": 2,
+   "n_act": 480,
+   "best_E_stored": 2.0,
+   "best_E_tiled": 2.0,
+   "curve_identical": true,
+   "sim_tile_rows": 256,
+   "file": "h8_main_ours_kc2_i11_p4n480_nominal_000.json"
+  },
+  {
+   "instance": "1101",
+   "r": 0,
+   "n_act": 480,
+   "best_E_stored": 3.0,
+   "best_E_tiled": 3.0,
+   "curve_identical": true,
+   "sim_tile_rows": 256,
+   "file": "h8_main_ours_none_p3n480_nominal_000.json"
+  },
+  {
+   "instance": "1101",
+   "r": 1,
+   "n_act": 480,
+   "best_E_stored": 2.0,
+   "best_E_tiled": 2.0,
+   "curve_identical": true,
+   "sim_tile_rows": 256,
+   "file": "h8_main_ours_none_p3n480_nominal_000.json"
+  },
+  {
+   "instance": "1101",
+   "r": 2,
+   "n_act": 480,
+   "best_E_stored": 0.0,
+   "best_E_tiled": 0.0,
+   "curve_identical": true,
+   "sim_tile_rows": 256,
+   "file": "h8_main_ours_none_p3n480_nominal_000.json"
+  }
+ ],
+ "pass_n_le_480": true
+}

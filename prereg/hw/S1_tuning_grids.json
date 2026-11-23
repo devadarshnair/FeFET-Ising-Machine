@@ -1,0 +1,426 @@
+{
+ "status": "DRAFT (Stage 1b re-tune grids, replacing the Stage 1 grids after internal review item 9.3.2; not a frozen prereg; prereg/hw/H8_full.md untouched)",
+ "rule": "Every arm evaluates exactly 12 configurations in round 1 and its top 4 in round 2 (p3n960 only). Same tuning instances, same seeds, same selection rule: highest pooled success; ties by lower mean best_E; remaining ties by grid order. Each arm uses its own registered knobs; B3 and ours_none/B1 share the (T_start, T_end) percentile pairs of plan.PCT_PAIRS extended by two pairs.",
+ "pct_pairs": [
+  [
+   85,
+   5
+  ],
+  [
+   90,
+   5
+  ],
+  [
+   85,
+   10
+  ],
+  [
+   75,
+   5
+  ],
+  [
+   90,
+   10
+  ],
+  [
+   75,
+   10
+  ]
+ ],
+ "B3_v2": {
+  "label": "B3_v2",
+  "knob": "b3v2 final-temperature knob (plan.knob_values: 1.0 -> T_low, 0.5 -> T_low^2/T_high)",
+  "knob_values": [
+   1.0,
+   0.5
+  ],
+  "configs": "pct_pairs x knob_values = 12"
+ },
+ "ours_none_and_B1": {
+  "label": "ours_none",
+  "note": "B1_best (b1.none.fs) is bit-identical to ours_none on the ideal device (PROBLEMS_AGREED A6): tuned once, priced for both",
+  "knob": "schedule fraction (plan.SCHED_FRAC)",
+  "knob_values": [
+   1.0,
+   0.5
+  ],
+  "configs": "pct_pairs x knob_values = 12"
+ },
+ "ours_kc2c": {
+  "label": "ours_kc2c",
+  "pct": [
+   90,
+   5
+  ],
+  "tfinal": [
+   1.0,
+   0.5
+  ],
+  "knob_K": [
+   0.5,
+   1,
+   2
+  ],
+  "kick_c": [
+   0,
+   0.04
+  ],
+  "configs": "tfinal x K x kick_c = 12"
+ },
+ "ours_kc2_i11": {
+  "label": "ours_kc2_i11",
+  "kick_c": [
+   0,
+   0.02,
+   0.04,
+   0.08
+  ],
+  "knob_K": [
+   0.5,
+   1,
+   2
+  ],
+  "configs": "kick_c x K = 12 labels; labels with the same L = max(10, ceil(c n)) at a given n are aliases: run once, counted as evaluated",
+  "registered_reference": {
+   "colouring": {
+    "kick_c": 0,
+    "knob": 2
+   },
+   "maxcut": {
+    "kick_c": 0,
+    "knob": 1
+   }
+  }
+ },
+ "round2": "p3n960 only: top 4 of every arm by round-1 pooled success on p3n480 + p4n480, plus the registered reference of ours; p4n960 uses the transferred config of every arm",
+ "stage2_gate": "ours selected improves on the registered reference by >= +0.15 success at p3n960 or >= +0.25 on gk (tuning-only G43-47), Newcombe lower bound of the paired difference > 0, and loses <= 0.05 at the smaller sizes (not tested in this bundle: needs the 120-240 re-check; reported, not gated)",
+ "instances": {
+  "p3_tuning_keys": "2101-2112",
+  "p4_tuning_keys": "2201-2212",
+  "gk": "G43-G47 (TUNING-ONLY: used in P4.02 calibration; no result on them is confirmatory)",
+  "tag": 10
+ },
+ "stage1b_grids": {
+  "ours_kc2_i11": [
+   {
+    "kick_c": 0,
+    "knob": 0.25
+   },
+   {
+    "kick_c": 0,
+    "knob": 0.5
+   },
+   {
+    "kick_c": 0,
+    "knob": 1
+   },
+   {
+    "kick_c": 0.04,
+    "knob": 0.25
+   },
+   {
+    "kick_c": 0.04,
+    "knob": 0.5
+   },
+   {
+    "kick_c": 0.04,
+    "knob": 1
+   },
+   {
+    "kick_c": 0.08,
+    "knob": 0.25
+   },
+   {
+    "kick_c": 0.08,
+    "knob": 0.5
+   },
+   {
+    "kick_c": 0.08,
+    "knob": 1
+   },
+   {
+    "kick_c": 0.16,
+    "knob": 0.25
+   },
+   {
+    "kick_c": 0.16,
+    "knob": 0.5
+   },
+   {
+    "kick_c": 0.16,
+    "knob": 1
+   }
+  ],
+  "B3_v2": [
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 1.0,
+    "t_hi_mult": 1.0,
+    "t_lo_mult": 0.0625
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 1.0,
+    "t_hi_mult": 1.0,
+    "t_lo_mult": 0.125
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 1.0,
+    "t_hi_mult": 1.0,
+    "t_lo_mult": 0.25
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 1.0,
+    "t_hi_mult": 1.0,
+    "t_lo_mult": 0.5
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 1.0,
+    "t_hi_mult": 1.5,
+    "t_lo_mult": 0.0625
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 1.0,
+    "t_hi_mult": 1.5,
+    "t_lo_mult": 0.125
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 1.0,
+    "t_hi_mult": 1.5,
+    "t_lo_mult": 0.25
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 1.0,
+    "t_hi_mult": 1.5,
+    "t_lo_mult": 0.5
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 1.0,
+    "t_hi_mult": 2.5,
+    "t_lo_mult": 0.0625
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 1.0,
+    "t_hi_mult": 2.5,
+    "t_lo_mult": 0.125
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 1.0,
+    "t_hi_mult": 2.5,
+    "t_lo_mult": 0.25
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 1.0,
+    "t_hi_mult": 2.5,
+    "t_lo_mult": 0.5
+   }
+  ],
+  "ours_none": [
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 0.25,
+    "t_hi_mult": 1.0,
+    "t_lo_mult": 0.25
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 0.25,
+    "t_hi_mult": 1.0,
+    "t_lo_mult": 0.5
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 0.25,
+    "t_hi_mult": 1.0,
+    "t_lo_mult": 1.0
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 0.25,
+    "t_hi_mult": 2.0,
+    "t_lo_mult": 0.25
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 0.25,
+    "t_hi_mult": 2.0,
+    "t_lo_mult": 0.5
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 0.25,
+    "t_hi_mult": 2.0,
+    "t_lo_mult": 1.0
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 0.5,
+    "t_hi_mult": 1.0,
+    "t_lo_mult": 0.25
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 0.5,
+    "t_hi_mult": 1.0,
+    "t_lo_mult": 0.5
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 0.5,
+    "t_hi_mult": 1.0,
+    "t_lo_mult": 1.0
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 0.5,
+    "t_hi_mult": 2.0,
+    "t_lo_mult": 0.25
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 0.5,
+    "t_hi_mult": 2.0,
+    "t_lo_mult": 0.5
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "knob": 0.5,
+    "t_hi_mult": 2.0,
+    "t_lo_mult": 1.0
+   }
+  ],
+  "ours_kc2c": [
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "tfinal": 1.0,
+    "t_lo_mult": 0.1,
+    "knob": 0.5,
+    "kick_c": 0.04
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "tfinal": 1.0,
+    "t_lo_mult": 0.1,
+    "knob": 0.5,
+    "kick_c": 0.08
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "tfinal": 1.0,
+    "t_lo_mult": 0.1,
+    "knob": 1,
+    "kick_c": 0.04
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "tfinal": 1.0,
+    "t_lo_mult": 0.1,
+    "knob": 1,
+    "kick_c": 0.08
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "tfinal": 1.0,
+    "t_lo_mult": 0.1,
+    "knob": 2,
+    "kick_c": 0.04
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "tfinal": 1.0,
+    "t_lo_mult": 0.1,
+    "knob": 2,
+    "kick_c": 0.08
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "tfinal": 1.0,
+    "t_lo_mult": 0.25,
+    "knob": 0.5,
+    "kick_c": 0.04
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "tfinal": 1.0,
+    "t_lo_mult": 0.25,
+    "knob": 0.5,
+    "kick_c": 0.08
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "tfinal": 1.0,
+    "t_lo_mult": 0.25,
+    "knob": 1,
+    "kick_c": 0.04
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "tfinal": 1.0,
+    "t_lo_mult": 0.25,
+    "knob": 1,
+    "kick_c": 0.08
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "tfinal": 1.0,
+    "t_lo_mult": 0.25,
+    "knob": 2,
+    "kick_c": 0.04
+   },
+   {
+    "pct_hi": 90,
+    "pct_lo": 5,
+    "tfinal": 1.0,
+    "t_lo_mult": 0.25,
+    "knob": 2,
+    "kick_c": 0.08
+   }
+  ]
+ },
+ "stage1b_note": "Copied from scripts/testing/s1_retune_grids.GRIDS (855513e): continuous t_hi_mult / t_lo_mult knobs (pct knobs are inert on integer |dE|); 12 behaviour-distinct configurations per arm (machines.effective_params check), widened past the Stage 1 edge winners for every arm incl. ours. ours_kc2_i11 is greedy (I11): temperatures never enter, so its 12 configs are (kick_c, K). Reference rows (not selectable): ours registered (kick_c 0, K = 2n) and B3 H8-registered (p90/5, knob 0.5). Instances: p3n480 keys 2101-2108, seeds 0-2, ideal device, tag 10 (tuning only)."
+}

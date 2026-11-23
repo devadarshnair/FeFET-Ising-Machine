@@ -1,0 +1,26 @@
+{
+ "id": "0.5.r13_960",
+ "pass": true,
+ "smoke": false,
+ "rows": [
+  {
+   "r": 0,
+   "family": "p3n960",
+   "best_E_ideal": 6.0,
+   "best_E_tiled_nominal": 6.0,
+   "curve_identical": true,
+   "flips_ideal": 576000,
+   "flips_tiled": 576000
+  },
+  {
+   "r": 1,
+   "family": "p3n960",
+   "best_E_ideal": 6.0,
+   "best_E_tiled_nominal": 6.0,
+   "curve_identical": true,
+   "flips_ideal": 568320,
+   "flips_tiled": 568320
+  }
+ ],
+ "rule": "nominal (tiled 256, wv+diff+cal, share 0.5) == ideal at the gate size; a difference STOPS every noisy 960-class job and is reported"
+}
